@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kplato>
+<kplato version="0.6.5" mime="application/x-vnd.kde.kplato" editor="KPlato">
+ <project scheduling="MustStartOn" description="Engineering To Order" end-time="2012-11-04T00:00:00+02:00" timezone="Europe/Bucharest" leader="cris" id="2011-11-14T14:10:10 uHsYSlGeep" name="eto project" start-time="2010-11-01T00:00:00+02:00">
+  <wbs-definition levels-enabled="0" project-code="" project-separator="">
+   <default separator="." code="Number"/>
+  </wbs-definition>
+  <locale positive-prefix-currency-symbol="1" negative-prefix-currency-symbol="1" positive-monetary-sign-position="1" currency-symbol="€" negative-monetary-sign-position="1"/>
+  <accounts>
+   <account description="engineering activities" name="engineering">
+    <costplace object-id="2011-11-14T20:58:37 BQFaoJO14o" startup-cost="0" shutdown-cost="0" running-cost="1"/>
+    <costplace object-id="2011-11-14T20:58:42 THyVKIgTon" startup-cost="0" shutdown-cost="0" running-cost="1"/>
+   </account>
+   <account description="procurement activities and materials" name="procurement">
+    <account description="procurement activities" name="proc. activities">
+     <costplace object-id="2011-11-14T20:58:49 fimRtAfRyw" startup-cost="0" shutdown-cost="0" running-cost="1"/>
+     <costplace object-id="2011-11-14T20:58:59 Fbd3O9dfEo" startup-cost="0" shutdown-cost="0" running-cost="1"/>
+    </account>
+    <account description="procurement materials" name="proc. materials">
+     <costplace object-id="2011-11-14T20:58:53 q00c0RryuA" startup-cost="1" shutdown-cost="0" running-cost="0"/>
+    </account>
+   </account>
+   <account description="construction activities" name="construction">
+    <costplace object-id="2011-11-14T20:59:05 1tWlJPvwpr" startup-cost="0" shutdown-cost="0" running-cost="1"/>
+    <costplace object-id="2011-11-14T20:59:11 sfpqFqH6mB" startup-cost="0" shutdown-cost="0" running-cost="1"/>
+    <costplace object-id="2011-11-14T20:59:15 G1ku261fmE" startup-cost="0" shutdown-cost="0" running-cost="1"/>
+   </account>
+   <account description="installation" name="installation">
+    <account description="supervisor" name="inst. supervisor">
+     <costplace object-id="2011-11-14T20:59:30 PNe9HeEGK0" startup-cost="0" shutdown-cost="0" running-cost="1"/>
+     <costplace object-id="2011-11-14T20:59:35 chDy0aJAoT" startup-cost="0" shutdown-cost="0" running-cost="1"/>
+    </account>
+    <account description="commissioning" name="inst. commissioning">
+     <costplace object-id="2011-11-14T20:59:40 vqUxgh3J6Q" startup-cost="0" shutdown-cost="0" running-cost="1"/>
+     <costplace object-id="2011-11-14T20:59:44 xEhbSwtSQd" startup-cost="0" shutdown-cost="1" running-cost="1"/>
+    </account>
+   </account>
+   <account description="delivery costs" name="delivery">
+    <costplace object-id="2011-11-14T20:59:23 Rl7xUOLNKA" startup-cost="0" shutdown-cost="0" running-cost="1"/>
+    <costplace object-id="2011-11-14T20:59:26 ECn202sF8e" startup-cost="1" shutdown-cost="0" running-cost="0"/>
+   </account>
+  </accounts>
+  <calendar timezone="Europe/Bucharest" id="2011-11-14T14:10:10 OocGaK6nDA" name="Base">
+   <weekday day="0" state="2">
+    <interval length="28800000" start="08:00:00"/>
+   </weekday>
+   <weekday day="1" state="2">
+    <interval length="28800000" start="08:00:00"/>
+   </weekday>
+   <weekday day="2" state="2">
+    <interval length="28800000" start="08:00:00"/>
+   </weekday>
+   <weekday day="3" state="2">
+    <interval length="28800000" start="08:00:00"/>
+   </weekday>
+   <weekday day="4" state="2">
+    <interval length="28800000" start="08:00:00"/>
+   </weekday>
+   <weekday day="5" state="1"/>
+   <weekday day="6" state="1"/>
+  </calendar>
+  <calendar timezone="Asia/Ho_Chi_Minh" id="2011-11-14T14:16:30 BpF1OBoDrF" name="Installation">
+   <weekday day="0" state="2">
+    <interval length="36000000" start="07:00:00"/>
+   </weekday>
+   <weekday day="1" state="2">
+    <interval length="36000000" start="07:00:00"/>
+   </weekday>
+   <weekday day="2" state="2">
+    <interval length="36000000" start="07:00:00"/>
+   </weekday>
+   <weekday day="3" state="2">
+    <interval length="36000000" start="07:00:00"/>
+   </weekday>
+   <weekday day="4" state="2">
+    <interval length="36000000" start="07:00:00"/>
+   </weekday>
+   <weekday day="5" state="2">
+    <interval length="36000000" start="07:00:00"/>
+   </weekday>
+   <weekday day="6" state="2">
+    <interval length="14400000" start="08:00:00"/>
+   </weekday>
+  </calendar>
+  <standard-worktime week="40h0m" day="8h0m" month="176h0m" year="1760h0m"/>
+  <resource-group type="Work" id="2011-11-14T14:38:57 KMC5QKAkBB" name="engineering">
+   <resource available-from="2010-11-04T00:00:00+02:00" available-until="2012-11-04T00:00:00+02:00" normal-rate="€ 30.00" overtime-rate="€ 60.00" calendar-id="2011-11-14T14:10:10 OocGaK6nDA" email="md@kplato.org" units="100" initials="md" type="Work" id="2011-11-14T14:40:29 lydA4Etzhs" name="mec designer"/>
+   <resource available-from="2010-11-04T00:00:00+02:00" available-until="2012-11-04T00:00:00+02:00" normal-rate="€ 30.00" overtime-rate="€ 60.00" calendar-id="2011-11-14T14:10:10 OocGaK6nDA" email="ed@kplato.org" units="100" initials="ed" type="Work" id="2011-11-14T14:40:33 tKQU01wDoI" name="ele designer"/>
+  </resource-group>
+  <resource-group type="Work" id="2011-11-14T14:39:11 wH2Aae36tZ" name="procurement">
+   <resource available-from="2010-11-04T00:00:00+02:00" available-until="2012-11-04T00:00:00+02:00" normal-rate="€ 22.00" overtime-rate="€ 44.00" calendar-id="2011-11-14T14:10:10 OocGaK6nDA" email="pd@kplato.org" units="100" initials="pd" type="Work" id="2011-11-14T14:40:56 yjBuY0GX7I" name="purchaser1"/>
+  </resource-group>
+  <resource-group type="Work" id="2011-11-14T14:39:13 DuY8ZDuwSC" name="construction">
+   <resource available-from="2010-11-04T00:00:00+02:00" available-until="2012-11-04T00:00:00+02:00" normal-rate="€ 20.00" overtime-rate="€ 40.00" calendar-id="2011-11-14T14:10:10 OocGaK6nDA" email="w1@kplato.org" units="100" initials="w1" type="Work" id="2011-11-14T14:41:11 lsEP1JdsGI" name="worker 1">
+    <required-resources>
+     <resource id="2011-11-14T14:41:30 7VuKuvbVnr"/>
+    </required-resources>
+   </resource>
+   <resource available-from="2010-11-04T00:00:00+02:00" available-until="2012-11-04T00:00:00+02:00" normal-rate="€ 20.00" overtime-rate="€ 40.00" calendar-id="2011-11-14T14:10:10 OocGaK6nDA" email="w2@kplato.org" units="100" initials="w2" type="Work" id="2011-11-14T14:41:12 k9c8ba8Xnw" name="worker 2">
+    <required-resources>
+     <resource id="2011-11-14T14:41:29 njgybCzrk4"/>
+    </required-resources>
+   </resource>
+  </resource-group>
+  <resource-group type="Material" id="2011-11-14T14:39:15 HfHfxPP8ak" name="workshop">
+   <resource available-from="2010-11-04T00:00:00+02:00" available-until="2012-11-04T00:00:00+02:00" normal-rate="€ 30.00" overtime-rate="€ 30.00" calendar-id="2011-11-14T14:10:10 OocGaK6nDA" email="" units="100" initials="" type="Material" id="2011-11-14T14:41:29 njgybCzrk4" name="cnc machine"/>
+   <resource available-from="2010-12-04T00:00:00+02:00" available-until="2012-11-04T00:00:00+02:00" normal-rate="€ 2.00" overtime-rate="€ 2.00" calendar-id="2011-11-14T14:10:10 OocGaK6nDA" email="" units="100" initials="" type="Material" id="2011-11-14T14:41:30 7VuKuvbVnr" name="assembly tools"/>
+  </resource-group>
+  <resource-group type="Work" id="2011-11-14T14:39:20 uVzwfXagbU" name="installation">
+   <resource available-from="2010-11-04T00:00:00+02:00" available-until="2012-11-04T00:00:00+02:00" normal-rate="€ 70.00" overtime-rate="€ 140.00" calendar-id="2011-11-14T14:16:30 BpF1OBoDrF" email="sv@kplato.org" units="100" initials="sv" type="Work" id="2011-11-14T14:41:34 nWyNeaxm7k" name="supervisor"/>
+   <resource available-from="2010-11-04T00:00:00+02:00" available-until="2012-11-04T00:00:00+02:00" normal-rate="€ 80.00" overtime-rate="€ 160.00" calendar-id="2011-11-14T14:16:30 BpF1OBoDrF" email="co@kplato.org" units="100" initials="co" type="Work" id="2011-11-14T14:41:34 htRLr2XosF" name="commissioning"/>
+  </resource-group>
+  <task wbs="1" scheduling="ASAP" constraint-endtime="2011-11-14T20:57:26.685+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:57:26.685+02:00" leader="" id="2011-11-14T20:57:26 aSqjboe6wd" name="engineering">
+   <estimate risk="None" expected="8" optimistic="8" pessimistic="8" unit="Y" type="Effort"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <schedules>
+    <schedule earlystart="2010-11-01T00:00:00+02:00" duration="14 04:00:00.0" in-critical-path="0" resource-overbooked="0" scheduling-conflict="0" end="2010-11-18T12:00:00+02:00" free-float="0 00:00:00.0" resource-not-available="0" type="Expected" id="1" name="Schedule: Plan" start="2010-11-04T08:00:00+02:00" not-scheduled="0" latefinish="2011-03-10T04:32:00+02:00" negative-float="0 00:00:00.0" resource-error="0" positive-float="0 00:00:00.0"/>
+   </schedules>
+   <task wbs="1.1" scheduling="ASAP" constraint-endtime="2011-11-14T20:58:37.389+02:00" description="mechanical basic and detail design" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:58:37.389+02:00" leader="" id="2011-11-14T20:58:37 BQFaoJO14o" name="mec design">
+    <estimate risk="High" expected="10" optimistic="9.5" pessimistic="12" unit="d" type="Effort"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterEffortPerTask" finishTime="" started="1" finished="0" startTime="2010-11-25T22:03:00+02:00">
+     <completion-entry note="" remaining-effort="2 19:12:00.0" performed-effort="1 08:00:00.0" percent-finished="20" date="2011-11-14"/>
+     <used-effort>
+      <resource id="2011-11-14T14:40:29 lydA4Etzhs"/>
+     </used-effort>
+    </progress>
+    <schedules>
+     <schedule earlystart="2010-11-04T08:00:00+02:00" start="2010-11-04T08:00:00+02:00" positive-float="0 00:42:51.999" end="2010-11-18T12:00:00+02:00" in-critical-path="0" id="1" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" latestart="2010-11-04T08:42:51.999+02:00" duration="14 04:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2010-11-18T12:42:51.999+02:00" negative-float="0 00:00:00.0" earlyfinish="2010-11-18T12:00:00+02:00"/>
+    </schedules>
+    <resourcegroup-request units="0" group-id="2011-11-14T14:38:57 KMC5QKAkBB">
+     <resource-request resource-id="2011-11-14T14:40:29 lydA4Etzhs" units="100"/>
+    </resourcegroup-request>
+   </task>
+   <task wbs="1.2" scheduling="ASAP" constraint-endtime="2011-11-14T20:58:42.445+02:00" description="electrical basic and detail design" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:58:42.445+02:00" leader="" id="2011-11-14T20:58:42 THyVKIgTon" name="ele design">
+    <estimate risk="High" expected="5" optimistic="4.75" pessimistic="6" unit="d" type="Effort"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="1" finished="0" startTime="2010-11-25T22:07:00+02:00">
+     <completion-entry note="" remaining-effort="0 14:24:00.0" performed-effort="0 00:00:00.0" percent-finished="10" date="2010-11-25"/>
+     <used-effort>
+      <resource id="2011-11-14T14:40:33 tKQU01wDoI">
+       <actual-effort overtime-effort="0 00:00:00.0" normal-effort="0 05:00:00.0" date="2011-11-15"/>
+       <actual-effort overtime-effort="0 00:00:00.0" normal-effort="0 05:00:00.0" date="2011-11-16"/>
+       <actual-effort overtime-effort="0 00:00:00.0" normal-effort="0 05:00:00.0" date="2011-11-17"/>
+      </resource>
+     </used-effort>
+    </progress>
+    <schedules>
+     <schedule earlystart="2010-11-04T08:00:00+02:00" start="2010-11-04T08:00:00+02:00" positive-float="7 02:42:51.999" end="2010-11-11T10:00:00+02:00" in-critical-path="0" id="1" resource-overbooked="0" name="Schedule: Plan" free-float="7 02:00:00.0" not-scheduled="0" scheduling-conflict="0" latestart="2010-11-11T10:42:51.999+02:00" duration="7 02:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2010-11-18T12:42:51.999+02:00" negative-float="0 00:00:00.0" earlyfinish="2010-11-11T10:00:00+02:00"/>
+    </schedules>
+    <resourcegroup-request units="0" group-id="2011-11-14T14:38:57 KMC5QKAkBB">
+     <resource-request resource-id="2011-11-14T14:40:33 tKQU01wDoI" units="100"/>
+    </resourcegroup-request>
+   </task>
+  </task>
+  <task wbs="2" scheduling="ASAP" constraint-endtime="2011-11-14T20:57:36.885+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:57:36.885+02:00" leader="" id="2011-11-14T20:57:36 bPA8DxtIQY" name="procurement">
+   <estimate risk="None" expected="8" optimistic="8" pessimistic="8" unit="Y" type="Effort"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <schedules>
+    <schedule earlystart="2010-11-01T00:00:00+02:00" duration="61 02:49:08.571" in-critical-path="0" resource-overbooked="0" scheduling-conflict="0" end="2011-01-18T14:49:08.571+02:00" free-float="0 00:00:00.0" resource-not-available="0" type="Expected" id="1" name="Schedule: Plan" start="2010-11-18T12:00:00+02:00" not-scheduled="0" latefinish="2011-03-10T04:32:00+02:00" negative-float="0 00:00:00.0" resource-error="0" positive-float="0 00:00:00.0"/>
+   </schedules>
+   <task wbs="2.1" scheduling="ASAP" constraint-endtime="2011-11-14T20:58:49.869+02:00" description="Orders for the procurement of t..." startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:58:49.869+02:00" leader="" id="2011-11-14T20:58:49 fimRtAfRyw" name="orders">
+    <estimate risk="Low" expected="16" optimistic="15.68" pessimistic="17.6" unit="h" type="Effort"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2010-11-18T12:00:00+02:00" start="2010-11-18T12:00:00+02:00" positive-float="0 00:42:51.999" end="2010-11-22T12:12:00+02:00" in-critical-path="0" id="1" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" latestart="2010-11-18T12:42:51.999+02:00" duration="4 00:12:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2010-11-22T12:54:51.999+02:00" negative-float="0 00:00:00.0" earlyfinish="2010-11-22T12:12:00+02:00"/>
+    </schedules>
+    <resourcegroup-request units="0" group-id="2011-11-14T14:39:11 wH2Aae36tZ">
+     <resource-request resource-id="2011-11-14T14:40:56 yjBuY0GX7I" units="100"/>
+    </resourcegroup-request>
+   </task>
+   <task wbs="2.2" scheduling="ASAP" constraint-endtime="2011-11-14T20:58:53.741+02:00" description="material ordered and arrieved" startup-cost="1000" shutdown-cost="0" constraint-starttime="2011-11-14T20:58:53.741+02:00" leader="" id="2011-11-14T20:58:53 q00c0RryuA" name="material arrival">
+    <estimate risk="High" expected="40" optimistic="38" pessimistic="42" unit="d" calendar-id="2011-11-14T14:10:10 OocGaK6nDA" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2010-11-22T12:12:00+02:00" start="2010-11-22T12:12:00+02:00" positive-float="0 00:42:51.429" end="2011-01-17T14:29:08.571+02:00" in-critical-path="0" id="1" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" latestart="2010-11-22T12:54:51.999+02:00" duration="56 02:17:08.571" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-01-17T15:12:00+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-01-17T14:29:08.571+02:00"/>
+    </schedules>
+   </task>
+   <task wbs="2.3" scheduling="ASAP" constraint-endtime="2011-11-14T20:58:59.358+02:00" description="checking of the arrieved materials" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:58:59.358+02:00" leader="" id="2011-11-14T20:58:59 Fbd3O9dfEo" name="material check">
+    <estimate risk="High" expected="8" optimistic="7.2" pessimistic="9.6" unit="h" type="Effort"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-01-17T14:29:08.571+02:00" start="2011-01-17T14:29:08.571+02:00" positive-float="0 00:42:51.429" end="2011-01-18T14:49:08.571+02:00" in-critical-path="0" id="1" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" latestart="2011-01-17T15:12:00+02:00" duration="1 00:20:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-01-18T15:32:00+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-01-18T14:49:08.571+02:00"/>
+    </schedules>
+    <resourcegroup-request units="0" group-id="2011-11-14T14:39:11 wH2Aae36tZ">
+     <resource-request resource-id="2011-11-14T14:40:56 yjBuY0GX7I" units="100"/>
+    </resourcegroup-request>
+   </task>
+  </task>
+  <task wbs="3" scheduling="ASAP" constraint-endtime="2011-11-14T20:58:05.478+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:58:05.478+02:00" leader="" id="2011-11-14T20:58:05 0QCezVOO3q" name="constuction">
+   <estimate risk="None" expected="8" optimistic="8" pessimistic="8" unit="Y" type="Effort"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <schedules>
+    <schedule earlystart="2010-11-01T00:00:00+02:00" duration="6 00:08:00.0" in-critical-path="0" resource-overbooked="0" scheduling-conflict="0" end="2011-01-24T14:57:08.571+02:00" free-float="0 00:00:00.0" resource-not-available="0" type="Expected" id="1" name="Schedule: Plan" start="2011-01-18T14:49:08.571+02:00" not-scheduled="0" latefinish="2011-03-10T04:32:00+02:00" negative-float="0 00:00:00.0" resource-error="0" positive-float="0 00:00:00.0"/>
+   </schedules>
+   <task wbs="3.1" scheduling="ASAP" constraint-endtime="2011-11-14T20:59:05.590+02:00" description="assembly of the parts" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:59:05.590+02:00" leader="" id="2011-11-14T20:59:05 1tWlJPvwpr" name="assembly">
+    <estimate risk="Low" expected="32" optimistic="30.4" pessimistic="33.28" unit="h" type="Effort"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-01-18T14:49:08.571+02:00" start="2011-01-18T14:49:08.571+02:00" positive-float="0 00:42:51.429" end="2011-01-20T14:47:08.571+02:00" in-critical-path="0" id="1" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" latestart="2011-01-18T15:32:00+02:00" duration="1 23:58:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-01-20T15:30:00+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-01-20T14:47:08.571+02:00"/>
+    </schedules>
+    <resourcegroup-request units="0" group-id="2011-11-14T14:39:13 DuY8ZDuwSC">
+     <resource-request resource-id="2011-11-14T14:41:11 lsEP1JdsGI" units="100">
+      <required-resources>
+       <resource id="2011-11-14T14:41:30 7VuKuvbVnr"/>
+      </required-resources>
+     </resource-request>
+     <resource-request resource-id="2011-11-14T14:41:12 k9c8ba8Xnw" units="100">
+      <required-resources>
+       <resource id="2011-11-14T14:41:29 njgybCzrk4"/>
+      </required-resources>
+     </resource-request>
+    </resourcegroup-request>
+   </task>
+   <task wbs="3.2" scheduling="ASAP" constraint-endtime="2011-11-14T20:59:11.814+02:00" description="coating and final checking" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:59:11.814+02:00" leader="" id="2011-11-14T20:59:11 sfpqFqH6mB" name="coating">
+    <estimate risk="High" expected="8" optimistic="6.8" pessimistic="9.199999999999999" unit="h" type="Effort"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-01-20T14:47:08.571+02:00" start="2011-01-20T14:47:08.571+02:00" positive-float="0 00:42:51.429" end="2011-01-21T14:57:08.571+02:00" in-critical-path="0" id="1" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" latestart="2011-01-20T15:30:00+02:00" duration="1 00:10:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-01-21T15:40:00+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-01-21T14:57:08.571+02:00"/>
+    </schedules>
+    <resourcegroup-request units="0" group-id="2011-11-14T14:39:13 DuY8ZDuwSC">
+     <resource-request resource-id="2011-11-14T14:41:12 k9c8ba8Xnw" units="100">
+      <required-resources>
+       <resource id="2011-11-14T14:41:29 njgybCzrk4"/>
+      </required-resources>
+     </resource-request>
+    </resourcegroup-request>
+   </task>
+   <task wbs="3.3" scheduling="ASAP" constraint-endtime="2011-11-14T20:59:15.157+02:00" description="un-installation of the machine" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:59:15.157+02:00" leader="" id="2011-11-14T20:59:15 G1ku261fmE" name="un-installation">
+    <estimate risk="Low" expected="16" optimistic="15.2" pessimistic="16.8" unit="h" type="Effort"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-01-21T14:57:08.571+02:00" start="2011-01-21T14:57:08.571+02:00" positive-float="0 00:42:51.429" end="2011-01-24T14:57:08.571+02:00" in-critical-path="0" id="1" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" latestart="2011-01-21T15:40:00+02:00" duration="3 00:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-01-24T15:40:00+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-01-24T14:57:08.571+02:00"/>
+    </schedules>
+    <resourcegroup-request units="0" group-id="2011-11-14T14:39:13 DuY8ZDuwSC">
+     <resource-request resource-id="2011-11-14T14:41:11 lsEP1JdsGI" units="100">
+      <required-resources>
+       <resource id="2011-11-14T14:41:30 7VuKuvbVnr"/>
+      </required-resources>
+     </resource-request>
+     <resource-request resource-id="2011-11-14T14:41:12 k9c8ba8Xnw" units="100">
+      <required-resources>
+       <resource id="2011-11-14T14:41:29 njgybCzrk4"/>
+      </required-resources>
+     </resource-request>
+    </resourcegroup-request>
+   </task>
+  </task>
+  <task wbs="4" scheduling="ASAP" constraint-endtime="2011-11-14T20:58:18.333+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:58:18.333+02:00" leader="" id="2011-11-14T20:58:18 nP1RTv25KD" name="delivery">
+   <estimate risk="None" expected="8" optimistic="8" pessimistic="8" unit="Y" type="Effort"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <schedules>
+    <schedule earlystart="2010-11-01T00:00:00+02:00" duration="29 00:20:00.0" in-critical-path="0" resource-overbooked="0" scheduling-conflict="0" end="2011-02-22T15:17:08.571+02:00" free-float="0 00:00:00.0" resource-not-available="0" type="Expected" id="1" name="Schedule: Plan" start="2011-01-24T14:57:08.571+02:00" not-scheduled="0" latefinish="2011-03-10T04:32:00+02:00" negative-float="0 00:00:00.0" resource-error="0" positive-float="0 00:00:00.0"/>
+   </schedules>
+   <task wbs="4.1" scheduling="ASAP" constraint-endtime="2011-11-14T20:59:23.445+02:00" description="marking and packing of the mate..." startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:59:23.445+02:00" leader="" id="2011-11-14T20:59:23 Rl7xUOLNKA" name="marking and packing">
+    <estimate risk="High" expected="8" optimistic="7.2" pessimistic="9.6" unit="h" type="Effort"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-01-24T14:57:08.571+02:00" start="2011-01-24T14:57:08.571+02:00" positive-float="0 00:42:51.429" end="2011-01-25T15:17:08.571+02:00" in-critical-path="0" id="1" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" latestart="2011-01-24T15:40:00+02:00" duration="1 00:20:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-01-25T16:00:00+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-01-25T15:17:08.571+02:00"/>
+    </schedules>
+    <resourcegroup-request units="0" group-id="2011-11-14T14:39:11 wH2Aae36tZ">
+     <resource-request resource-id="2011-11-14T14:40:56 yjBuY0GX7I" units="100"/>
+    </resourcegroup-request>
+   </task>
+   <task wbs="4.2" scheduling="ASAP" constraint-endtime="2011-11-14T20:59:26.135+02:00" description="delivery to final destination" startup-cost="2000" shutdown-cost="0" constraint-starttime="2011-11-14T20:59:26.135+02:00" leader="" id="2011-11-14T20:59:26 ECn202sF8e" name="transport">
+    <estimate risk="Low" expected="20" optimistic="19.6" pessimistic="20.4" unit="d" calendar-id="2011-11-14T14:10:10 OocGaK6nDA" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-01-25T15:17:08.571+02:00" start="2011-01-25T15:17:08.571+02:00" positive-float="0 00:42:51.429" end="2011-02-22T15:17:08.571+02:00" in-critical-path="0" id="1" resource-overbooked="0" name="Schedule: Plan" free-float="0 10:42:52.429" not-scheduled="0" scheduling-conflict="0" latestart="2011-01-26T08:00:00+02:00" duration="28 00:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-02-22T16:00:00+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-02-22T15:17:08.571+02:00"/>
+    </schedules>
+   </task>
+  </task>
+  <task wbs="5" scheduling="ASAP" constraint-endtime="2011-11-14T20:58:23.141+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:58:23.141+02:00" leader="" id="2011-11-14T20:58:23 BX82qWbZ2a" name="installation">
+   <estimate risk="None" expected="8" optimistic="8" pessimistic="8" unit="Y" type="Effort"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <schedules>
+    <schedule earlystart="2010-11-01T00:00:00+02:00" duration="15 02:32:00.0" in-critical-path="0" resource-overbooked="0" scheduling-conflict="0" end="2011-03-10T04:32:00+02:00" free-float="0 00:00:00.0" resource-not-available="0" type="Expected" id="1" name="Schedule: Plan" start="2011-02-23T02:00:00+02:00" not-scheduled="0" latefinish="2011-03-10T04:32:00+02:00" negative-float="0 00:00:00.0" resource-error="0" positive-float="0 00:00:00.0"/>
+   </schedules>
+   <task wbs="5.1" scheduling="ASAP" constraint-endtime="2011-11-14T20:59:30.350+02:00" description="checking of the material arrived" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:59:30.350+02:00" leader="" id="2011-11-14T20:59:30 PNe9HeEGK0" name="check at arrival">
+    <estimate risk="High" expected="24" optimistic="22.8" pessimistic="26.4" unit="h" type="Effort"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-02-23T02:00:00+02:00" start="2011-02-23T02:00:00+02:00" positive-float="0 00:00:00.0" end="2011-02-25T06:30:00+02:00" in-critical-path="0" id="1" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" latestart="2011-02-23T02:00:00+02:00" duration="2 04:30:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-02-25T06:30:00+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-02-25T06:30:00+02:00"/>
+    </schedules>
+    <resourcegroup-request units="0" group-id="2011-11-14T14:39:20 uVzwfXagbU">
+     <resource-request resource-id="2011-11-14T14:41:34 nWyNeaxm7k" units="100"/>
+    </resourcegroup-request>
+   </task>
+   <task wbs="5.2" scheduling="ASAP" constraint-endtime="2011-11-14T20:59:35.694+02:00" description="supervision to the installation" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:59:35.694+02:00" leader="" id="2011-11-14T20:59:35 chDy0aJAoT" name="installation">
+    <estimate risk="Low" expected="10" optimistic="9.5" pessimistic="11" unit="d" calendar-id="2011-11-14T14:16:30 BpF1OBoDrF" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-02-25T06:30:00+02:00" start="2011-02-25T06:30:00+02:00" positive-float="0 00:00:00.0" end="2011-03-06T04:10:00+02:00" in-critical-path="0" id="1" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" latestart="2011-02-25T06:30:00+02:00" duration="8 21:40:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-03-06T04:10:00+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-03-06T04:10:00+02:00"/>
+    </schedules>
+    <resourcegroup-request units="0" group-id="2011-11-14T14:39:20 uVzwfXagbU">
+     <resource-request resource-id="2011-11-14T14:41:34 nWyNeaxm7k" units="100"/>
+    </resourcegroup-request>
+   </task>
+   <task wbs="5.3" scheduling="ASAP" constraint-endtime="2011-11-14T20:59:40.926+02:00" description="commisioning of the machine" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T20:59:40.926+02:00" leader="" id="2011-11-14T20:59:40 vqUxgh3J6Q" name="commissioning">
+    <estimate risk="High" expected="32" optimistic="28.8" pessimistic="38.4" unit="h" type="Effort"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-03-06T04:10:00+02:00" start="2011-03-06T04:10:00+02:00" positive-float="0 00:00:00.0" end="2011-03-10T02:32:00+02:00" in-critical-path="0" id="1" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" latestart="2011-03-06T04:10:00+02:00" duration="3 22:22:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-03-10T02:32:00+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-03-10T02:32:00+02:00"/>
+    </schedules>
+    <resourcegroup-request units="0" group-id="2011-11-14T14:39:20 uVzwfXagbU">
+     <resource-request resource-id="2011-11-14T14:41:34 htRLr2XosF" units="100"/>
+    </resourcegroup-request>
+   </task>
+   <task wbs="5.4" scheduling="ASAP" constraint-endtime="2011-11-14T20:59:44.326+02:00" description="final dinner!" startup-cost="0" shutdown-cost="250" constraint-starttime="2011-11-14T20:59:44.326+02:00" leader="" id="2011-11-14T20:59:44 xEhbSwtSQd" name="dinner">
+    <estimate risk="None" expected="2" optimistic="1.9" pessimistic="4" unit="h" calendar-id="2011-11-14T14:16:30 BpF1OBoDrF" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-03-10T02:32:00+02:00" start="2011-03-10T02:32:00+02:00" positive-float="0 00:00:00.0" end="2011-03-10T04:32:00+02:00" in-critical-path="0" id="1" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" latestart="2011-03-10T02:32:00+02:00" duration="0 02:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-03-10T04:32:00+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-03-10T04:32:00+02:00"/>
+    </schedules>
+    <resourcegroup-request units="0" group-id="2011-11-14T14:39:20 uVzwfXagbU">
+     <resource-request resource-id="2011-11-14T14:41:34 htRLr2XosF" units="100"/>
+    </resourcegroup-request>
+   </task>
+  </task>
+  <relation type="Finish-Start" parent-id="2011-11-14T20:58:37 BQFaoJO14o" lag="0 00:00:00.0" child-id="2011-11-14T20:58:49 fimRtAfRyw"/>
+  <relation type="Finish-Start" parent-id="2011-11-14T20:58:42 THyVKIgTon" lag="0 00:00:00.0" child-id="2011-11-14T20:58:49 fimRtAfRyw"/>
+  <relation type="Finish-Start" parent-id="2011-11-14T20:58:49 fimRtAfRyw" lag="0 00:00:00.0" child-id="2011-11-14T20:58:53 q00c0RryuA"/>
+  <relation type="Finish-Start" parent-id="2011-11-14T20:58:53 q00c0RryuA" lag="0 00:00:00.0" child-id="2011-11-14T20:58:59 Fbd3O9dfEo"/>
+  <relation type="Finish-Start" parent-id="2011-11-14T20:58:59 Fbd3O9dfEo" lag="0 00:00:00.0" child-id="2011-11-14T20:59:05 1tWlJPvwpr"/>
+  <relation type="Finish-Start" parent-id="2011-11-14T20:59:05 1tWlJPvwpr" lag="0 00:00:00.0" child-id="2011-11-14T20:59:11 sfpqFqH6mB"/>
+  <relation type="Finish-Start" parent-id="2011-11-14T20:59:11 sfpqFqH6mB" lag="0 00:00:00.0" child-id="2011-11-14T20:59:15 G1ku261fmE"/>
+  <relation type="Finish-Start" parent-id="2011-11-14T20:59:15 G1ku261fmE" lag="0 00:00:00.0" child-id="2011-11-14T20:59:23 Rl7xUOLNKA"/>
+  <relation type="Finish-Start" parent-id="2011-11-14T20:59:23 Rl7xUOLNKA" lag="0 00:00:00.0" child-id="2011-11-14T20:59:26 ECn202sF8e"/>
+  <relation type="Finish-Start" parent-id="2011-11-14T20:59:26 ECn202sF8e" lag="0 00:00:00.0" child-id="2011-11-14T20:59:30 PNe9HeEGK0"/>
+  <relation type="Finish-Start" parent-id="2011-11-14T20:59:30 PNe9HeEGK0" lag="0 00:00:00.0" child-id="2011-11-14T20:59:35 chDy0aJAoT"/>
+  <relation type="Finish-Start" parent-id="2011-11-14T20:59:35 chDy0aJAoT" lag="0 00:00:00.0" child-id="2011-11-14T20:59:40 vqUxgh3J6Q"/>
+  <relation type="Finish-Start" parent-id="2011-11-14T20:59:40 vqUxgh3J6Q" lag="0 00:00:00.0" child-id="2011-11-14T20:59:44 xEhbSwtSQd"/>
+  <schedules>
+   <plan scheduling-direction="0" recalculate-from="" check-external-appointments="1" distribution="1" baselined="1" recalculate="0" id="SJrvQATqrr" overbooking="1" name="Plan" scheduler-plugin-id="">
+    <schedule duration="129 04:32:00.0" scheduling-conflict="0" end="2011-03-10T04:32:00+02:00" type="Expected" id="1" name="Schedule: Plan" start="2010-11-01T00:00:00+02:00">
+     <appointment task-id="2011-11-14T20:58:37 BQFaoJO14o" resource-id="2011-11-14T14:40:29 lydA4Etzhs">
+      <interval end="2010-11-04T16:00:00+02:00" load="100" start="2010-11-04T08:00:00+02:00"/>
+      <interval end="2010-11-05T16:00:00+02:00" load="100" start="2010-11-05T08:00:00+02:00"/>
+      <interval end="2010-11-08T16:00:00+02:00" load="100" start="2010-11-08T08:00:00+02:00"/>
+      <interval end="2010-11-09T16:00:00+02:00" load="100" start="2010-11-09T08:00:00+02:00"/>
+      <interval end="2010-11-10T16:00:00+02:00" load="100" start="2010-11-10T08:00:00+02:00"/>
+      <interval end="2010-11-11T16:00:00+02:00" load="100" start="2010-11-11T08:00:00+02:00"/>
+      <interval end="2010-11-12T16:00:00+02:00" load="100" start="2010-11-12T08:00:00+02:00"/>
+      <interval end="2010-11-15T16:00:00+02:00" load="100" start="2010-11-15T08:00:00+02:00"/>
+      <interval end="2010-11-16T16:00:00+02:00" load="100" start="2010-11-16T08:00:00+02:00"/>
+      <interval end="2010-11-17T16:00:00+02:00" load="100" start="2010-11-17T08:00:00+02:00"/>
+      <interval end="2010-11-18T12:00:00+02:00" load="100" start="2010-11-18T08:00:00+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:58:42 THyVKIgTon" resource-id="2011-11-14T14:40:33 tKQU01wDoI">
+      <interval end="2010-11-04T16:00:00+02:00" load="100" start="2010-11-04T08:00:00+02:00"/>
+      <interval end="2010-11-05T16:00:00+02:00" load="100" start="2010-11-05T08:00:00+02:00"/>
+      <interval end="2010-11-08T16:00:00+02:00" load="100" start="2010-11-08T08:00:00+02:00"/>
+      <interval end="2010-11-09T16:00:00+02:00" load="100" start="2010-11-09T08:00:00+02:00"/>
+      <interval end="2010-11-10T16:00:00+02:00" load="100" start="2010-11-10T08:00:00+02:00"/>
+      <interval end="2010-11-11T10:00:00+02:00" load="100" start="2010-11-11T08:00:00+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:58:49 fimRtAfRyw" resource-id="2011-11-14T14:40:56 yjBuY0GX7I">
+      <interval end="2010-11-18T16:00:00+02:00" load="100" start="2010-11-18T12:00:00+02:00"/>
+      <interval end="2010-11-19T12:00:00+02:00" load="100" start="2010-11-19T08:00:00+02:00"/>
+      <interval end="2010-11-19T16:00:00+02:00" load="100" start="2010-11-19T12:00:00+02:00"/>
+      <interval end="2010-11-22T12:00:00+02:00" load="100" start="2010-11-22T08:00:00+02:00"/>
+      <interval end="2010-11-22T12:12:00+02:00" load="100" start="2010-11-22T12:00:00+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:58:59 Fbd3O9dfEo" resource-id="2011-11-14T14:40:56 yjBuY0GX7I">
+      <interval end="2011-01-17T16:00:00+02:00" load="100" start="2011-01-17T14:29:08.571+02:00"/>
+      <interval end="2011-01-18T14:29:08.571+02:00" load="100" start="2011-01-18T08:00:00+02:00"/>
+      <interval end="2011-01-18T14:49:08.571+02:00" load="100" start="2011-01-18T14:29:08.571+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:59:05 1tWlJPvwpr" resource-id="2011-11-14T14:41:11 lsEP1JdsGI">
+      <interval end="2011-01-18T16:00:00+02:00" load="100" start="2011-01-18T14:49:08.571+02:00"/>
+      <interval end="2011-01-19T14:49:08.571+02:00" load="100" start="2011-01-19T08:00:00+02:00"/>
+      <interval end="2011-01-19T16:00:00+02:00" load="100" start="2011-01-19T14:49:08.571+02:00"/>
+      <interval end="2011-01-20T14:47:08.571+02:00" load="100" start="2011-01-20T08:00:00+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:59:05 1tWlJPvwpr" resource-id="2011-11-14T14:41:30 7VuKuvbVnr">
+      <interval end="2011-01-18T16:00:00+02:00" load="100" start="2011-01-18T14:49:08.571+02:00"/>
+      <interval end="2011-01-19T14:49:08.571+02:00" load="100" start="2011-01-19T08:00:00+02:00"/>
+      <interval end="2011-01-19T16:00:00+02:00" load="100" start="2011-01-19T14:49:08.571+02:00"/>
+      <interval end="2011-01-20T14:47:08.571+02:00" load="100" start="2011-01-20T08:00:00+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:59:05 1tWlJPvwpr" resource-id="2011-11-14T14:41:12 k9c8ba8Xnw">
+      <interval end="2011-01-18T16:00:00+02:00" load="100" start="2011-01-18T14:49:08.571+02:00"/>
+      <interval end="2011-01-19T14:49:08.571+02:00" load="100" start="2011-01-19T08:00:00+02:00"/>
+      <interval end="2011-01-19T16:00:00+02:00" load="100" start="2011-01-19T14:49:08.571+02:00"/>
+      <interval end="2011-01-20T14:47:08.571+02:00" load="100" start="2011-01-20T08:00:00+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:59:05 1tWlJPvwpr" resource-id="2011-11-14T14:41:29 njgybCzrk4">
+      <interval end="2011-01-18T16:00:00+02:00" load="100" start="2011-01-18T14:49:08.571+02:00"/>
+      <interval end="2011-01-19T14:49:08.571+02:00" load="100" start="2011-01-19T08:00:00+02:00"/>
+      <interval end="2011-01-19T16:00:00+02:00" load="100" start="2011-01-19T14:49:08.571+02:00"/>
+      <interval end="2011-01-20T14:47:08.571+02:00" load="100" start="2011-01-20T08:00:00+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:59:11 sfpqFqH6mB" resource-id="2011-11-14T14:41:12 k9c8ba8Xnw">
+      <interval end="2011-01-20T14:49:08.571+02:00" load="100" start="2011-01-20T14:47:08.571+02:00"/>
+      <interval end="2011-01-20T16:00:00+02:00" load="100" start="2011-01-20T14:49:08.571+02:00"/>
+      <interval end="2011-01-21T14:47:08.571+02:00" load="100" start="2011-01-21T08:00:00+02:00"/>
+      <interval end="2011-01-21T14:57:08.571+02:00" load="100" start="2011-01-21T14:47:08.571+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:59:11 sfpqFqH6mB" resource-id="2011-11-14T14:41:29 njgybCzrk4">
+      <interval end="2011-01-20T14:49:08.571+02:00" load="100" start="2011-01-20T14:47:08.571+02:00"/>
+      <interval end="2011-01-20T16:00:00+02:00" load="100" start="2011-01-20T14:49:08.571+02:00"/>
+      <interval end="2011-01-21T14:47:08.571+02:00" load="100" start="2011-01-21T08:00:00+02:00"/>
+      <interval end="2011-01-21T14:57:08.571+02:00" load="100" start="2011-01-21T14:47:08.571+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:59:15 G1ku261fmE" resource-id="2011-11-14T14:41:11 lsEP1JdsGI">
+      <interval end="2011-01-21T16:00:00+02:00" load="100" start="2011-01-21T14:57:08.571+02:00"/>
+      <interval end="2011-01-24T14:57:08.571+02:00" load="100" start="2011-01-24T08:00:00+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:59:15 G1ku261fmE" resource-id="2011-11-14T14:41:30 7VuKuvbVnr">
+      <interval end="2011-01-21T16:00:00+02:00" load="100" start="2011-01-21T14:57:08.571+02:00"/>
+      <interval end="2011-01-24T14:57:08.571+02:00" load="100" start="2011-01-24T08:00:00+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:59:15 G1ku261fmE" resource-id="2011-11-14T14:41:12 k9c8ba8Xnw">
+      <interval end="2011-01-21T16:00:00+02:00" load="100" start="2011-01-21T14:57:08.571+02:00"/>
+      <interval end="2011-01-24T14:57:08.571+02:00" load="100" start="2011-01-24T08:00:00+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:59:15 G1ku261fmE" resource-id="2011-11-14T14:41:29 njgybCzrk4">
+      <interval end="2011-01-21T16:00:00+02:00" load="100" start="2011-01-21T14:57:08.571+02:00"/>
+      <interval end="2011-01-24T14:57:08.571+02:00" load="100" start="2011-01-24T08:00:00+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:59:23 Rl7xUOLNKA" resource-id="2011-11-14T14:40:56 yjBuY0GX7I">
+      <interval end="2011-01-24T16:00:00+02:00" load="100" start="2011-01-24T14:57:08.571+02:00"/>
+      <interval end="2011-01-25T14:57:08.571+02:00" load="100" start="2011-01-25T08:00:00+02:00"/>
+      <interval end="2011-01-25T15:17:08.571+02:00" load="100" start="2011-01-25T14:57:08.571+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:59:30 PNe9HeEGK0" resource-id="2011-11-14T14:41:34 nWyNeaxm7k">
+      <interval end="2011-02-23T12:00:00+02:00" load="100" start="2011-02-23T02:00:00+02:00"/>
+      <interval end="2011-02-24T12:00:00+02:00" load="100" start="2011-02-24T02:00:00+02:00"/>
+      <interval end="2011-02-25T06:30:00+02:00" load="100" start="2011-02-25T02:00:00+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:59:35 chDy0aJAoT" resource-id="2011-11-14T14:41:34 nWyNeaxm7k">
+      <interval end="2011-02-25T12:00:00+02:00" load="100" start="2011-02-25T06:30:00+02:00"/>
+      <interval end="2011-02-26T12:00:00+02:00" load="100" start="2011-02-26T02:00:00+02:00"/>
+      <interval end="2011-02-27T07:00:00+02:00" load="100" start="2011-02-27T03:00:00+02:00"/>
+      <interval end="2011-02-28T12:00:00+02:00" load="100" start="2011-02-28T02:00:00+02:00"/>
+      <interval end="2011-03-01T12:00:00+02:00" load="100" start="2011-03-01T02:00:00+02:00"/>
+      <interval end="2011-03-02T12:00:00+02:00" load="100" start="2011-03-02T02:00:00+02:00"/>
+      <interval end="2011-03-03T12:00:00+02:00" load="100" start="2011-03-03T02:00:00+02:00"/>
+      <interval end="2011-03-04T12:00:00+02:00" load="100" start="2011-03-04T02:00:00+02:00"/>
+      <interval end="2011-03-05T12:00:00+02:00" load="100" start="2011-03-05T02:00:00+02:00"/>
+      <interval end="2011-03-06T04:10:00+02:00" load="100" start="2011-03-06T03:00:00+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:59:40 vqUxgh3J6Q" resource-id="2011-11-14T14:41:34 htRLr2XosF">
+      <interval end="2011-03-06T07:00:00+02:00" load="100" start="2011-03-06T04:10:00+02:00"/>
+      <interval end="2011-03-07T04:10:00+02:00" load="100" start="2011-03-07T02:00:00+02:00"/>
+      <interval end="2011-03-07T12:00:00+02:00" load="100" start="2011-03-07T04:10:00+02:00"/>
+      <interval end="2011-03-08T04:10:00+02:00" load="100" start="2011-03-08T02:00:00+02:00"/>
+      <interval end="2011-03-08T12:00:00+02:00" load="100" start="2011-03-08T04:10:00+02:00"/>
+      <interval end="2011-03-09T04:10:00+02:00" load="100" start="2011-03-09T02:00:00+02:00"/>
+      <interval end="2011-03-09T12:00:00+02:00" load="100" start="2011-03-09T04:10:00+02:00"/>
+      <interval end="2011-03-10T02:32:00+02:00" load="100" start="2011-03-10T02:00:00+02:00"/>
+     </appointment>
+     <appointment task-id="2011-11-14T20:59:44 xEhbSwtSQd" resource-id="2011-11-14T14:41:34 htRLr2XosF">
+      <interval end="2011-03-10T04:10:00+02:00" load="100" start="2011-03-10T02:32:00+02:00"/>
+      <interval end="2011-03-10T04:32:00+02:00" load="100" start="2011-03-10T04:10:00+02:00"/>
+     </appointment>
+    </schedule>
+   </plan>
+  </schedules>
+ </project>
+</kplato>

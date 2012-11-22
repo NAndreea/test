@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kplato.context>
+<context version="0" mime="application/x-vnd.kde.kplato" editor="KPlato">
+ <context current-schedule="11" current-view="TaskEditor">
+  <categories>
+   <category itemtype="0" tag="Editors" tooltip="TIP_USE_DEFAULT_TEXT" name="">
+    <view itemtype="1000" tag="CalendarEditor" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="CalendarEditor" name="">
+     <settings/>
+    </view>
+    <view itemtype="1000" tag="AccountsEditor" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="AccountsEditor" name="">
+     <settings/>
+    </view>
+    <view itemtype="1000" tag="ResourceEditor" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="ResourceEditor" name="">
+     <settings>
+      <master>
+       <columns ResourceType="hidden" ResourceNormalRate="hidden" ResourceName="shown" ResourceOvertimeRate="hidden" ResourceCalendar="hidden" ResourceEmail="hidden" ResourceAccount="hidden" ResourceAvailableFrom="hidden" ResourceAvailableUntil="hidden" ResourceInitials="hidden" ResourceLimit="hidden"/>
+       <sections section-0="ResourceName"/>
+      </master>
+      <slave>
+       <columns ResourceType="shown" ResourceNormalRate="shown" ResourceName="hidden" ResourceOvertimeRate="shown" ResourceCalendar="shown" ResourceEmail="shown" ResourceAccount="shown" ResourceAvailableFrom="shown" ResourceAvailableUntil="shown" ResourceInitials="shown" ResourceLimit="shown"/>
+       <sections section-1="ResourceType" section-2="ResourceInitials" section-3="ResourceEmail" section-4="ResourceCalendar" section-5="ResourceLimit" section-6="ResourceAvailableFrom" section-7="ResourceAvailableUntil" section-8="ResourceNormalRate" section-9="ResourceOvertimeRate" section-10="ResourceAccount"/>
+      </slave>
+     </settings>
+    </view>
+    <view itemtype="1000" tag="TaskEditor" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="TaskEditor" name="">
+     <settings show-project="0">
+      <master>
+       <columns NodeStatus="hidden" NodeName="shown" NodeFinished="hidden" NodeActualEffort="hidden" NodeRunningAccount="shown" NodeFreeFloat="hidden" NodeNotScheduled="hidden" NodeEarlyStart="hidden" NodeACWP="hidden" NodeActualFinish="hidden" NodeStartFloat="hidden" NodeEffortNotMet="hidden" NodeResponsible="shown" NodeEstimateType="hidden" NodePositiveFloat="hidden" NodeShutdownAccount="shown" NodeNegativeFloat="hidden" NodeEstimate="shown" NodePessimisticRatio="shown" WPOwnerName="hidden" NodeLateStart="hidden" NodeDescription="shown" NodeActualStart="hidden" NodeActualCost="hidden" NodeEstimateCalendar="shown" WPTransmitionTime="hidden" NodePlannedCost="hidden" NodeEndTime="hidden" NodeCompleted="hidden" NodeBCWP="hidden" NodeBCWS="hidden" NodeVarianceDuration="hidden" NodeExpected="hidden" NodeDuration="hidden" NodeAssignments="hidden" NodePessimistic="hidden" NodeCriticalPath="hidden" NodeConstraintsError="hidden" NodeOptimisticRatio="shown" NodeFinishFloat="hidden" NodeLevel="hidden" NodePerformanceIndex="hidden" NodeEarlyFinish="hidden" NodeSchedulingStatus="hidden" NodePlannedEffort="hidden" NodeResourceOverbooked="hidden" NodeStartTime="hidden" NodeVarianceEstimate="hidden" NodeWBSCode="hidden" NodeStatusNote="hidden" NodeType="shown" NodeShutdownCost="shown" NodeRemainingEffort="hidden" NodeResourceUnavailable="hidden" NodeStarted="hidden" NodeOptimisticDuration="hidden" NodeConstraintStart="shown" NodePessimisticDuration="hidden" NodeConstraint="shown" NodeAssignmentMissing="hidden" NodeStartupCost="shown" NodeLateFinish="hidden" NodeOptimistic="hidden" NodeStartupAccount="shown" NodeRisk="shown" WPTransmitionStatus="hidden" NodeAllocation="shown" NodeConstraintEnd="shown" NodeCritical="hidden"/>
+       <sections section-11="NodeConstraintEnd" section-12="NodeRunningAccount" section-13="NodeStartupAccount" section-0="NodeName" section-14="NodeStartupCost" section-1="NodeResponsible" section-15="NodeShutdownAccount" section-2="NodeAllocation" section-16="NodeShutdownCost" section-3="NodeType" section-17="NodeDescription" section-4="NodeEstimateCalendar" section-5="NodeEstimate" section-6="NodeOptimisticRatio" section-7="NodePessimisticRatio" section-8="NodeRisk" section-9="NodeConstraint" section-10="NodeConstraintStart"/>
+      </master>
+      <slave hidden="true">
+       <columns NodeStatus="hidden" NodeName="hidden" NodeFinished="hidden" NodeActualEffort="hidden" NodeRunningAccount="shown" NodeFreeFloat="hidden" NodeNotScheduled="hidden" NodeEarlyStart="hidden" NodeACWP="hidden" NodeActualFinish="hidden" NodeStartFloat="hidden" NodeEffortNotMet="hidden" NodeResponsible="shown" NodeEstimateType="hidden" NodePositiveFloat="hidden" NodeShutdownAccount="shown" NodeNegativeFloat="hidden" NodeEstimate="shown" NodePessimisticRatio="shown" WPOwnerName="hidden" NodeLateStart="hidden" NodeDescription="shown" NodeActualStart="hidden" NodeActualCost="hidden" NodeEstimateCalendar="shown" WPTransmitionTime="hidden" NodePlannedCost="hidden" NodeEndTime="hidden" NodeCompleted="hidden" NodeBCWP="hidden" NodeBCWS="hidden" NodeVarianceDuration="hidden" NodeExpected="hidden" NodeDuration="hidden" NodeAssignments="hidden" NodePessimistic="hidden" NodeCriticalPath="hidden" NodeConstraintsError="hidden" NodeOptimisticRatio="shown" NodeFinishFloat="hidden" NodeLevel="hidden" NodePerformanceIndex="hidden" NodeEarlyFinish="hidden" NodeSchedulingStatus="hidden" NodePlannedEffort="hidden" NodeResourceOverbooked="hidden" NodeStartTime="hidden" NodeVarianceEstimate="hidden" NodeWBSCode="hidden" NodeStatusNote="hidden" NodeType="shown" NodeShutdownCost="shown" NodeRemainingEffort="hidden" NodeResourceUnavailable="hidden" NodeStarted="hidden" NodeOptimisticDuration="hidden" NodeConstraintStart="shown" NodePessimisticDuration="hidden" NodeConstraint="shown" NodeAssignmentMissing="hidden" NodeStartupCost="shown" NodeLateFinish="hidden" NodeOptimistic="hidden" NodeStartupAccount="shown" NodeRisk="shown" WPTransmitionStatus="hidden" NodeAllocation="shown" NodeConstraintEnd="shown" NodeCritical="hidden"/>
+       <sections section-1="NodeAllocation" section-15="NodeShutdownCost" section-2="NodeType" section-16="NodeDescription" section-3="NodeEstimateCalendar" section-4="NodeEstimate" section-5="NodeOptimisticRatio" section-6="NodePessimisticRatio" section-7="NodeRisk" section-8="NodeConstraint" section-9="NodeConstraintStart" section-10="NodeConstraintEnd" section-11="NodeRunningAccount" section-12="NodeStartupAccount" section-13="NodeStartupCost" section-0="NodeResponsible" section-14="NodeShutdownAccount"/>
+      </slave>
+     </settings>
+    </view>
+    <view itemtype="1000" tag="DependencyEditor" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="DependencyEditor" name="">
+     <settings/>
+    </view>
+    <view itemtype="1000" tag="PertEditor" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="PertEditor" name="">
+     <settings/>
+    </view>
+    <view itemtype="1000" tag="ScheduleHandlerView" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="ScheduleHandlerView" name="">
+     <settings>
+      <views ScheduleEditor="" ScheduleLogView="" PertResult="" PertCpmView="">
+       <ScheduleLogView/>
+       <PertCpmView>
+        <master>
+         <columns NodeStatus="hidden" NodeName="shown" NodeFinished="hidden" NodeActualEffort="hidden" NodeRunningAccount="hidden" NodeFreeFloat="hidden" NodeNotScheduled="hidden" NodeEarlyStart="hidden" NodeACWP="hidden" NodeActualFinish="hidden" NodeStartFloat="hidden" NodeEffortNotMet="hidden" NodeResponsible="hidden" NodeEstimateType="hidden" NodePositiveFloat="hidden" NodeShutdownAccount="hidden" NodeNegativeFloat="hidden" NodeEstimate="hidden" NodePessimisticRatio="hidden" WPOwnerName="hidden" NodeLateStart="hidden" NodeDescription="hidden" NodeActualStart="hidden" NodeActualCost="hidden" NodeEstimateCalendar="hidden" WPTransmitionTime="hidden" NodePlannedCost="hidden" NodeEndTime="hidden" NodeCompleted="hidden" NodeBCWP="hidden" NodeBCWS="hidden" NodeVarianceDuration="hidden" NodeExpected="hidden" NodeDuration="hidden" NodeAssignments="hidden" NodePessimistic="hidden" NodeCriticalPath="hidden" NodeConstraintsError="hidden" NodeOptimisticRatio="hidden" NodeFinishFloat="hidden" NodeLevel="hidden" NodePerformanceIndex="hidden" NodeEarlyFinish="hidden" NodeSchedulingStatus="hidden" NodePlannedEffort="hidden" NodeResourceOverbooked="hidden" NodeStartTime="hidden" NodeVarianceEstimate="hidden" NodeWBSCode="hidden" NodeStatusNote="hidden" NodeType="hidden" NodeShutdownCost="hidden" NodeRemainingEffort="hidden" NodeResourceUnavailable="hidden" NodeStarted="hidden" NodeOptimisticDuration="hidden" NodeConstraintStart="hidden" NodePessimisticDuration="hidden" NodeConstraint="hidden" NodeAssignmentMissing="hidden" NodeStartupCost="hidden" NodeLateFinish="hidden" NodeOptimistic="hidden" NodeStartupAccount="hidden" NodeRisk="hidden" WPTransmitionStatus="hidden" NodeAllocation="hidden" NodeConstraintEnd="hidden" NodeCritical="hidden"/>
+         <sections section-0="NodeName"/>
+        </master>
+        <slave>
+         <columns NodeStatus="hidden" NodeName="hidden" NodeFinished="hidden" NodeActualEffort="hidden" NodeRunningAccount="hidden" NodeFreeFloat="hidden" NodeNotScheduled="hidden" NodeEarlyStart="hidden" NodeACWP="hidden" NodeActualFinish="hidden" NodeStartFloat="hidden" NodeEffortNotMet="hidden" NodeResponsible="hidden" NodeEstimateType="hidden" NodePositiveFloat="hidden" NodeShutdownAccount="hidden" NodeNegativeFloat="hidden" NodeEstimate="shown" NodePessimisticRatio="hidden" WPOwnerName="hidden" NodeLateStart="hidden" NodeDescription="hidden" NodeActualStart="hidden" NodeActualCost="hidden" NodeEstimateCalendar="hidden" WPTransmitionTime="hidden" NodePlannedCost="hidden" NodeEndTime="hidden" NodeCompleted="hidden" NodeBCWP="hidden" NodeBCWS="hidden" NodeVarianceDuration="shown" NodeExpected="shown" NodeDuration="shown" NodeAssignments="hidden" NodePessimistic="shown" NodeCriticalPath="hidden" NodeConstraintsError="hidden" NodeOptimisticRatio="hidden" NodeFinishFloat="hidden" NodeLevel="hidden" NodePerformanceIndex="hidden" NodeEarlyFinish="hidden" NodeSchedulingStatus="hidden" NodePlannedEffort="hidden" NodeResourceOverbooked="hidden" NodeStartTime="hidden" NodeVarianceEstimate="shown" NodeWBSCode="hidden" NodeStatusNote="hidden" NodeType="hidden" NodeShutdownCost="hidden" NodeRemainingEffort="hidden" NodeResourceUnavailable="hidden" NodeStarted="hidden" NodeOptimisticDuration="shown" NodeConstraintStart="hidden" NodePessimisticDuration="shown" NodeConstraint="hidden" NodeAssignmentMissing="hidden" NodeStartupCost="hidden" NodeLateFinish="hidden" NodeOptimistic="shown" NodeStartupAccount="hidden" NodeRisk="hidden" WPTransmitionStatus="hidden" NodeAllocation="hidden" NodeConstraintEnd="hidden" NodeCritical="hidden"/>
+         <sections section-1="NodeVarianceDuration" section-2="NodeOptimisticDuration" section-3="NodePessimisticDuration" section-4="NodeEstimate" section-5="NodeExpected" section-6="NodeVarianceEstimate" section-7="NodeOptimistic" section-8="NodePessimistic" section-0="NodeDuration"/>
+        </slave>
+       </PertCpmView>
+       <PertResult>
+        <master>
+         <columns NodeStatus="hidden" NodeName="shown" NodeFinished="hidden" NodeActualEffort="hidden" NodeRunningAccount="hidden" NodeFreeFloat="hidden" NodeNotScheduled="hidden" NodeEarlyStart="hidden" NodeACWP="hidden" NodeActualFinish="hidden" NodeStartFloat="hidden" NodeEffortNotMet="hidden" NodeResponsible="hidden" NodeEstimateType="hidden" NodePositiveFloat="hidden" NodeShutdownAccount="hidden" NodeNegativeFloat="hidden" NodeEstimate="hidden" NodePessimisticRatio="hidden" WPOwnerName="hidden" NodeLateStart="hidden" NodeDescription="hidden" NodeActualStart="hidden" NodeActualCost="hidden" NodeEstimateCalendar="hidden" WPTransmitionTime="hidden" NodePlannedCost="hidden" NodeEndTime="hidden" NodeCompleted="hidden" NodeBCWP="hidden" NodeBCWS="hidden" NodeVarianceDuration="hidden" NodeExpected="hidden" NodeDuration="hidden" NodeAssignments="hidden" NodePessimistic="hidden" NodeCriticalPath="hidden" NodeConstraintsError="hidden" NodeOptimisticRatio="hidden" NodeFinishFloat="hidden" NodeLevel="hidden" NodePerformanceIndex="hidden" NodeEarlyFinish="hidden" NodeSchedulingStatus="hidden" NodePlannedEffort="hidden" NodeResourceOverbooked="hidden" NodeStartTime="hidden" NodeVarianceEstimate="hidden" NodeWBSCode="hidden" NodeStatusNote="hidden" NodeType="hidden" NodeShutdownCost="hidden" NodeRemainingEffort="hidden" NodeResourceUnavailable="hidden" NodeStarted="hidden" NodeOptimisticDuration="hidden" NodeConstraintStart="hidden" NodePessimisticDuration="hidden" NodeConstraint="hidden" NodeAssignmentMissing="hidden" NodeStartupCost="hidden" NodeLateFinish="hidden" NodeOptimistic="hidden" NodeStartupAccount="hidden" NodeRisk="hidden" WPTransmitionStatus="hidden" NodeAllocation="hidden" NodeConstraintEnd="hidden" NodeCritical="hidden"/>
+         <sections section-0="NodeName"/>
+        </master>
+        <slave>
+         <columns NodeStatus="hidden" NodeName="hidden" NodeFinished="hidden" NodeActualEffort="hidden" NodeRunningAccount="hidden" NodeFreeFloat="shown" NodeNotScheduled="hidden" NodeEarlyStart="shown" NodeACWP="hidden" NodeActualFinish="hidden" NodeStartFloat="shown" NodeEffortNotMet="hidden" NodeResponsible="hidden" NodeEstimateType="hidden" NodePositiveFloat="shown" NodeShutdownAccount="hidden" NodeNegativeFloat="shown" NodeEstimate="hidden" NodePessimisticRatio="hidden" WPOwnerName="hidden" NodeLateStart="shown" NodeDescription="hidden" NodeActualStart="hidden" NodeActualCost="hidden" NodeEstimateCalendar="hidden" WPTransmitionTime="hidden" NodePlannedCost="hidden" NodeEndTime="hidden" NodeCompleted="hidden" NodeBCWP="hidden" NodeBCWS="hidden" NodeVarianceDuration="hidden" NodeExpected="hidden" NodeDuration="hidden" NodeAssignments="hidden" NodePessimistic="hidden" NodeCriticalPath="hidden" NodeConstraintsError="hidden" NodeOptimisticRatio="hidden" NodeFinishFloat="shown" NodeLevel="hidden" NodePerformanceIndex="hidden" NodeEarlyFinish="shown" NodeSchedulingStatus="hidden" NodePlannedEffort="hidden" NodeResourceOverbooked="hidden" NodeStartTime="hidden" NodeVarianceEstimate="hidden" NodeWBSCode="hidden" NodeStatusNote="hidden" NodeType="hidden" NodeShutdownCost="hidden" NodeRemainingEffort="hidden" NodeResourceUnavailable="hidden" NodeStarted="hidden" NodeOptimisticDuration="hidden" NodeConstraintStart="hidden" NodePessimisticDuration="hidden" NodeConstraint="hidden" NodeAssignmentMissing="hidden" NodeStartupCost="hidden" NodeLateFinish="shown" NodeOptimistic="hidden" NodeStartupAccount="hidden" NodeRisk="hidden" WPTransmitionStatus="hidden" NodeAllocation="hidden" NodeConstraintEnd="hidden" NodeCritical="hidden"/>
+         <sections section-26="NodeEarlyFinish" section-27="NodeLateStart" section-28="NodeLateFinish" section-29="NodePositiveFloat" section-30="NodeFreeFloat" section-31="NodeNegativeFloat" section-32="NodeStartFloat" section-33="NodeFinishFloat" section-25="NodeEarlyStart"/>
+        </slave>
+       </PertResult>
+       <ScheduleEditor>
+        <columns ScheduleScheduled="hidden" ScheduleDirection="shown" ScheduleOverbooking="shown" ScheduleScheduler="shown" ScheduleDistribution="shown" ScheduleName="shown" SchedulePlannedStart="shown" ScheduleState="shown" SchedulePlannedFinish="shown"/>
+        <sections section-1="ScheduleState" section-2="ScheduleDirection" section-3="ScheduleOverbooking" section-4="ScheduleDistribution" section-5="SchedulePlannedStart" section-6="SchedulePlannedFinish" section-7="ScheduleScheduler" section-0="ScheduleName"/>
+       </ScheduleEditor>
+      </views>
+     </settings>
+    </view>
+   </category>
+   <category itemtype="0" tag="Views" tooltip="TIP_USE_DEFAULT_TEXT" name="">
+    <view itemtype="1000" tag="ProjectStatusView" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="ProjectStatusView" name="">
+     <settings show-bcws-cost="1" show-bcwp-effort="1" show-cost="1" show-bcws-effort="1" show-acwp-cost="1" show-effort="1" show-bcwp-cost="1" show-acwp-effort="1"/>
+    </view>
+    <view itemtype="1000" tag="PerformanceStatusView" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="PerformanceStatusView" name="">
+     <settings>
+      <chart show-bcws-cost="1" show-bcwp-effort="1" show-cost="1" show-bcws-effort="1" show-acwp-cost="1" show-effort="1" show-bcwp-cost="1" show-acwp-effort="1"/>
+      <tree>
+       <columns NodeStatus="hidden" NodeName="shown" NodeFinished="hidden" NodeActualEffort="hidden" NodeRunningAccount="hidden" NodeFreeFloat="hidden" NodeNotScheduled="hidden" NodeEarlyStart="hidden" NodeACWP="hidden" NodeActualFinish="hidden" NodeStartFloat="hidden" NodeEffortNotMet="hidden" NodeResponsible="hidden" NodeEstimateType="hidden" NodePositiveFloat="hidden" NodeShutdownAccount="hidden" NodeNegativeFloat="hidden" NodeEstimate="hidden" NodePessimisticRatio="hidden" WPOwnerName="hidden" NodeLateStart="hidden" NodeDescription="hidden" NodeActualStart="hidden" NodeActualCost="hidden" NodeEstimateCalendar="hidden" WPTransmitionTime="hidden" NodePlannedCost="hidden" NodeEndTime="hidden" NodeCompleted="hidden" NodeBCWP="hidden" NodeBCWS="hidden" NodeVarianceDuration="hidden" NodeExpected="hidden" NodeDuration="hidden" NodeAssignments="hidden" NodePessimistic="hidden" NodeCriticalPath="hidden" NodeConstraintsError="hidden" NodeOptimisticRatio="hidden" NodeFinishFloat="hidden" NodeLevel="hidden" NodePerformanceIndex="hidden" NodeEarlyFinish="hidden" NodeSchedulingStatus="hidden" NodePlannedEffort="hidden" NodeResourceOverbooked="hidden" NodeStartTime="hidden" NodeVarianceEstimate="hidden" NodeWBSCode="hidden" NodeStatusNote="hidden" NodeType="hidden" NodeShutdownCost="hidden" NodeRemainingEffort="hidden" NodeResourceUnavailable="hidden" NodeStarted="hidden" NodeOptimisticDuration="hidden" NodeConstraintStart="hidden" NodePessimisticDuration="hidden" NodeConstraint="hidden" NodeAssignmentMissing="hidden" NodeStartupCost="hidden" NodeLateFinish="hidden" NodeOptimistic="hidden" NodeStartupAccount="hidden" NodeRisk="hidden" WPTransmitionStatus="hidden" NodeAllocation="hidden" NodeConstraintEnd="hidden" NodeCritical="hidden"/>
+       <sections section-0="NodeName"/>
+      </tree>
+     </settings>
+    </view>
+    <view itemtype="1000" tag="TaskStatusView" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="TaskStatusView" name="">
+     <settings periodtype="0" period="7" weekday="5">
+      <master>
+       <columns NodeStatus="hidden" NodeName="shown" NodeFinished="hidden" NodeActualEffort="hidden" NodeRunningAccount="hidden" NodeFreeFloat="hidden" NodeNotScheduled="hidden" NodeEarlyStart="hidden" NodeACWP="hidden" NodeActualFinish="hidden" NodeStartFloat="hidden" NodeEffortNotMet="hidden" NodeResponsible="hidden" NodeEstimateType="hidden" NodePositiveFloat="hidden" NodeShutdownAccount="hidden" NodeNegativeFloat="hidden" NodeEstimate="hidden" NodePessimisticRatio="hidden" WPOwnerName="hidden" NodeLateStart="hidden" NodeDescription="hidden" NodeActualStart="hidden" NodeActualCost="hidden" NodeEstimateCalendar="hidden" WPTransmitionTime="hidden" NodePlannedCost="hidden" NodeEndTime="hidden" NodeCompleted="hidden" NodeBCWP="hidden" NodeBCWS="hidden" NodeVarianceDuration="hidden" NodeExpected="hidden" NodeDuration="hidden" NodeAssignments="hidden" NodePessimistic="hidden" NodeCriticalPath="hidden" NodeConstraintsError="hidden" NodeOptimisticRatio="hidden" NodeFinishFloat="hidden" NodeLevel="hidden" NodePerformanceIndex="hidden" NodeEarlyFinish="hidden" NodeSchedulingStatus="hidden" NodePlannedEffort="hidden" NodeResourceOverbooked="hidden" NodeStartTime="hidden" NodeVarianceEstimate="hidden" NodeWBSCode="hidden" NodeStatusNote="hidden" NodeType="hidden" NodeShutdownCost="hidden" NodeRemainingEffort="hidden" NodeResourceUnavailable="hidden" NodeStarted="hidden" NodeOptimisticDuration="hidden" NodeConstraintStart="hidden" NodePessimisticDuration="hidden" NodeConstraint="hidden" NodeAssignmentMissing="hidden" NodeStartupCost="hidden" NodeLateFinish="hidden" NodeOptimistic="hidden" NodeStartupAccount="hidden" NodeRisk="hidden" WPTransmitionStatus="hidden" NodeAllocation="hidden" NodeConstraintEnd="hidden" NodeCritical="hidden"/>
+       <sections section-0="NodeName"/>
+      </master>
+      <slave>
+       <columns NodeStatus="shown" NodeName="hidden" NodeFinished="hidden" NodeActualEffort="shown" NodeRunningAccount="hidden" NodeFreeFloat="hidden" NodeNotScheduled="hidden" NodeEarlyStart="hidden" NodeACWP="hidden" NodeActualFinish="shown" NodeStartFloat="hidden" NodeEffortNotMet="hidden" NodeResponsible="hidden" NodeEstimateType="hidden" NodePositiveFloat="hidden" NodeShutdownAccount="hidden" NodeNegativeFloat="hidden" NodeEstimate="hidden" NodePessimisticRatio="hidden" WPOwnerName="hidden" NodeLateStart="hidden" NodeDescription="hidden" NodeActualStart="shown" NodeActualCost="shown" NodeEstimateCalendar="hidden" WPTransmitionTime="hidden" NodePlannedCost="shown" NodeEndTime="hidden" NodeCompleted="shown" NodeBCWP="hidden" NodeBCWS="hidden" NodeVarianceDuration="hidden" NodeExpected="hidden" NodeDuration="hidden" NodeAssignments="hidden" NodePessimistic="hidden" NodeCriticalPath="hidden" NodeConstraintsError="hidden" NodeOptimisticRatio="hidden" NodeFinishFloat="hidden" NodeLevel="hidden" NodePerformanceIndex="hidden" NodeEarlyFinish="hidden" NodeSchedulingStatus="hidden" NodePlannedEffort="shown" NodeResourceOverbooked="hidden" NodeStartTime="hidden" NodeVarianceEstimate="hidden" NodeWBSCode="hidden" NodeStatusNote="shown" NodeType="hidden" NodeShutdownCost="hidden" NodeRemainingEffort="shown" NodeResourceUnavailable="hidden" NodeStarted="hidden" NodeOptimisticDuration="hidden" NodeConstraintStart="hidden" NodePessimisticDuration="hidden" NodeConstraint="hidden" NodeAssignmentMissing="hidden" NodeStartupCost="hidden" NodeLateFinish="hidden" NodeOptimistic="hidden" NodeStartupAccount="hidden" NodeRisk="hidden" WPTransmitionStatus="hidden" NodeAllocation="hidden" NodeConstraintEnd="hidden" NodeCritical="hidden"/>
+       <sections section-48="NodeActualFinish" section-50="NodeStatusNote" section-39="NodeStatus" section-40="NodeCompleted" section-41="NodePlannedEffort" section-42="NodeActualEffort" section-43="NodeRemainingEffort" section-44="NodePlannedCost" section-45="NodeActualCost" section-46="NodeActualStart"/>
+      </slave>
+     </settings>
+    </view>
+    <view itemtype="1000" tag="TaskView" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="TaskView" name="">
+     <settings show-project="0">
+      <master>
+       <columns NodeStatus="hidden" NodeName="shown" NodeFinished="hidden" NodeActualEffort="hidden" NodeRunningAccount="hidden" NodeFreeFloat="hidden" NodeNotScheduled="hidden" NodeEarlyStart="hidden" NodeACWP="hidden" NodeActualFinish="hidden" NodeStartFloat="hidden" NodeEffortNotMet="hidden" NodeResponsible="hidden" NodeEstimateType="hidden" NodePositiveFloat="hidden" NodeShutdownAccount="hidden" NodeNegativeFloat="hidden" NodeEstimate="hidden" NodePessimisticRatio="hidden" WPOwnerName="hidden" NodeLateStart="hidden" NodeDescription="hidden" NodeActualStart="hidden" NodeActualCost="hidden" NodeEstimateCalendar="hidden" WPTransmitionTime="hidden" NodePlannedCost="hidden" NodeEndTime="hidden" NodeCompleted="hidden" NodeBCWP="hidden" NodeBCWS="hidden" NodeVarianceDuration="hidden" NodeExpected="hidden" NodeDuration="hidden" NodeAssignments="hidden" NodePessimistic="hidden" NodeCriticalPath="hidden" NodeConstraintsError="hidden" NodeOptimisticRatio="hidden" NodeFinishFloat="hidden" NodeLevel="hidden" NodePerformanceIndex="hidden" NodeEarlyFinish="hidden" NodeSchedulingStatus="hidden" NodePlannedEffort="hidden" NodeResourceOverbooked="hidden" NodeStartTime="hidden" NodeVarianceEstimate="hidden" NodeWBSCode="hidden" NodeStatusNote="hidden" NodeType="hidden" NodeShutdownCost="hidden" NodeRemainingEffort="hidden" NodeResourceUnavailable="hidden" NodeStarted="hidden" NodeOptimisticDuration="hidden" NodeConstraintStart="hidden" NodePessimisticDuration="hidden" NodeConstraint="hidden" NodeAssignmentMissing="hidden" NodeStartupCost="hidden" NodeLateFinish="hidden" NodeOptimistic="hidden" NodeStartupAccount="hidden" NodeRisk="hidden" WPTransmitionStatus="hidden" NodeAllocation="hidden" NodeConstraintEnd="hidden" NodeCritical="hidden"/>
+       <sections section-0="NodeName"/>
+      </master>
+      <slave>
+       <columns NodeStatus="shown" NodeName="hidden" NodeFinished="hidden" NodeActualEffort="hidden" NodeRunningAccount="hidden" NodeFreeFloat="hidden" NodeNotScheduled="hidden" NodeEarlyStart="hidden" NodeACWP="shown" NodeActualFinish="hidden" NodeStartFloat="hidden" NodeEffortNotMet="hidden" NodeResponsible="shown" NodeEstimateType="hidden" NodePositiveFloat="hidden" NodeShutdownAccount="hidden" NodeNegativeFloat="hidden" NodeEstimate="hidden" NodePessimisticRatio="hidden" WPOwnerName="hidden" NodeLateStart="hidden" NodeDescription="shown" NodeActualStart="hidden" NodeActualCost="hidden" NodeEstimateCalendar="hidden" WPTransmitionTime="hidden" NodePlannedCost="hidden" NodeEndTime="hidden" NodeCompleted="shown" NodeBCWP="shown" NodeBCWS="shown" NodeVarianceDuration="hidden" NodeExpected="hidden" NodeDuration="hidden" NodeAssignments="shown" NodePessimistic="hidden" NodeCriticalPath="hidden" NodeConstraintsError="hidden" NodeOptimisticRatio="hidden" NodeFinishFloat="hidden" NodeLevel="hidden" NodePerformanceIndex="shown" NodeEarlyFinish="hidden" NodeSchedulingStatus="hidden" NodePlannedEffort="hidden" NodeResourceOverbooked="hidden" NodeStartTime="hidden" NodeVarianceEstimate="hidden" NodeWBSCode="hidden" NodeStatusNote="hidden" NodeType="hidden" NodeShutdownCost="hidden" NodeRemainingEffort="hidden" NodeResourceUnavailable="hidden" NodeStarted="hidden" NodeOptimisticDuration="hidden" NodeConstraintStart="hidden" NodePessimisticDuration="hidden" NodeConstraint="hidden" NodeAssignmentMissing="hidden" NodeStartupCost="hidden" NodeLateFinish="hidden" NodeOptimistic="hidden" NodeStartupAccount="hidden" NodeRisk="hidden" WPTransmitionStatus="hidden" NodeAllocation="hidden" NodeConstraintEnd="hidden" NodeCritical="hidden"/>
+       <sections section-1="NodeCompleted" section-2="NodeResponsible" section-3="NodeAssignments" section-4="NodePerformanceIndex" section-5="NodeBCWS" section-6="NodeBCWP" section-7="NodeACWP" section-8="NodeDescription" section-0="NodeStatus"/>
+      </slave>
+     </settings>
+    </view>
+    <view itemtype="1000" tag="TaskWorkPackageView" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="TaskWorkPackageView" name="">
+     <settings>
+      <master>
+       <columns NodeStatus="hidden" NodeName="shown" NodeFinished="hidden" NodeActualEffort="hidden" NodeRunningAccount="hidden" NodeFreeFloat="hidden" NodeNotScheduled="hidden" NodeEarlyStart="hidden" NodeACWP="hidden" NodeActualFinish="hidden" NodeStartFloat="hidden" NodeEffortNotMet="hidden" NodeResponsible="hidden" NodeEstimateType="hidden" NodePositiveFloat="hidden" NodeShutdownAccount="hidden" NodeNegativeFloat="hidden" NodeEstimate="hidden" NodePessimisticRatio="hidden" WPOwnerName="hidden" NodeLateStart="hidden" NodeDescription="hidden" NodeActualStart="hidden" NodeActualCost="hidden" NodeEstimateCalendar="hidden" WPTransmitionTime="hidden" NodePlannedCost="hidden" NodeEndTime="hidden" NodeCompleted="hidden" NodeBCWP="hidden" NodeBCWS="hidden" NodeVarianceDuration="hidden" NodeExpected="hidden" NodeDuration="hidden" NodeAssignments="hidden" NodePessimistic="hidden" NodeCriticalPath="hidden" NodeConstraintsError="hidden" NodeOptimisticRatio="hidden" NodeFinishFloat="hidden" NodeLevel="hidden" NodePerformanceIndex="hidden" NodeEarlyFinish="hidden" NodeSchedulingStatus="hidden" NodePlannedEffort="hidden" NodeResourceOverbooked="hidden" NodeStartTime="hidden" NodeVarianceEstimate="hidden" NodeWBSCode="hidden" NodeStatusNote="hidden" NodeType="hidden" NodeShutdownCost="hidden" NodeRemainingEffort="hidden" NodeResourceUnavailable="hidden" NodeStarted="hidden" NodeOptimisticDuration="hidden" NodeConstraintStart="hidden" NodePessimisticDuration="hidden" NodeConstraint="hidden" NodeAssignmentMissing="hidden" NodeStartupCost="hidden" NodeLateFinish="hidden" NodeOptimistic="hidden" NodeStartupAccount="hidden" NodeRisk="hidden" WPTransmitionStatus="hidden" NodeAllocation="hidden" NodeConstraintEnd="hidden" NodeCritical="hidden"/>
+       <sections section-0="NodeName"/>
+      </master>
+      <slave>
+       <columns NodeStatus="shown" NodeName="hidden" NodeFinished="hidden" NodeActualEffort="hidden" NodeRunningAccount="hidden" NodeFreeFloat="hidden" NodeNotScheduled="hidden" NodeEarlyStart="hidden" NodeACWP="hidden" NodeActualFinish="hidden" NodeStartFloat="hidden" NodeEffortNotMet="hidden" NodeResponsible="shown" NodeEstimateType="hidden" NodePositiveFloat="hidden" NodeShutdownAccount="hidden" NodeNegativeFloat="hidden" NodeEstimate="hidden" NodePessimisticRatio="hidden" WPOwnerName="hidden" NodeLateStart="hidden" NodeDescription="shown" NodeActualStart="hidden" NodeActualCost="hidden" NodeEstimateCalendar="hidden" WPTransmitionTime="hidden" NodePlannedCost="hidden" NodeEndTime="hidden" NodeCompleted="shown" NodeBCWP="hidden" NodeBCWS="hidden" NodeVarianceDuration="hidden" NodeExpected="hidden" NodeDuration="hidden" NodeAssignments="shown" NodePessimistic="hidden" NodeCriticalPath="hidden" NodeConstraintsError="hidden" NodeOptimisticRatio="hidden" NodeFinishFloat="hidden" NodeLevel="hidden" NodePerformanceIndex="hidden" NodeEarlyFinish="hidden" NodeSchedulingStatus="hidden" NodePlannedEffort="hidden" NodeResourceOverbooked="hidden" NodeStartTime="hidden" NodeVarianceEstimate="hidden" NodeWBSCode="hidden" NodeStatusNote="hidden" NodeType="hidden" NodeShutdownCost="hidden" NodeRemainingEffort="hidden" NodeResourceUnavailable="hidden" NodeStarted="hidden" NodeOptimisticDuration="hidden" NodeConstraintStart="hidden" NodePessimisticDuration="hidden" NodeConstraint="hidden" NodeAssignmentMissing="hidden" NodeStartupCost="hidden" NodeLateFinish="hidden" NodeOptimistic="hidden" NodeStartupAccount="hidden" NodeRisk="hidden" WPTransmitionStatus="hidden" NodeAllocation="hidden" NodeConstraintEnd="hidden" NodeCritical="hidden"/>
+       <sections section-1="NodeCompleted" section-2="NodeResponsible" section-3="NodeAssignments" section-4="NodeDescription" section-0="NodeStatus"/>
+      </slave>
+     </settings>
+    </view>
+    <view itemtype="1000" tag="GanttView" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="GanttView" name="">
+     <settings show-project="0">
+      <columns NodeStatus="hidden" NodeName="shown" NodeFinished="hidden" NodeActualEffort="hidden" NodeRunningAccount="hidden" NodeFreeFloat="hidden" NodeNotScheduled="hidden" NodeEarlyStart="hidden" NodeACWP="hidden" NodeActualFinish="hidden" NodeStartFloat="hidden" NodeEffortNotMet="hidden" NodeResponsible="hidden" NodeEstimateType="hidden" NodePositiveFloat="hidden" NodeShutdownAccount="hidden" NodeNegativeFloat="hidden" NodeEstimate="hidden" NodePessimisticRatio="hidden" WPOwnerName="hidden" NodeLateStart="hidden" NodeDescription="hidden" NodeActualStart="hidden" NodeActualCost="hidden" NodeEstimateCalendar="hidden" WPTransmitionTime="hidden" NodePlannedCost="hidden" NodeEndTime="shown" NodeCompleted="shown" NodeBCWP="hidden" NodeBCWS="hidden" NodeVarianceDuration="hidden" NodeExpected="hidden" NodeDuration="hidden" NodeAssignments="hidden" NodePessimistic="hidden" NodeCriticalPath="hidden" NodeConstraintsError="hidden" NodeOptimisticRatio="hidden" NodeFinishFloat="hidden" NodeLevel="hidden" NodePerformanceIndex="hidden" NodeEarlyFinish="hidden" NodeSchedulingStatus="hidden" NodePlannedEffort="hidden" NodeResourceOverbooked="hidden" NodeStartTime="shown" NodeVarianceEstimate="hidden" NodeWBSCode="hidden" NodeStatusNote="hidden" NodeType="hidden" NodeShutdownCost="hidden" NodeRemainingEffort="hidden" NodeResourceUnavailable="hidden" NodeStarted="hidden" NodeOptimisticDuration="hidden" NodeConstraintStart="hidden" NodePessimisticDuration="hidden" NodeConstraint="hidden" NodeAssignmentMissing="hidden" NodeStartupCost="hidden" NodeLateFinish="hidden" NodeOptimistic="hidden" NodeStartupAccount="hidden" NodeRisk="hidden" WPTransmitionStatus="hidden" NodeAllocation="hidden" NodeConstraintEnd="hidden" NodeCritical="hidden"/>
+      <sections section-40="NodeCompleted" section-23="NodeStartTime" section-24="NodeEndTime" section-0="NodeName"/>
+      <ganttchart show-completion="0" show-schedulingerror="0" show-positivefloat="0" show-resourcenames="0" show-taskname="1" show-dependencies="1" show-criticalpath="0" show-criticaltasks="0"/>
+     </settings>
+    </view>
+    <view itemtype="1000" tag="MilestoneGanttView" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="MilestoneGanttView" name="">
+     <settings>
+      <columns NodeStatus="hidden" NodeName="shown" NodeFinished="hidden" NodeActualEffort="hidden" NodeRunningAccount="hidden" NodeFreeFloat="hidden" NodeNotScheduled="hidden" NodeEarlyStart="hidden" NodeACWP="hidden" NodeActualFinish="hidden" NodeStartFloat="hidden" NodeEffortNotMet="hidden" NodeResponsible="hidden" NodeEstimateType="hidden" NodePositiveFloat="hidden" NodeShutdownAccount="hidden" NodeNegativeFloat="hidden" NodeEstimate="hidden" NodePessimisticRatio="hidden" WPOwnerName="hidden" NodeLateStart="hidden" NodeDescription="hidden" NodeActualStart="hidden" NodeActualCost="hidden" NodeEstimateCalendar="hidden" WPTransmitionTime="hidden" NodePlannedCost="hidden" NodeEndTime="hidden" NodeCompleted="hidden" NodeBCWP="hidden" NodeBCWS="hidden" NodeVarianceDuration="hidden" NodeExpected="hidden" NodeDuration="hidden" NodeAssignments="hidden" NodePessimistic="hidden" NodeCriticalPath="hidden" NodeConstraintsError="hidden" NodeOptimisticRatio="hidden" NodeFinishFloat="hidden" NodeLevel="hidden" NodePerformanceIndex="hidden" NodeEarlyFinish="hidden" NodeSchedulingStatus="hidden" NodePlannedEffort="hidden" NodeResourceOverbooked="hidden" NodeStartTime="shown" NodeVarianceEstimate="hidden" NodeWBSCode="hidden" NodeStatusNote="hidden" NodeType="hidden" NodeShutdownCost="hidden" NodeRemainingEffort="hidden" NodeResourceUnavailable="hidden" NodeStarted="hidden" NodeOptimisticDuration="hidden" NodeConstraintStart="hidden" NodePessimisticDuration="hidden" NodeConstraint="hidden" NodeAssignmentMissing="hidden" NodeStartupCost="hidden" NodeLateFinish="hidden" NodeOptimistic="hidden" NodeStartupAccount="hidden" NodeRisk="hidden" WPTransmitionStatus="hidden" NodeAllocation="hidden" NodeConstraintEnd="hidden" NodeCritical="hidden"/>
+      <sections section-23="NodeStartTime" section-0="NodeName"/>
+     </settings>
+    </view>
+    <view itemtype="1000" tag="ResourceAppointmentsView" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="ResourceAppointmentsView" name="">
+     <settings>
+      <common show-internal-appointments="1" show-external-appointments="1"/>
+     </settings>
+    </view>
+    <view itemtype="1000" tag="ResourceAppointmentsGanttView" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="ResourceAppointmentsGanttView" name="">
+     <settings>
+      <columns EndTime="shown" StartTime="shown" Load="shown" Type="shown" Name="shown"/>
+      <sections section-1="Type" section-2="StartTime" section-3="EndTime" section-4="Load" section-0="Name"/>
+     </settings>
+    </view>
+    <view itemtype="1000" tag="AccountsView" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="AccountsView" name="">
+     <settings period-type="0" start-mode="0" start-date="2010-10-25" end-mode="0" show-mode="2" cumulative="0" end-date="2011-06-29"/>
+    </view>
+   </category>
+   <category itemtype="0" tag="Reports" tooltip="TIP_USE_DEFAULT_TEXT" name="Reports">
+    <view itemtype="1000" tag="ReportView" tooltip="TIP_USE_DEFAULT_TEXT" viewtype="ReportView" name="Task Status Report">
+     <settings>
+      <kplatoreportdefinition version="1.0" mime="application/x-vnd.kde.kplato.report.definition" editor="KPlato">
+       <data-source select-from="taskstatus">
+        <select-from resourceassignments="unchecked" tasks="unchecked" taskstatus="checked" resourcesandgroups="unchecked"/>
+       </data-source>
+       <report:content xmlns:report="http://kexi-project.org/report/2.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0">
+        <report:title>Report</report:title>
+        <report:script report:script-interpreter="javascript"/>
+        <report:grid report:grid-divisions="4" report:grid-snap="1" report:page-unit="cm" report:grid-visible="1"/>
+        <report:page-style report:print-orientation="portrait" fo:margin-bottom="1,00cm" fo:margin-top="1,00cm" fo:margin-left="1,00cm" fo:margin-right="1,00cm" report:page-size="A4">predefined</report:page-style>
+        <report:body>
+         <report:section svg:height="1,75cm" fo:background-color="#ffffff" report:section-type="header-page-any">
+          <report:field report:item-data-source="=project.Manager()" report:name="field16" report:horizontal-align="left" svg:x="13cm" svg:width="5.9714cm" svg:y="0cm" report:vertical-align="bottom" svg:height="0.9388cm" report:z-index="-2">
+           <report:text-style fo:font-weight="bold" fo:letter-spacing="0%" style:letter-kerning="true" fo:font-size="10" fo:foreground-color="#000000" fo:font-family="DejaVu Sans" fo:background-color="#ffffff" fo:background-opacity="100%"/>
+           <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
+          </report:field>
+          <report:label report:name="label16" report:horizontal-align="left" svg:x="13cm" svg:width="2.5cm" svg:y="0cm" report:caption="Manager:" report:vertical-align="center" svg:height="0.4cm" report:z-index="0">
+           <report:text-style fo:letter-spacing="0%" style:letter-kerning="true" fo:font-size="8" fo:foreground-color="#000000" fo:font-family="DejaVu Sans" fo:font-style="italic" fo:background-color="#ffffff" fo:background-opacity="100%"/>
+           <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
+          </report:label>
+          <report:field report:item-data-source="=project.Name()" report:name="field17" report:horizontal-align="left" svg:x="0cm" svg:width="12.5cm" svg:y="0cm" report:vertical-align="bottom" svg:height="1cm" report:z-index="-1">
+           <report:text-style fo:font-weight="bold" fo:letter-spacing="0%" style:letter-kerning="true" fo:font-size="10" fo:foreground-color="#000000" fo:font-family="DejaVu Sans" fo:background-color="#ffffff" fo:background-opacity="100%"/>
+           <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
+          </report:field>
+          <report:label report:name="label18" report:horizontal-align="left" svg:x="0cm" svg:width="2.5cm" svg:y="0cm" report:caption="Project:" report:vertical-align="center" svg:height="0.4cm" report:z-index="0">
+           <report:text-style fo:letter-spacing="0%" style:letter-kerning="true" fo:font-size="8" fo:foreground-color="#000000" fo:font-family="DejaVu Sans" fo:font-style="italic" fo:background-color="#ffffff" fo:background-opacity="100%"/>
+           <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
+          </report:label>
+          <report:line report:name="line15" svg:y1="1.2229cm" svg:x1="18.9715cm" svg:y2="1.2229cm" svg:x2="0cm" report:z-index="0">
+           <report:line-style report:line-style="solid" report:line-weight="1" report:line-color="#000000"/>
+          </report:line>
+         </report:section>
+         <report:section svg:height="1,50cm" fo:background-color="#ffffff" report:section-type="header-report">
+          <report:label report:name="label17" report:horizontal-align="left" svg:x="0cm" svg:width="18.25cm" svg:y="0cm" report:caption="Task Status Report" report:vertical-align="center" svg:height="1.25cm" report:z-index="0">
+           <report:text-style fo:letter-spacing="0%" style:letter-kerning="true" fo:font-size="10" fo:foreground-color="#000000" fo:font-family="DejaVu Sans" fo:background-color="#ffffff" fo:background-opacity="100%"/>
+           <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
+          </report:label>
+         </report:section>
+         <report:section svg:height="2,50cm" fo:background-color="#ffffff" report:section-type="footer-page-any">
+          <report:field report:item-data-source="=constants.PageNumber()" report:name="field10" report:horizontal-align="right" svg:x="6.75cm" svg:width="0.75cm" svg:y="0.25cm" report:vertical-align="center" svg:height="0.75cm" report:z-index="0">
+           <report:text-style fo:letter-spacing="0%" style:letter-kerning="true" fo:font-size="8" fo:foreground-color="#000000" fo:font-family="DejaVu Sans" fo:background-color="#ffffff" fo:background-opacity="100%"/>
+           <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
+          </report:field>
+          <report:field report:item-data-source="=constants.PageTotal()" report:name="field11" report:horizontal-align="left" svg:x="8.25cm" svg:width="3cm" svg:y="0.25cm" report:vertical-align="center" svg:height="0.75cm" report:z-index="0">
+           <report:text-style fo:letter-spacing="0%" style:letter-kerning="true" fo:font-size="8" fo:foreground-color="#000000" fo:font-family="DejaVu Sans" fo:background-color="#ffffff" fo:background-opacity="100%"/>
+           <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
+          </report:field>
+          <report:label report:name="label12" report:horizontal-align="center" svg:x="7.5cm" svg:width="0.75cm" svg:y="0.25cm" report:caption="of" report:vertical-align="center" svg:height="0.75cm" report:z-index="0">
+           <report:text-style fo:letter-spacing="0%" style:letter-kerning="true" fo:font-size="8" fo:foreground-color="#000000" fo:font-family="DejaVu Sans" fo:font-style="italic" fo:background-color="#ffffff" fo:background-opacity="100%"/>
+           <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
+          </report:label>
+          <report:label report:name="label13" report:horizontal-align="right" svg:x="5.75cm" svg:width="1cm" svg:y="0.25cm" report:caption="Page" report:vertical-align="center" svg:height="0.75cm" report:z-index="0">
+           <report:text-style fo:letter-spacing="0%" style:letter-kerning="true" fo:font-size="8" fo:foreground-color="#000000" fo:font-family="DejaVu Sans" fo:font-style="italic" fo:background-color="#ffffff" fo:background-opacity="100%"/>
+           <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
+          </report:label>
+          <report:line report:name="line14" svg:y1="0.2195cm" svg:x1="0cm" svg:y2="0.2195cm" svg:x2="18.9715cm" report:z-index="0">
+           <report:line-style report:line-style="solid" report:line-weight="1" report:line-color="#000000"/>
+          </report:line>
+         </report:section>
+         <report:detail>
+          <report:group report:group-sort="ascending" report:group-column="Parent">
+           <report:section svg:height="2,50cm" fo:background-color="#ffffff" report:section-type="group-header">
+            <report:label report:name="label6" report:horizontal-align="left" svg:x="0.5cm" svg:width="3.75cm" svg:y="1.75cm" report:caption="Name" report:vertical-align="center" svg:height="0.75cm" report:z-index="0">
+             <report:text-style fo:letter-spacing="0%" style:letter-kerning="true" fo:font-size="8" fo:foreground-color="#000000" fo:font-family="DejaVu Sans" fo:background-color="#ffffff" fo:background-opacity="100%"/>
+             <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
+            </report:label>
+            <report:field report:item-data-source="Parent" report:name="field8" report:horizontal-align="left" svg:x="0.5cm" svg:width="8cm" svg:y="1cm" report:vertical-align="center" svg:height="0.689cm" report:z-index="0">
+             <report:text-style fo:font-weight="bold" fo:letter-spacing="0%" style:letter-kerning="true" fo:font-size="8" fo:foreground-color="#000000" fo:font-family="DejaVu Sans" fo:background-color="#ffffff" fo:background-opacity="100%"/>
+             <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
+            </report:field>
+            <report:label report:name="label8" report:horizontal-align="center" svg:x="4.25cm" svg:width="4.25cm" svg:y="1.75cm" report:caption="Completion (%)" report:vertical-align="center" svg:height="0.75cm" report:z-index="0">
+             <report:text-style fo:letter-spacing="0%" style:letter-kerning="true" fo:font-size="8" fo:foreground-color="#000000" fo:font-family="DejaVu Sans" fo:background-color="#ffffff" fo:background-opacity="100%"/>
+             <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
+            </report:label>
+           </report:section>
+          </report:group>
+          <report:section svg:height="0,50cm" fo:background-color="#ffffff" report:section-type="detail">
+           <report:field report:item-data-source="NodeName" report:name="field7" report:horizontal-align="left" svg:x="0.5cm" svg:width="3.75cm" svg:y="0cm" report:vertical-align="center" svg:height="0.5cm" report:z-index="0">
+            <report:text-style fo:letter-spacing="0%" style:letter-kerning="true" fo:font-size="8" fo:foreground-color="#000000" fo:font-family="DejaVu Sans" fo:background-color="#ffffff" fo:background-opacity="100%"/>
+            <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
+           </report:field>
+           <report:field report:item-data-source="NodeCompleted" report:name="field9" report:horizontal-align="center" svg:x="4.25cm" svg:width="4.25cm" svg:y="0cm" report:vertical-align="center" svg:height="0.5cm" report:z-index="0">
+            <report:text-style fo:letter-spacing="0%" style:letter-kerning="true" fo:font-size="8" fo:foreground-color="#000000" fo:font-family="DejaVu Sans" fo:background-color="#ffffff" fo:background-opacity="100%"/>
+            <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
+           </report:field>
+          </report:section>
+         </report:detail>
+        </report:body>
+       </report:content>
+      </kplatoreportdefinition>
+     </settings>
+    </view>
+   </category>
+  </categories>
+ </context>
+</context>

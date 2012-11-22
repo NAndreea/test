@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specificationSet xmlns="http://www.yawlfoundation.org/yawlschema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2" xsi:schemaLocation="http://www.yawlfoundation.org/yawlschema http://www.yawlfoundation.org/yawlschema/YAWL_Schema2.2.xsd">
+  <specification uri="Licenta">
+    <metaData>
+      <creator>cris</creator>
+      <description>No description has been given.</description>
+      <version>0.3</version>
+      <persistent>false</persistent>
+      <identifier>UID_3a977196-5db3-4549-b009-65c16b459c07</identifier>
+    </metaData>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+    <decomposition id="Licenta" isRootNet="true" xsi:type="NetFactsType">
+      <processControlElements>
+        <inputCondition id="InputCondition_1">
+          <flowsInto>
+            <nextElementRef id="Alegerea_temei_de_licenta_3" />
+          </flowsInto>
+        </inputCondition>
+        <task id="Alegerea_temei_de_licenta_3">
+          <name>Alegerea temei de licenta</name>
+          <flowsInto>
+            <nextElementRef id="Cautare_si_recenzie_articole_4" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Cautare_si_recenzie_articole_4">
+          <name>Cautare si recenzie articole</name>
+          <flowsInto>
+            <nextElementRef id="Cerinte_si_specificatii_5" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Cerinte_si_specificatii_5">
+          <name>Cerinte si specificatii</name>
+          <flowsInto>
+            <nextElementRef id="Proiectarea_functionala_a_aplicatiei_6" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Proiectarea_functionala_a_aplicatiei_6">
+          <name>Proiectarea functionala a aplicatiei</name>
+          <flowsInto>
+            <nextElementRef id="Quality_gate1_literature_review_si_proiectarea_functionala_26" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Quality_gate1_literature_review_si_proiectarea_functionala_26">
+          <name>Quality gate1: literature review si proiectarea functionala</name>
+          <flowsInto>
+            <nextElementRef id="Analiza_alternative_implementare_7" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Analiza_alternative_implementare_7">
+          <name>Analiza alternative implementare</name>
+          <flowsInto>
+            <nextElementRef id="Studiu_limbaje_27" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Studiu_limbaje_27">
+          <name>Studiu limbaje</name>
+          <flowsInto>
+            <nextElementRef id="Quality_gate_2_choice_of_programming_languages_and_basic_prototypes_29" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <decomposesTo id="Studiu_limbaje" />
+        </task>
+        <task id="Quality_gate_2_choice_of_programming_languages_and_basic_prototypes_29">
+          <name>Quality gate 2: choice of programming languages and basic prototypes</name>
+          <flowsInto>
+            <nextElementRef id="Review_proiectare_13" />
+          </flowsInto>
+          <flowsInto>
+            <nextElementRef id="Scrierea_lucrarii_de_licenta_14" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Scrierea_lucrarii_de_licenta_14">
+          <name>Scrierea lucrarii de licenta</name>
+          <flowsInto>
+            <nextElementRef id="END_49" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Review_proiectare_13">
+          <name>Review proiectare</name>
+          <flowsInto>
+            <nextElementRef id="Implementare_30" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="END_49">
+          <name>END</name>
+          <flowsInto>
+            <nextElementRef id="OutputCondition_2" />
+          </flowsInto>
+          <join code="and" />
+          <split code="and" />
+        </task>
+        <task id="Implementare_30">
+          <name>Implementare</name>
+          <flowsInto>
+            <nextElementRef id="Testarea_aplicatiei_23" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <decomposesTo id="Implementare" />
+        </task>
+        <task id="Testarea_aplicatiei_23">
+          <name>Testarea aplicatiei</name>
+          <flowsInto>
+            <nextElementRef id="Modificari_si_completari_licenta_24" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Modificari_si_completari_licenta_24">
+          <name>Modificari si completari licenta</name>
+          <flowsInto>
+            <nextElementRef id="END_49" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <outputCondition id="OutputCondition_2" />
+      </processControlElements>
+    </decomposition>
+    <decomposition id="Studiu_limbaje" xsi:type="NetFactsType">
+      <processControlElements>
+        <inputCondition id="InputCondition_33">
+          <flowsInto>
+            <nextElementRef id="UBL_36" />
+          </flowsInto>
+        </inputCondition>
+        <task id="UBL_36">
+          <name>UBL</name>
+          <flowsInto>
+            <nextElementRef id="XML_37" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="XML_37">
+          <name>XML</name>
+          <flowsInto>
+            <nextElementRef id="XForms_40" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="XForms_40">
+          <name>XForms</name>
+          <flowsInto>
+            <nextElementRef id="XPath_38" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="XPath_38">
+          <name>XPath</name>
+          <flowsInto>
+            <nextElementRef id="XQuery_39" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="XQuery_39">
+          <name>XQuery</name>
+          <flowsInto>
+            <nextElementRef id="OutputCondition_34" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <outputCondition id="OutputCondition_34" />
+      </processControlElements>
+    </decomposition>
+    <decomposition id="Implementare" xsi:type="NetFactsType">
+      <localVariable>
+        <index>0</index>
+        <name>colectie</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <initialValue />
+      </localVariable>
+      <localVariable>
+        <index>1</index>
+        <name>durata_colectie</name>
+        <type>duration</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <initialValue>P15D</initialValue>
+      </localVariable>
+      <processControlElements>
+        <inputCondition id="InputCondition_41">
+          <flowsInto>
+            <nextElementRef id="Structurarea_colectiei_43" />
+          </flowsInto>
+        </inputCondition>
+        <task id="Structurarea_colectiei_43">
+          <name>Structurarea colectiei</name>
+          <flowsInto>
+            <nextElementRef id="Crearea_formularului_cu_XForms_44" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <startingMappings>
+            <mapping>
+              <expression query="&lt;durata_colectie&gt;{/Implementare/durata_colectie/text()}&lt;/durata_colectie&gt;" />
+              <mapsTo>durata_colectie</mapsTo>
+            </mapping>
+          </startingMappings>
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;colectie&gt;{/Structurarea_colectiei/colectie/text()}&lt;/colectie&gt;" />
+              <mapsTo>colectie</mapsTo>
+            </mapping>
+          </completedMappings>
+          <timer>
+            <trigger>OnEnabled</trigger>
+            <duration>P15D</duration>
+          </timer>
+          <resourcing>
+            <offer initiator="user" />
+            <allocate initiator="user" />
+            <start initiator="user" />
+          </resourcing>
+          <decomposesTo id="Structurarea_colectiei" />
+        </task>
+        <task id="Crearea_formularului_cu_XForms_44">
+          <name>Crearea formularului cu XForms</name>
+          <flowsInto>
+            <nextElementRef id="Realizarea_interogarii_cu_XQuery_45" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Realizarea_interogarii_cu_XQuery_45">
+          <name>Realizarea interogarii cu XQuery</name>
+          <flowsInto>
+            <nextElementRef id="Realizarea_comunicarii_cu_baza_de_date_eXist_46" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Realizarea_comunicarii_cu_baza_de_date_eXist_46">
+          <name>Realizarea comunicarii cu baza de date eXist</name>
+          <flowsInto>
+            <nextElementRef id="Realizarea_transformarilor_cu_XSLT_47" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Realizarea_transformarilor_cu_XSLT_47">
+          <name>Realizarea transformarilor cu XSLT</name>
+          <flowsInto>
+            <nextElementRef id="OutputCondition_42" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <outputCondition id="OutputCondition_42" />
+      </processControlElements>
+    </decomposition>
+    <decomposition id="Structurarea_colectiei" xsi:type="WebServiceGatewayFactsType">
+      <inputParam>
+        <index>0</index>
+        <name>durata_colectie</name>
+        <type>duration</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <outputParam>
+        <index>1</index>
+        <name>colectie</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </outputParam>
+      <externalInteraction>manual</externalInteraction>
+    </decomposition>
+  </specification>
+  <layout>
+    <locale language="en" country="US" />
+    <specification id="Licenta">
+      <size w="118" h="27" />
+      <net id="Studiu_limbaje">
+        <bounds x="0" y="0" w="1200" h="476" />
+        <frame x="2" y="24" w="1203" h="479" />
+        <viewport x="0" y="0" w="1203" h="479" />
+        <vertex id="InputCondition_33">
+          <attributes>
+            <bounds x="84.0" y="240.0" w="32.0" h="32.0" />
+          </attributes>
+        </vertex>
+        <vertex id="OutputCondition_34">
+          <attributes>
+            <bounds x="836.0" y="240.0" w="32.0" h="32.0" />
+          </attributes>
+        </vertex>
+        <container id="XForms_40">
+          <vertex>
+            <attributes>
+              <bounds x="444.0" y="240.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="412.0" y="272.0" w="97.0" h="21.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="XQuery_39">
+          <vertex>
+            <attributes>
+              <bounds x="712.0" y="240.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="680.0" y="272.0" w="97.0" h="21.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="XPath_38">
+          <vertex>
+            <attributes>
+              <bounds x="588.0" y="240.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="556.0" y="272.0" w="97.0" h="21.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="UBL_36">
+          <vertex>
+            <attributes>
+              <bounds x="204.0" y="240.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="172.0" y="272.0" w="96.0" h="18.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="XML_37">
+          <vertex>
+            <attributes>
+              <bounds x="316.0" y="240.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="284.0" y="272.0" w="97.0" h="21.0" />
+            </attributes>
+          </label>
+        </container>
+        <flow source="XQuery_39" target="OutputCondition_34">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="InputCondition_33" target="UBL_36">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="XForms_40" target="XPath_38">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="XML_37" target="XForms_40">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="XPath_38" target="XQuery_39">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="UBL_36" target="XML_37">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+      </net>
+      <net id="Licenta">
+        <bounds x="0" y="0" w="1924" h="461" />
+        <frame x="2" y="24" w="1203" h="479" />
+        <viewport x="0" y="0" w="1203" h="479" />
+        <vertex id="InputCondition_1">
+          <attributes>
+            <bounds x="16.0" y="164.0" w="32.0" h="32.0" />
+          </attributes>
+        </vertex>
+        <vertex id="OutputCondition_2">
+          <attributes>
+            <bounds x="1872.0" y="176.0" w="32.0" h="32.0" />
+          </attributes>
+        </vertex>
+        <container id="Review_proiectare_13">
+          <vertex>
+            <attributes>
+              <bounds x="1148.0" y="72.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="1116.0" y="104.0" w="96.0" h="36.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="END_49">
+          <vertex>
+            <attributes>
+              <bounds x="1780.0" y="176.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="1744.0" y="208.0" w="96.0" h="18.0" />
+            </attributes>
+          </label>
+          <decorator type="AND_join">
+            <position>12</position>
+            <attributes>
+              <bounds x="1770.0" y="176.0" w="11.0" h="32.0" />
+              <size w="11" h="32" />
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Scrierea_lucrarii_de_licenta_14">
+          <vertex>
+            <attributes>
+              <bounds x="1160.0" y="240.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="1128.0" y="272.0" w="97.0" h="57.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Alegerea_temei_de_licenta_3">
+          <vertex>
+            <attributes>
+              <bounds x="128.0" y="164.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="96.0" y="196.0" w="97.0" h="57.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Cerinte_si_specificatii_5">
+          <vertex>
+            <attributes>
+              <bounds x="356.0" y="164.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="324.0" y="196.0" w="97.0" h="37.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Testarea_aplicatiei_23">
+          <vertex>
+            <attributes>
+              <bounds x="1468.0" y="72.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="1436.0" y="104.0" w="97.0" h="37.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Quality_gate1_literature_review_si_proiectarea_functionala_26">
+          <vertex>
+            <attributes>
+              <bounds x="604.0" y="164.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="572.0" y="196.0" w="97.0" h="109.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Proiectarea_functionala_a_aplicatiei_6">
+          <vertex>
+            <attributes>
+              <bounds x="480.0" y="164.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="448.0" y="196.0" w="97.0" h="73.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Analiza_alternative_implementare_7">
+          <vertex>
+            <attributes>
+              <bounds x="724.0" y="164.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="684.0" y="196.0" w="117.0" h="57.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Modificari_si_completari_licenta_24">
+          <vertex>
+            <attributes>
+              <bounds x="1592.0" y="72.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="1560.0" y="104.0" w="97.0" h="73.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Quality_gate_2_choice_of_programming_languages_and_basic_prototypes_29">
+          <vertex>
+            <attributes>
+              <bounds x="1000.0" y="164.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="964.0" y="196.0" w="113.0" h="109.0" />
+            </attributes>
+          </label>
+          <decorator type="AND_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="1031.0" y="164.0" w="11.0" h="32.0" />
+              <size w="11" h="32" />
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Cautare_si_recenzie_articole_4">
+          <vertex>
+            <attributes>
+              <bounds x="240.0" y="164.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="208.0" y="196.0" w="97.0" h="57.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Studiu_limbaje_27">
+          <vertex>
+            <attributes>
+              <bounds x="844.0" y="164.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="812.0" y="196.0" w="97.0" h="37.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Implementare_30">
+          <vertex>
+            <attributes>
+              <bounds x="1336.0" y="72.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="1294.0" y="104.0" w="116.0" h="18.0" />
+            </attributes>
+          </label>
+        </container>
+        <flow source="END_49" target="OutputCondition_2">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="InputCondition_1" target="Alegerea_temei_de_licenta_3">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Quality_gate_2_choice_of_programming_languages_and_basic_prototypes_29" target="Review_proiectare_13">
+          <ports in="2" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Implementare_30" target="Testarea_aplicatiei_23">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Scrierea_lucrarii_de_licenta_14" target="END_49">
+          <ports in="13" out="3" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Cerinte_si_specificatii_5" target="Proiectarea_functionala_a_aplicatiei_6">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Cautare_si_recenzie_articole_4" target="Cerinte_si_specificatii_5">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+            <points>
+              <value x="271.0" y="179.5" />
+              <value x="356.0" y="179.5" />
+            </points>
+          </attributes>
+        </flow>
+        <flow source="Quality_gate1_literature_review_si_proiectarea_functionala_26" target="Analiza_alternative_implementare_7">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Alegerea_temei_de_licenta_3" target="Cautare_si_recenzie_articole_4">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Quality_gate_2_choice_of_programming_languages_and_basic_prototypes_29" target="Scrierea_lucrarii_de_licenta_14">
+          <ports in="3" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Testarea_aplicatiei_23" target="Modificari_si_completari_licenta_24">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Analiza_alternative_implementare_7" target="Studiu_limbaje_27">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Review_proiectare_13" target="Implementare_30">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Studiu_limbaje_27" target="Quality_gate_2_choice_of_programming_languages_and_basic_prototypes_29">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Proiectarea_functionala_a_aplicatiei_6" target="Quality_gate1_literature_review_si_proiectarea_functionala_26">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Modificari_si_completari_licenta_24" target="END_49">
+          <ports in="13" out="3" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+      </net>
+      <net id="Implementare">
+        <bounds x="0" y="0" w="1200" h="476" />
+        <frame x="2" y="24" w="1203" h="479" />
+        <viewport x="0" y="0" w="1203" h="479" />
+        <vertex id="InputCondition_41">
+          <attributes>
+            <bounds x="36.0" y="104.0" w="32.0" h="32.0" />
+          </attributes>
+        </vertex>
+        <vertex id="OutputCondition_42">
+          <attributes>
+            <bounds x="1124.0" y="104.0" w="32.0" h="32.0" />
+          </attributes>
+        </vertex>
+        <container id="Structurarea_colectiei_43">
+          <vertex>
+            <attributes>
+              <bounds x="132.0" y="104.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="96.0" y="136.0" w="105.0" h="36.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Realizarea_transformarilor_cu_XSLT_47">
+          <vertex>
+            <attributes>
+              <bounds x="1052.0" y="104.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="1006.0" y="136.0" w="125.0" h="54.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Realizarea_comunicarii_cu_baza_de_date_eXist_46">
+          <vertex>
+            <attributes>
+              <bounds x="820.0" y="104.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="788.0" y="136.0" w="96.0" h="90.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Crearea_formularului_cu_XForms_44">
+          <vertex>
+            <attributes>
+              <bounds x="356.0" y="104.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="323.0" y="136.0" w="99.0" h="54.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Realizarea_interogarii_cu_XQuery_45">
+          <vertex>
+            <attributes>
+              <bounds x="588.0" y="104.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="556.0" y="136.0" w="96.0" h="54.0" />
+            </attributes>
+          </label>
+        </container>
+        <flow source="Realizarea_transformarilor_cu_XSLT_47" target="OutputCondition_42">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="InputCondition_41" target="Structurarea_colectiei_43">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Structurarea_colectiei_43" target="Crearea_formularului_cu_XForms_44">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Realizarea_interogarii_cu_XQuery_45" target="Realizarea_comunicarii_cu_baza_de_date_eXist_46">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Crearea_formularului_cu_XForms_44" target="Realizarea_interogarii_cu_XQuery_45">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Realizarea_comunicarii_cu_baza_de_date_eXist_46" target="Realizarea_transformarilor_cu_XSLT_47">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+      </net>
+    </specification>
+  </layout>
+</specificationSet>
+
+

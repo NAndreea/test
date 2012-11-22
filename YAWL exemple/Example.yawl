@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specificationSet xmlns="http://www.yawlfoundation.org/yawlschema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2" xsi:schemaLocation="http://www.yawlfoundation.org/yawlschema http://www.yawlfoundation.org/yawlschema/YAWL_Schema2.2.xsd">
+  <specification uri="Example">
+    <metaData>
+      <title>Data_Perspective</title>
+      <creator>cris</creator>
+      <description>No description has been given.</description>
+      <version>0.1</version>
+      <persistent>false</persistent>
+      <identifier>UID_57abf26b-254d-4a2d-a41d-f3113640078f</identifier>
+    </metaData>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="complevar">
+        <xs:sequence>
+          <xs:element name="var5" type="xs:string" />
+          <xs:element name="var6" type="xs:string" />
+          <xs:element name="var7" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <decomposition id="New_Net" isRootNet="true" xsi:type="NetFactsType">
+      <localVariable>
+        <index>0</index>
+        <name>Net_Var1</name>
+        <type>boolean</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <initialValue />
+      </localVariable>
+      <localVariable>
+        <index>1</index>
+        <name>Net_Var2</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <initialValue />
+      </localVariable>
+      <localVariable>
+        <index>2</index>
+        <name>complexVar</name>
+        <type>complevar</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <initialValue />
+      </localVariable>
+      <processControlElements>
+        <inputCondition id="InputCondition_1">
+          <flowsInto>
+            <nextElementRef id="Task_1_5" />
+          </flowsInto>
+        </inputCondition>
+        <task id="Task_1_5">
+          <name>Task_1</name>
+          <flowsInto>
+            <nextElementRef id="Task_2_3" />
+            <predicate ordering="0">/New_Net/Net_Var1/text() = true ()</predicate>
+          </flowsInto>
+          <flowsInto>
+            <nextElementRef id="Task_3_4" />
+            <isDefaultFlow />
+          </flowsInto>
+          <join code="xor" />
+          <split code="xor" />
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;Net_Var1&gt;{/Task_1/TaskVar1/text()}&lt;/Net_Var1&gt;" />
+              <mapsTo>Net_Var1</mapsTo>
+            </mapping>
+          </completedMappings>
+          <resourcing>
+            <offer initiator="user" />
+            <allocate initiator="user" />
+            <start initiator="user" />
+          </resourcing>
+          <decomposesTo id="Task_1" />
+        </task>
+        <task id="Task_2_3">
+          <name>Task_2</name>
+          <flowsInto>
+            <nextElementRef id="Task_6" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;Net_Var2&gt;{/Task_2/Task_Var2/text()}&lt;/Net_Var2&gt;" />
+              <mapsTo>Net_Var2</mapsTo>
+            </mapping>
+          </completedMappings>
+          <resourcing>
+            <offer initiator="user" />
+            <allocate initiator="user" />
+            <start initiator="user" />
+          </resourcing>
+          <decomposesTo id="Task_2" />
+        </task>
+        <task id="Task_3_4">
+          <name>Task_3</name>
+          <flowsInto>
+            <nextElementRef id="Task_6" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;Net_Var2&gt;{/Task_3/Task_Var_3/text()}&lt;/Net_Var2&gt;" />
+              <mapsTo>Net_Var2</mapsTo>
+            </mapping>
+          </completedMappings>
+          <resourcing>
+            <offer initiator="user" />
+            <allocate initiator="user" />
+            <start initiator="user" />
+          </resourcing>
+          <decomposesTo id="Task_3" />
+        </task>
+        <task id="Task_6">
+          <name>Task_4</name>
+          <flowsInto>
+            <nextElementRef id="OutputCondition_2" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <startingMappings>
+            <mapping>
+              <expression query="&lt;Task_Var_4&gt;{/New_Net/Net_Var2/text()}&lt;/Task_Var_4&gt;" />
+              <mapsTo>Task_Var_4</mapsTo>
+            </mapping>
+          </startingMappings>
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;complexVar&gt;{/Task_4/ComplexVar/*}&lt;/complexVar&gt;" />
+              <mapsTo>complexVar</mapsTo>
+            </mapping>
+          </completedMappings>
+          <resourcing>
+            <offer initiator="user" />
+            <allocate initiator="user" />
+            <start initiator="user" />
+          </resourcing>
+          <decomposesTo id="Task_4" />
+        </task>
+        <outputCondition id="OutputCondition_2" />
+      </processControlElements>
+    </decomposition>
+    <decomposition id="Task_2" xsi:type="WebServiceGatewayFactsType">
+      <outputParam>
+        <index>0</index>
+        <name>Task_Var2</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </outputParam>
+      <externalInteraction>manual</externalInteraction>
+    </decomposition>
+    <decomposition id="Task_3" xsi:type="WebServiceGatewayFactsType">
+      <outputParam>
+        <index>0</index>
+        <name>Task_Var_3</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </outputParam>
+      <externalInteraction>manual</externalInteraction>
+    </decomposition>
+    <decomposition id="Task_4" xsi:type="WebServiceGatewayFactsType">
+      <inputParam>
+        <index>0</index>
+        <name>Task_Var_4</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <outputParam>
+        <index>1</index>
+        <name>ComplexVar</name>
+        <type>complevar</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </outputParam>
+      <externalInteraction>manual</externalInteraction>
+    </decomposition>
+    <decomposition id="Task_1" xsi:type="WebServiceGatewayFactsType">
+      <outputParam>
+        <index>0</index>
+        <name>TaskVar1</name>
+        <type>boolean</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </outputParam>
+      <externalInteraction>manual</externalInteraction>
+    </decomposition>
+  </specification>
+  <layout>
+    <locale language="en" country="US" />
+    <specification id="Example">
+      <size w="108" h="27" />
+      <net id="New_Net">
+        <bounds x="0" y="0" w="487" h="330" />
+        <frame x="2" y="24" w="505" h="275" />
+        <viewport x="0" y="0" w="505" h="275" />
+        <vertex id="InputCondition_1">
+          <attributes>
+            <bounds x="36.0" y="168.0" w="32.0" h="32.0" />
+          </attributes>
+        </vertex>
+        <vertex id="OutputCondition_2">
+          <attributes>
+            <bounds x="428.0" y="168.0" w="32.0" h="32.0" />
+          </attributes>
+        </vertex>
+        <flow source="InputCondition_1" target="Task_1_5">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Task_1_5" target="Task_2_3">
+          <ports in="2" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Task_2_3" target="Task_6">
+          <ports in="13" out="2" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Task_6" target="OutputCondition_2">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <container id="Task_1_5">
+          <vertex>
+            <attributes>
+              <bounds x="148.0" y="168.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="179.0" y="168.0" w="11.0" h="32.0" />
+              <size w="11" h="32" />
+            </attributes>
+          </decorator>
+          <label>
+            <attributes>
+              <bounds x="120.0" y="200.0" w="96.0" h="18.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Task_6">
+          <vertex>
+            <attributes>
+              <bounds x="328.0" y="168.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <decorator type="XOR_join">
+            <position>12</position>
+            <attributes>
+              <bounds x="318.0" y="168.0" w="11.0" h="32.0" />
+              <size w="11" h="32" />
+            </attributes>
+          </decorator>
+          <label>
+            <attributes>
+              <bounds x="292.0" y="200.0" w="96.0" h="18.0" />
+            </attributes>
+          </label>
+        </container>
+        <flow source="Task_1_5" target="Task_3_4">
+          <ports in="2" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Task_3_4" target="Task_6">
+          <ports in="13" out="3" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <container id="Task_2_3">
+          <vertex>
+            <attributes>
+              <bounds x="236.0" y="92.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="204.0" y="124.0" w="96.0" h="18.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Task_3_4">
+          <vertex>
+            <attributes>
+              <bounds x="236.0" y="260.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="204.0" y="292.0" w="96.0" h="18.0" />
+            </attributes>
+          </label>
+        </container>
+      </net>
+    </specification>
+  </layout>
+</specificationSet>
+
+

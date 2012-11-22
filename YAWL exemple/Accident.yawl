@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specificationSet xmlns="http://www.yawlfoundation.org/yawlschema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2" xsi:schemaLocation="http://www.yawlfoundation.org/yawlschema http://www.yawlfoundation.org/yawlschema/YAWL_Schema2.2.xsd">
+  <specification uri="Accident">
+    <metaData>
+      <creator>cris</creator>
+      <description>No description has been given.</description>
+      <version>0.1</version>
+      <persistent>false</persistent>
+      <identifier>UID_335910af-57a8-4f4f-b796-672a312d8d1a</identifier>
+    </metaData>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+    <decomposition id="New_Net_1" isRootNet="true" xsi:type="NetFactsType">
+      <processControlElements>
+        <inputCondition id="InputCondition_1">
+          <flowsInto>
+            <nextElementRef id="Obtain_Quote_3" />
+          </flowsInto>
+        </inputCondition>
+        <task id="Obtain_Quote_3">
+          <name>Obtain Quote</name>
+          <flowsInto>
+            <nextElementRef id="Lodge_preliminary_insurance_claim_6" />
+          </flowsInto>
+          <flowsInto>
+            <nextElementRef id="null_9" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <condition id="null_9">
+          <flowsInto>
+            <nextElementRef id="Have_car_fixed_10" />
+          </flowsInto>
+          <flowsInto>
+            <nextElementRef id="Buy_new_car_5" />
+          </flowsInto>
+        </condition>
+        <task id="Lodge_preliminary_insurance_claim_6">
+          <name>Lodge preliminary insurance claim</name>
+          <flowsInto>
+            <nextElementRef id="Lodge_final_insurance_claim_8" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Have_car_fixed_10">
+          <name>Have car fixed</name>
+          <flowsInto>
+            <nextElementRef id="Settle_bill_12" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Buy_new_car_5">
+          <name>Buy new car</name>
+          <flowsInto>
+            <nextElementRef id="Settle_bill_12" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Settle_bill_12">
+          <name>Settle bill</name>
+          <flowsInto>
+            <nextElementRef id="OutputCondition_2" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Lodge_final_insurance_claim_8">
+          <name>Lodge final insurance claim</name>
+          <flowsInto>
+            <nextElementRef id="OutputCondition_2" />
+          </flowsInto>
+          <join code="and" />
+          <split code="and" />
+        </task>
+        <outputCondition id="OutputCondition_2" />
+      </processControlElements>
+    </decomposition>
+  </specification>
+  <layout>
+    <locale language="en" country="US" />
+    <specification id="Accident">
+      <size w="118" h="27" />
+      <net id="New_Net_1">
+        <bounds x="0" y="0" w="715" h="369" />
+        <frame x="2" y="24" w="733" h="267" />
+        <viewport x="0" y="0" w="733" h="267" />
+        <vertex id="InputCondition_1">
+          <attributes>
+            <bounds x="20.0" y="172.0" w="32.0" h="32.0" />
+          </attributes>
+        </vertex>
+        <vertex id="OutputCondition_2">
+          <attributes>
+            <bounds x="656.0" y="168.0" w="32.0" h="32.0" />
+          </attributes>
+        </vertex>
+        <vertex id="null_9">
+          <attributes>
+            <bounds x="224.0" y="148.0" w="32.0" h="32.0" />
+          </attributes>
+        </vertex>
+        <flow source="InputCondition_1" target="Obtain_Quote_3">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Obtain_Quote_3" target="null_9">
+          <ports in="2" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+            <points>
+              <value x="167.0" y="203.5" />
+              <value x="212.0" y="159.5" />
+            </points>
+          </attributes>
+        </flow>
+        <flow source="null_9" target="Buy_new_car_5">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Lodge_final_insurance_claim_8" target="OutputCondition_2">
+          <ports in="13" out="11" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Lodge_preliminary_insurance_claim_6" target="Lodge_final_insurance_claim_8">
+          <ports in="13" out="2" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="null_9" target="Have_car_fixed_10">
+          <ports in="10" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Have_car_fixed_10" target="Settle_bill_12">
+          <ports in="13" out="2" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Settle_bill_12" target="OutputCondition_2">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <container id="Obtain_Quote_3">
+          <vertex>
+            <attributes>
+              <bounds x="128.0" y="172.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <decorator type="AND_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="159.0" y="172.0" w="11.0" h="32.0" />
+              <size w="11" h="32" />
+            </attributes>
+          </decorator>
+          <label>
+            <attributes>
+              <bounds x="100.0" y="204.0" w="97.0" h="37.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Settle_bill_12">
+          <vertex>
+            <attributes>
+              <bounds x="428.0" y="132.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <decorator type="XOR_join">
+            <position>12</position>
+            <attributes>
+              <bounds x="418.0" y="132.0" w="11.0" h="32.0" />
+              <size w="11" h="32" />
+            </attributes>
+          </decorator>
+          <label>
+            <attributes>
+              <bounds x="392.0" y="164.0" w="96.0" h="18.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Lodge_final_insurance_claim_8">
+          <vertex>
+            <attributes>
+              <bounds x="472.0" y="244.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <decorator type="AND_join">
+            <position>12</position>
+            <attributes>
+              <bounds x="462.0" y="244.0" w="11.0" h="32.0" />
+              <size w="11" h="32" />
+            </attributes>
+          </decorator>
+          <label>
+            <attributes>
+              <bounds x="436.0" y="276.0" w="97.0" h="57.0" />
+            </attributes>
+          </label>
+        </container>
+        <flow source="Buy_new_car_5" target="Settle_bill_12">
+          <ports in="13" out="3" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Obtain_Quote_3" target="Lodge_preliminary_insurance_claim_6">
+          <ports in="2" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <container id="Have_car_fixed_10">
+          <vertex>
+            <attributes>
+              <bounds x="320.0" y="104.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="288.0" y="136.0" w="96.0" h="36.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Buy_new_car_5">
+          <vertex>
+            <attributes>
+              <bounds x="320.0" y="172.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="288.0" y="204.0" w="96.0" h="36.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Lodge_preliminary_insurance_claim_6">
+          <vertex>
+            <attributes>
+              <bounds x="324.0" y="244.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="292.0" y="276.0" w="97.0" h="73.0" />
+            </attributes>
+          </label>
+        </container>
+      </net>
+    </specification>
+  </layout>
+</specificationSet>
+
+

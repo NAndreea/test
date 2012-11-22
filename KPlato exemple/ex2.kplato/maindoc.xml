@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kplato>
+<kplato version="0.6.5" mime="application/x-vnd.kde.kplato" editor="KPlato">
+ <project scheduling="MustStartOn" description="" end-time="2013-11-14T00:00:00+02:00" timezone="Europe/Bucharest" leader="" id="2011-11-14T10:01:22 iZmr4SY3D8" name="" start-time="2011-11-14T00:00:00+02:00">
+  <wbs-definition levels-enabled="0" project-code="" project-separator="">
+   <default separator="." code="Number"/>
+  </wbs-definition>
+  <locale positive-prefix-currency-symbol="1" negative-prefix-currency-symbol="1" positive-monetary-sign-position="1" currency-symbol="$" negative-monetary-sign-position="1"/>
+  <accounts>
+   <account description="" name="Admin">
+    <costplace object-id="2011-11-14T10:06:54 8k3lKCItDY" startup-cost="0" shutdown-cost="0" running-cost="1"/>
+    <costplace object-id="2011-11-14T10:11:48 VYb7KRFyOj" startup-cost="0" shutdown-cost="1" running-cost="0"/>
+   </account>
+   <account description="" name="Operativ"/>
+   <account description="" name="Lider">
+    <costplace object-id="2011-11-14T10:08:22 KxE8h32MF2" startup-cost="0" shutdown-cost="0" running-cost="1"/>
+    <costplace object-id="2011-11-14T10:11:48 VYb7KRFyOj" startup-cost="1" shutdown-cost="0" running-cost="1"/>
+   </account>
+  </accounts>
+  <calendar timezone="Europe/Bucharest" id="2011-11-14T10:03:34 ANyggRGuPb" name="Calendar">
+   <weekday day="0"/>
+   <weekday day="1"/>
+   <weekday day="2"/>
+   <weekday day="3"/>
+   <weekday day="4"/>
+   <weekday day="5"/>
+   <weekday day="6"/>
+  </calendar>
+  <standard-worktime week="40h0m" day="8h0m" month="176h0m" year="1760h0m"/>
+  <resource-group type="Work" id="2011-11-14T10:06:08 GtlJQjN9YV" name="Personal">
+   <resource available-from="2011-11-15T00:00:00+02:00" available-until="2013-11-29T00:00:00+02:00" normal-rate="$ 100.00" overtime-rate="$ 200.00" calendar-id="2011-11-14T10:03:34 ANyggRGuPb" email="" units="100" account="Admin" initials="" type="Work" id="2011-11-14T10:06:54 8k3lKCItDY" name="Maria Pop"/>
+   <resource available-from="2011-11-15T00:00:00+02:00" available-until="2013-11-29T00:00:00+02:00" normal-rate="$ 50.00" overtime-rate="$ 100.00" calendar-id="2011-11-14T10:03:34 ANyggRGuPb" email="" units="100" account="Lider" initials="" type="Work" id="2011-11-14T10:08:22 KxE8h32MF2" name="Ion Muresan"/>
+  </resource-group>
+  <resource-group type="Work" id="2011-11-14T10:06:25 WBBxP5NysA" name="Materie_prima"/>
+  <task wbs="1" scheduling="ASAP" constraint-endtime="2011-11-14T10:11:21.966+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T10:11:21.966+02:00" leader="" id="2011-11-14T10:11:21 fg30dH6IK8" name="Analiza">
+   <estimate risk="None" expected="8" optimistic="8" pessimistic="8" unit="Y" type="Effort"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <resourcegroup-request units="0" group-id="2011-11-14T10:06:08 GtlJQjN9YV">
+    <resource-request resource-id="2011-11-14T10:06:54 8k3lKCItDY" units="100"/>
+    <resource-request resource-id="2011-11-14T10:08:22 KxE8h32MF2" units="100"/>
+   </resourcegroup-request>
+  </task>
+  <task wbs="2" scheduling="ASAP" constraint-endtime="2011-11-14T10:11:35.318+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T10:11:35.318+02:00" leader="" id="2011-11-14T10:11:35 ZBxw3T1wvq" name="Proiectare">
+   <estimate risk="None" expected="8" optimistic="8" pessimistic="8" unit="Y" type="Effort"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <resourcegroup-request units="0" group-id="2011-11-14T10:06:08 GtlJQjN9YV">
+    <resource-request resource-id="2011-11-14T10:08:22 KxE8h32MF2" units="100"/>
+   </resourcegroup-request>
+  </task>
+  <task wbs="3" scheduling="ASAP" constraint-endtime="2011-11-14T10:11:48.358+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T10:11:48.358+02:00" leader="" id="2011-11-14T10:11:48 VYb7KRFyOj" name="Implementare">
+   <estimate risk="None" expected="8" optimistic="8" pessimistic="8" unit="Y" type="Effort"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <resourcegroup-request units="0" group-id="2011-11-14T10:06:08 GtlJQjN9YV">
+    <resource-request resource-id="2011-11-14T10:06:54 8k3lKCItDY" units="100"/>
+    <resource-request resource-id="2011-11-14T10:08:22 KxE8h32MF2" units="100"/>
+   </resourcegroup-request>
+  </task>
+  <task wbs="4" scheduling="ASAP" constraint-endtime="2011-11-14T10:13:55.935+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-11-14T10:13:55.935+02:00" leader="" id="2011-11-14T10:13:55 dMCVJfJJb9" name="Testare">
+   <estimate risk="None" expected="8" optimistic="8" pessimistic="8" unit="Y" type="Effort"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+  </task>
+  <relation type="Finish-Start" parent-id="2011-11-14T10:11:21 fg30dH6IK8" lag="0 00:00:00.0" child-id="2011-11-14T10:11:35 ZBxw3T1wvq"/>
+  <relation type="Finish-Start" parent-id="2011-11-14T10:11:35 ZBxw3T1wvq" lag="0 00:00:00.0" child-id="2011-11-14T10:11:48 VYb7KRFyOj"/>
+  <relation type="Start-Start" parent-id="2011-11-14T10:11:48 VYb7KRFyOj" lag="3 00:00:00.0" child-id="2011-11-14T10:13:55 dMCVJfJJb9"/>
+ </project>
+</kplato>

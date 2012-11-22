@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specificationSet xmlns="http://www.yawlfoundation.org/yawlschema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2" xsi:schemaLocation="http://www.yawlfoundation.org/yawlschema http://www.yawlfoundation.org/yawlschema/YAWL_Schema2.2.xsd">
+  <specification uri="MyFirstExample">
+    <metaData>
+      <creator>cris</creator>
+      <description>Double Ckeck Example</description>
+      <version>0.1</version>
+      <persistent>false</persistent>
+      <identifier>UID_8cbb195b-fb02-40c4-841b-e6ab00b01400</identifier>
+    </metaData>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+    <decomposition id="New_Net_1" isRootNet="true" xsi:type="NetFactsType">
+      <processControlElements>
+        <inputCondition id="InputCondition_1">
+          <flowsInto>
+            <nextElementRef id="Register_Inquiry_3" />
+          </flowsInto>
+        </inputCondition>
+        <task id="Register_Inquiry_3">
+          <name>Register Inquiry</name>
+          <flowsInto>
+            <nextElementRef id="Ckeck_2_5" />
+          </flowsInto>
+          <flowsInto>
+            <nextElementRef id="Ckeck_1_4" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <task id="Ckeck_2_5">
+          <name>Ckeck 2</name>
+          <flowsInto>
+            <nextElementRef id="Send_Approval_to_Cust_6" />
+            <predicate ordering="0">true()</predicate>
+          </flowsInto>
+          <flowsInto>
+            <nextElementRef id="null_10" />
+            <isDefaultFlow />
+          </flowsInto>
+          <join code="xor" />
+          <split code="xor" />
+        </task>
+        <task id="Ckeck_1_4">
+          <name>Ckeck 1</name>
+          <flowsInto>
+            <nextElementRef id="Send_Approval_to_Cust_6" />
+            <predicate ordering="0">true()</predicate>
+          </flowsInto>
+          <flowsInto>
+            <nextElementRef id="null_10" />
+            <isDefaultFlow />
+          </flowsInto>
+          <join code="xor" />
+          <split code="xor" />
+        </task>
+        <condition id="null_10">
+          <flowsInto>
+            <nextElementRef id="Cancel_9" />
+          </flowsInto>
+        </condition>
+        <task id="Send_Approval_to_Cust_6">
+          <name>Send Approval to Cust</name>
+          <flowsInto>
+            <nextElementRef id="OutputCondition_2" />
+          </flowsInto>
+          <join code="and" />
+          <split code="and" />
+        </task>
+        <task id="Cancel_9">
+          <name>Cancel</name>
+          <flowsInto>
+            <nextElementRef id="Send_Rejection_to_Cust_8" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <removesTokens id="Ckeck_2_5" />
+          <removesTokens id="null_10" />
+          <removesTokensFromFlow>
+            <flowSource id="Ckeck_2_5" />
+            <flowDestination id="Send_Approval_to_Cust_6" />
+          </removesTokensFromFlow>
+          <removesTokensFromFlow>
+            <flowSource id="Register_Inquiry_3" />
+            <flowDestination id="Ckeck_1_4" />
+          </removesTokensFromFlow>
+          <removesTokensFromFlow>
+            <flowSource id="Ckeck_1_4" />
+            <flowDestination id="Send_Approval_to_Cust_6" />
+          </removesTokensFromFlow>
+          <removesTokensFromFlow>
+            <flowSource id="Register_Inquiry_3" />
+            <flowDestination id="Ckeck_2_5" />
+          </removesTokensFromFlow>
+        </task>
+        <task id="Send_Rejection_to_Cust_8">
+          <name>Send Rejection to Cust</name>
+          <flowsInto>
+            <nextElementRef id="OutputCondition_2" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+        </task>
+        <outputCondition id="OutputCondition_2" />
+      </processControlElements>
+    </decomposition>
+  </specification>
+  <layout>
+    <locale language="en" country="US" />
+    <specification id="MyFirstExample">
+      <size w="118" h="27" />
+      <net id="New_Net_1">
+        <bounds x="0" y="0" w="640" h="318" />
+        <frame x="2" y="24" w="415" h="267" />
+        <viewport x="0" y="0" w="415" h="267" />
+        <cancellationtask>Cancel_9</cancellationtask>
+        <vertex id="InputCondition_1">
+          <attributes>
+            <bounds x="36.0" y="160.0" w="32.0" h="32.0" />
+          </attributes>
+        </vertex>
+        <vertex id="OutputCondition_2">
+          <attributes>
+            <bounds x="588.0" y="156.0" w="32.0" h="32.0" />
+          </attributes>
+        </vertex>
+        <container id="Register_Inquiry_3">
+          <vertex>
+            <attributes>
+              <bounds x="104.0" y="168.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <decorator type="AND_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="135.0" y="168.0" w="11.0" h="32.0" />
+              <size w="11" h="32" />
+            </attributes>
+          </decorator>
+          <label>
+            <attributes>
+              <bounds x="76.0" y="200.0" w="96.0" h="36.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Ckeck_2_5">
+          <vertex>
+            <attributes>
+              <bounds x="200.0" y="212.0" w="32.0" h="32.0" />
+              <foregroundColor>-65536</foregroundColor>
+            </attributes>
+          </vertex>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="231.0" y="212.0" w="11.0" h="32.0" />
+              <size w="11" h="32" />
+              <foregroundColor>-65536</foregroundColor>
+            </attributes>
+          </decorator>
+          <label>
+            <attributes>
+              <bounds x="172.0" y="244.0" w="96.0" h="18.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Send_Approval_to_Cust_6">
+          <vertex>
+            <attributes>
+              <bounds x="380.0" y="108.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <decorator type="AND_join">
+            <position>12</position>
+            <attributes>
+              <bounds x="370.0" y="108.0" w="11.0" h="32.0" />
+              <size w="11" h="32" />
+            </attributes>
+          </decorator>
+          <label>
+            <attributes>
+              <bounds x="344.0" y="140.0" w="96.0" h="54.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Send_Rejection_to_Cust_8">
+          <vertex>
+            <attributes>
+              <bounds x="512.0" y="212.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="480.0" y="244.0" w="96.0" h="54.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Cancel_9">
+          <vertex>
+            <iconpath>/org/yawlfoundation/yawl/editor/resources/taskicons/RoutingTask.png</iconpath>
+            <attributes>
+              <backgroundColor>-4144960</backgroundColor>
+              <bounds x="392.0" y="212.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="360.0" y="244.0" w="96.0" h="18.0" />
+            </attributes>
+          </label>
+        </container>
+        <flow source="InputCondition_1" target="Register_Inquiry_3">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Register_Inquiry_3" target="Ckeck_2_5">
+          <ports in="3" out="12" />
+          <attributes>
+            <linecolor>-65536</linecolor>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Ckeck_2_5" target="Send_Approval_to_Cust_6">
+          <ports in="3" out="3" />
+          <attributes>
+            <linecolor>-65536</linecolor>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Send_Approval_to_Cust_6" target="OutputCondition_2">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Cancel_9" target="Send_Rejection_to_Cust_8">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Send_Rejection_to_Cust_8" target="OutputCondition_2">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <vertex id="null_10">
+          <attributes>
+            <bounds x="312.0" y="220.0" w="32.0" h="32.0" />
+            <foregroundColor>-65536</foregroundColor>
+          </attributes>
+        </vertex>
+        <flow source="Ckeck_2_5" target="null_10">
+          <ports in="3" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="null_10" target="Cancel_9">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <container id="Ckeck_1_4">
+          <label>
+            <attributes>
+              <bounds x="172.0" y="140.0" w="96.0" h="18.0" />
+            </attributes>
+          </label>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="231.0" y="108.0" w="11.0" h="32.0" />
+              <size w="11" h="32" />
+              <foregroundColor>-65536</foregroundColor>
+            </attributes>
+          </decorator>
+          <vertex>
+            <attributes>
+              <bounds x="200.0" y="108.0" w="32.0" h="32.0" />
+              <foregroundColor>-65536</foregroundColor>
+            </attributes>
+          </vertex>
+        </container>
+        <flow source="Register_Inquiry_3" target="Ckeck_1_4">
+          <ports in="2" out="12" />
+          <attributes>
+            <linecolor>-65536</linecolor>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Ckeck_1_4" target="null_10">
+          <ports in="4" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Ckeck_1_4" target="Send_Approval_to_Cust_6">
+          <ports in="4" out="2" />
+          <attributes>
+            <linecolor>-65536</linecolor>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+      </net>
+    </specification>
+  </layout>
+</specificationSet>
+
+

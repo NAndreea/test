@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kplato>
+<kplato version="0.6.5" mime="application/x-vnd.kde.kplato" editor="KPlato">
+ <project scheduling="MustStartOn" description="" end-time="2011-06-29T20:00:00+03:00" timezone="Europe/Bucharest" leader="Cris" id="2011-12-14T08:36:39 34I8ba4a5B" name="Cris" start-time="2010-10-25T08:00:00+03:00">
+  <wbs-definition levels-enabled="0" project-code="" project-separator="">
+   <default separator="." code="Number"/>
+  </wbs-definition>
+  <locale positive-prefix-currency-symbol="1" negative-prefix-currency-symbol="1" positive-monetary-sign-position="1" currency-symbol="$" negative-monetary-sign-position="1"/>
+  <accounts/>
+  <calendar timezone="Europe/Bucharest" id="2011-12-14T09:16:20 BreET2HhXq" name="LIC">
+   <weekday day="0"/>
+   <weekday day="1"/>
+   <weekday day="2"/>
+   <weekday day="3"/>
+   <weekday day="4"/>
+   <weekday day="5"/>
+   <weekday day="6"/>
+   <day state="1" date="2010-10-02"/>
+   <day state="1" date="2010-10-09"/>
+   <day state="1" date="2010-10-16"/>
+   <day state="1" date="2010-10-23"/>
+   <day state="1" date="2010-10-30"/>
+   <day state="1" date="2010-11-06"/>
+   <day state="1" date="2010-11-13"/>
+   <day state="1" date="2010-11-20"/>
+   <day state="1" date="2010-11-27"/>
+   <day state="1" date="2010-12-04"/>
+   <day state="1" date="2010-12-11"/>
+   <day state="1" date="2010-12-18"/>
+   <day state="1" date="2010-12-25"/>
+   <day state="1" date="2010-10-10"/>
+   <day state="1" date="2010-10-03"/>
+   <day state="1" date="2010-10-17"/>
+   <day state="1" date="2010-10-24"/>
+   <day state="1" date="2010-10-31"/>
+   <day state="1" date="2010-11-07"/>
+   <day state="1" date="2010-11-14"/>
+   <day state="1" date="2010-11-21"/>
+   <day state="1" date="2010-11-28"/>
+   <day state="1" date="2010-12-05"/>
+   <day state="1" date="2010-12-12"/>
+   <day state="1" date="2010-12-19"/>
+   <day state="1" date="2010-12-26"/>
+   <day state="1" date="2011-01-02"/>
+   <day state="1" date="2011-01-09"/>
+   <day state="1" date="2011-01-16"/>
+   <day state="1" date="2011-01-23"/>
+   <day state="1" date="2011-01-30"/>
+   <day state="1" date="2011-01-01"/>
+   <day state="1" date="2011-01-08"/>
+   <day state="1" date="2011-01-22"/>
+   <day state="1" date="2011-01-15"/>
+   <day state="1" date="2011-01-29"/>
+   <day state="1" date="2011-02-05"/>
+   <day state="1" date="2011-02-12"/>
+   <day state="1" date="2011-02-19"/>
+   <day state="1" date="2011-02-26"/>
+   <day state="1" date="2011-03-05"/>
+   <day state="1" date="2011-03-12"/>
+   <day state="1" date="2011-03-19"/>
+   <day state="1" date="2011-03-26"/>
+   <day state="1" date="2011-02-06"/>
+   <day state="1" date="2011-02-13"/>
+   <day state="1" date="2011-02-20"/>
+   <day state="1" date="2011-02-27"/>
+   <day state="1" date="2011-03-06"/>
+   <day state="1" date="2011-03-13"/>
+   <day state="1" date="2011-03-20"/>
+   <day state="1" date="2011-03-27"/>
+   <day state="1" date="2011-04-03"/>
+   <day state="1" date="2011-04-10"/>
+   <day state="1" date="2011-04-17"/>
+   <day state="1" date="2011-04-24"/>
+   <day state="1" date="2011-05-01"/>
+   <day state="1" date="2011-05-08"/>
+   <day state="1" date="2011-05-15"/>
+   <day state="1" date="2011-05-22"/>
+   <day state="1" date="2011-05-29"/>
+   <day state="1" date="2011-04-02"/>
+   <day state="1" date="2011-04-09"/>
+   <day state="1" date="2011-04-16"/>
+   <day state="1" date="2011-04-23"/>
+   <day state="1" date="2011-04-30"/>
+   <day state="1" date="2011-05-07"/>
+   <day state="1" date="2011-05-14"/>
+   <day state="1" date="2011-05-21"/>
+   <day state="1" date="2011-05-28"/>
+   <day state="1" date="2011-06-04"/>
+   <day state="1" date="2011-06-11"/>
+   <day state="1" date="2011-07-02"/>
+   <day state="1" date="2011-07-09"/>
+   <day state="1" date="2011-07-23"/>
+   <day state="1" date="2011-07-16"/>
+   <day state="1" date="2011-07-30"/>
+   <day state="1" date="2011-06-05"/>
+   <day state="1" date="2011-06-12"/>
+   <day state="1" date="2011-07-03"/>
+   <day state="1" date="2011-07-10"/>
+   <day state="1" date="2011-07-17"/>
+   <day state="1" date="2011-07-24"/>
+   <day state="1" date="2011-07-31"/>
+   <day state="1" date="2011-06-18"/>
+   <day state="1" date="2011-06-25"/>
+   <day state="1" date="2011-06-19"/>
+   <day state="1" date="2011-06-26"/>
+  </calendar>
+  <standard-worktime week="40h0m" day="8h0m" month="176h0m" year="1760h0m"/>
+  <task wbs="1" scheduling="FixedInterval" constraint-endtime="2010-10-29T20:00:58.774+03:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2010-10-25T08:00:58.774+03:00" leader="" id="2011-12-14T08:36:58 U7PlZUKgxb" name="Alegerea temei de licenta">
+   <estimate risk="None" expected="1" optimistic="1" pessimistic="1" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="2010-10-29T20:00:00+03:00" started="1" finished="1" startTime="2010-10-25T08:00:00+03:00">
+    <completion-entry note="" remaining-effort="0 00:00:00.0" performed-effort="0 00:00:00.0" percent-finished="100" date="2011-12-14"/>
+   </progress>
+   <schedules>
+    <schedule earlystart="2010-10-25T08:00:00+03:00" start="2010-10-25T08:00:58.774+03:00" positive-float="2 12:59:34.343" end="2010-10-29T20:00:58.774+03:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="2 12:59:34.343" not-scheduled="0" scheduling-conflict="0" end-work="2010-10-29T20:00:58.774+03:00" start-work="2010-10-25T08:00:58.774+03:00" latestart="2010-10-25T08:00:58.774+03:00" duration="4 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2010-11-01T08:00:32.117+02:00" negative-float="0 00:00:00.0" earlyfinish="2010-10-29T20:00:58.774+03:00"/>
+   </schedules>
+  </task>
+  <task wbs="2" scheduling="FixedInterval" constraint-endtime="2010-11-05T20:00:32.117+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2010-11-01T08:00:32.117+02:00" leader="" id="2011-12-14T08:37:32 w8dNIMAfed" name="Cautare si recenzie articole">
+   <estimate risk="None" expected="1" optimistic="1" pessimistic="1" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="1" finished="0" startTime="2010-11-01T08:00:00+02:00"/>
+   <schedules>
+    <schedule earlystart="2010-10-29T20:00:58.774+03:00" start="2010-11-01T08:00:32.117+02:00" positive-float="2 12:00:14.993" end="2010-11-05T20:00:32.117+02:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="2 12:00:14.993" not-scheduled="0" scheduling-conflict="0" end-work="2010-11-05T20:00:32.117+02:00" start-work="2010-11-01T08:00:32.117+02:00" latestart="2010-11-01T08:00:32.117+02:00" duration="4 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2010-11-08T08:00:46.110+02:00" negative-float="0 00:00:00.0" earlyfinish="2010-11-05T20:00:32.117+02:00"/>
+   </schedules>
+  </task>
+  <task wbs="3" scheduling="FixedInterval" constraint-endtime="2010-11-12T20:00:46.110+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2010-11-08T08:00:46.110+02:00" leader="" id="2011-12-14T08:37:46 AUPBu31q2K" name="Cerinte si specificatii">
+   <estimate risk="None" expected="1" optimistic="1" pessimistic="1" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <schedules>
+    <schedule earlystart="2010-11-05T20:00:32.117+02:00" start="2010-11-08T08:00:46.110+02:00" positive-float="1 23:59:32.624" end="2010-11-12T20:00:46.110+02:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="2 12:00:12.755" not-scheduled="0" scheduling-conflict="0" end-work="2010-11-12T20:00:46.110+02:00" start-work="2010-11-08T08:00:46.110+02:00" latestart="2010-11-08T08:00:46.110+02:00" duration="4 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2010-11-14T20:00:17.734+02:00" negative-float="0 00:00:00.0" earlyfinish="2010-11-12T20:00:46.110+02:00"/>
+   </schedules>
+  </task>
+  <task wbs="4" scheduling="FixedInterval" constraint-endtime="2010-11-26T20:00:57.865+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2010-11-15T08:00:57.865+02:00" leader="" id="2011-12-14T08:37:57 eWR3FzVZdS" name="Proiectarea functionala a aplicatiei">
+   <estimate risk="None" expected="2" optimistic="2" pessimistic="2" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <schedules>
+    <schedule earlystart="2010-11-12T20:00:46.110+02:00" start="2010-11-15T08:00:57.865+02:00" positive-float="0 00:00:00.0" end="2010-11-26T20:00:57.865+02:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" end-work="2010-11-26T20:00:57.865+02:00" start-work="2010-11-15T08:00:57.865+02:00" latestart="2010-11-14T20:00:17.734+02:00" duration="11 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2010-11-26T08:00:17.734+02:00" negative-float="0 00:00:00.0" earlyfinish="2010-11-26T20:00:57.865+02:00"/>
+   </schedules>
+  </task>
+  <task wbs="5" scheduling="MustStartOn" constraint-endtime="2010-11-26T20:00:17.734+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2010-11-26T08:00:17.734+02:00" leader="" id="2011-12-14T08:38:17 9Zamuq63Vk" name="Quality gate 1: Literature review  si proiectarea functionala">
+   <estimate risk="None" expected="0" optimistic="0" pessimistic="0" unit="d" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <schedules>
+    <schedule earlystart="2010-11-26T20:00:57.865+02:00" start="2010-11-26T20:00:57.865+02:00" positive-float="0 00:00:00.0" end="2010-11-26T20:00:57.865+02:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="2 11:59:54.165" not-scheduled="0" scheduling-conflict="1" latestart="2010-11-26T08:00:17.734+02:00" duration="0 00:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2010-11-29T08:00:50.030+02:00" negative-float="0 12:00:40.131" earlyfinish="2010-11-26T08:00:17.734+02:00"/>
+   </schedules>
+  </task>
+  <task wbs="6" scheduling="FixedInterval" constraint-endtime="2010-12-03T20:00:51.030+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2010-11-29T08:00:51.030+02:00" leader="" id="2011-12-14T08:38:51 gdD3p57qv7" name="Analiza alternative implementare">
+   <estimate risk="None" expected="1" optimistic="1" pessimistic="1" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <schedules>
+    <schedule earlystart="2010-11-26T08:00:17.734+02:00" start="2010-11-29T08:00:51.030+02:00" positive-float="2 11:59:30.98" end="2010-12-03T20:00:51.030+02:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="2 11:59:30.98" not-scheduled="0" scheduling-conflict="0" end-work="2010-12-03T20:00:51.030+02:00" start-work="2010-11-29T08:00:51.030+02:00" latestart="2010-11-29T08:00:50.030+02:00" duration="4 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2010-12-06T08:00:20.128+02:00" negative-float="0 00:00:00.0" earlyfinish="2010-12-03T20:00:51.030+02:00"/>
+   </schedules>
+  </task>
+  <task wbs="7" scheduling="ASAP" constraint-endtime="2011-12-14T08:39:04.223+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-12-14T08:39:04.223+02:00" leader="" id="2011-12-14T08:39:04 8ZdXarU5Q5" name="Studiu limbaje">
+   <estimate risk="None" expected="8" optimistic="8" pessimistic="8" unit="Y" type="Effort"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <schedules>
+    <schedule earlystart="2010-10-25T08:00:00+03:00" duration="67 11:59:41.356" in-critical-path="0" resource-overbooked="0" scheduling-conflict="0" end="2011-02-11T20:00:01.484+02:00" free-float="0 00:00:00.0" resource-not-available="0" type="Expected" id="11" name="Schedule: Plan" start="2010-12-06T08:00:20.128+02:00" not-scheduled="0" latefinish="2011-06-29T20:00:52.986+03:00" negative-float="0 00:00:00.0" resource-error="0" positive-float="0 00:00:00.0"/>
+   </schedules>
+   <task wbs="7.1" scheduling="FixedInterval" constraint-endtime="2010-12-17T20:00:20.128+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2010-12-06T08:00:20.128+02:00" leader="" id="2011-12-14T08:39:20 VZf3JXsPaL" name="UBL">
+    <estimate risk="None" expected="2" optimistic="2" pessimistic="2" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2010-12-03T20:00:51.030+02:00" start="2010-12-06T08:00:20.128+02:00" positive-float="2 12:00:12.618" end="2010-12-17T20:00:20.128+02:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="2 12:00:12.618" not-scheduled="0" scheduling-conflict="0" end-work="2010-12-17T20:00:20.128+02:00" start-work="2010-12-06T08:00:20.128+02:00" latestart="2010-12-06T08:00:20.128+02:00" duration="11 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2010-12-20T08:00:31.746+02:00" negative-float="0 00:00:00.0" earlyfinish="2010-12-17T20:00:20.128+02:00"/>
+    </schedules>
+   </task>
+   <task wbs="7.2" scheduling="FixedInterval" constraint-endtime="2010-12-31T20:00:31.746+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2010-12-20T08:00:31.746+02:00" leader="" id="2011-12-14T08:39:31 GzNImSPaMW" name="XML">
+    <estimate risk="None" expected="2" optimistic="2" pessimistic="2" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2010-12-17T20:00:20.128+02:00" start="2010-12-20T08:00:31.746+02:00" positive-float="2 12:00:17.704" end="2010-12-31T20:00:31.746+02:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="2 12:00:17.704" not-scheduled="0" scheduling-conflict="0" end-work="2010-12-31T20:00:31.746+02:00" start-work="2010-12-20T08:00:31.746+02:00" latestart="2010-12-20T08:00:31.746+02:00" duration="11 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-01-03T08:00:48.450+02:00" negative-float="0 00:00:00.0" earlyfinish="2010-12-31T20:00:31.746+02:00"/>
+    </schedules>
+   </task>
+   <task wbs="7.3" scheduling="FixedInterval" constraint-endtime="2011-01-14T20:00:48.450+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-01-03T08:00:48.450+02:00" leader="" id="2011-12-14T08:39:48 gt7DUyiXNn" name="XForms">
+    <estimate risk="None" expected="2" optimistic="2" pessimistic="2" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2010-12-31T20:00:31.746+02:00" start="2011-01-03T08:00:48.450+02:00" positive-float="2 12:00:07.429" end="2011-01-14T20:00:48.450+02:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="2 12:00:07.429" not-scheduled="0" scheduling-conflict="0" end-work="2011-01-14T20:00:48.450+02:00" start-work="2011-01-03T08:00:48.450+02:00" latestart="2011-01-03T08:00:48.450+02:00" duration="11 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-01-17T08:00:54.879+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-01-14T20:00:48.450+02:00"/>
+    </schedules>
+   </task>
+   <task wbs="7.4" scheduling="FixedInterval" constraint-endtime="2011-01-28T20:00:54.879+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-01-17T08:00:54.879+02:00" leader="" id="2011-12-14T08:39:54 3uQ6EwybWK" name="XPath">
+    <estimate risk="None" expected="2" optimistic="2" pessimistic="2" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-01-14T20:00:48.450+02:00" start="2011-01-17T08:00:54.879+02:00" positive-float="1 23:59:15.289" end="2011-01-28T20:00:54.879+02:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="2 11:59:07.605" not-scheduled="0" scheduling-conflict="0" end-work="2011-01-28T20:00:54.879+02:00" start-work="2011-01-17T08:00:54.879+02:00" latestart="2011-01-17T08:00:54.879+02:00" duration="11 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-01-30T20:00:09.168+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-01-28T20:00:54.879+02:00"/>
+    </schedules>
+   </task>
+   <task wbs="7.5" scheduling="FixedInterval" constraint-endtime="2011-02-11T20:00:01.484+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-01-31T08:00:01.484+02:00" leader="" id="2011-12-14T08:40:01 llH611XQbt" name="XQuery">
+    <estimate risk="None" expected="2" optimistic="2" pessimistic="2" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-01-28T20:00:54.879+02:00" start="2011-01-31T08:00:01.484+02:00" positive-float="0 00:00:00.0" end="2011-02-11T20:00:01.484+02:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" end-work="2011-02-11T20:00:01.484+02:00" start-work="2011-01-31T08:00:01.484+02:00" latestart="2011-01-30T20:00:09.168+02:00" duration="11 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-02-11T08:00:09.168+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-02-11T20:00:01.484+02:00"/>
+    </schedules>
+   </task>
+   <task wbs="7.6" scheduling="MustStartOn" constraint-endtime="2011-02-11T20:00:09.168+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-02-11T08:00:09.168+02:00" leader="" id="2011-12-14T08:40:09 uHmzSEw8mJ" name="Quality gate 2: Choice of programming languages and basic prototypes">
+    <estimate risk="None" expected="0" optimistic="0" pessimistic="0" unit="d" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-02-11T20:00:01.484+02:00" start="2011-02-11T20:00:01.484+02:00" positive-float="0 00:00:00.0" end="2011-02-11T20:00:01.484+02:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="2 12:00:42.427" not-scheduled="0" scheduling-conflict="1" latestart="2011-02-11T08:00:09.168+02:00" duration="0 00:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-02-14T08:00:41.911+02:00" negative-float="0 11:59:52.316" earlyfinish="2011-02-11T08:00:09.168+02:00"/>
+    </schedules>
+   </task>
+  </task>
+  <task wbs="8" scheduling="FixedInterval" constraint-endtime="2011-02-18T20:00:42.911+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-02-14T08:00:42.911+02:00" leader="" id="2011-12-14T08:40:42 pBItNEszjA" name="Review proiectare">
+   <estimate risk="None" expected="1" optimistic="1" pessimistic="1" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <schedules>
+    <schedule earlystart="2011-02-11T08:00:09.168+02:00" start="2011-02-14T08:00:42.911+02:00" positive-float="2 11:59:36.711" end="2011-02-18T20:00:42.911+02:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="2 11:59:36.711" not-scheduled="0" scheduling-conflict="0" end-work="2011-02-18T20:00:42.911+02:00" start-work="2011-02-14T08:00:42.911+02:00" latestart="2011-02-14T08:00:41.911+02:00" duration="4 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-02-21T08:00:18.622+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-02-18T20:00:42.911+02:00"/>
+   </schedules>
+  </task>
+  <task wbs="9" scheduling="FixedInterval" constraint-endtime="2011-06-29T20:00:52.986+03:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-02-14T08:00:52.986+02:00" leader="" id="2011-12-14T08:40:52 iSPnTQKrzB" name="Scrierea lucrarii de licenta">
+   <estimate risk="None" expected="5" optimistic="5" pessimistic="5" unit="M" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <schedules>
+    <schedule earlystart="2011-02-11T08:00:09.168+02:00" start="2011-02-14T08:00:52.986+02:00" positive-float="0 00:00:00.0" end="2011-06-29T20:00:52.986+03:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" end-work="2011-06-29T20:00:52.986+03:00" start-work="2011-02-14T08:00:52.986+02:00" latestart="2011-02-14T08:00:52.986+02:00" duration="135 11:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-06-29T20:00:52.986+03:00" negative-float="0 00:00:00.0" earlyfinish="2011-06-29T20:00:52.986+03:00"/>
+   </schedules>
+  </task>
+  <task wbs="10" scheduling="ASAP" constraint-endtime="2011-12-14T08:41:07.403+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-12-14T08:41:07.403+02:00" leader="" id="2011-12-14T08:41:07 lEvkgAgpwx" name="Implementare">
+   <estimate risk="None" expected="8" optimistic="8" pessimistic="8" unit="Y" type="Effort"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <schedules>
+    <schedule earlystart="2010-10-25T08:00:00+03:00" duration="114 11:00:25.757" in-critical-path="0" resource-overbooked="0" scheduling-conflict="0" end="2011-06-15T20:00:44.379+03:00" free-float="0 00:00:00.0" resource-not-available="0" type="Expected" id="11" name="Schedule: Plan" start="2011-02-21T08:00:18.622+02:00" not-scheduled="0" latefinish="2011-06-29T20:00:52.986+03:00" negative-float="0 00:00:00.0" resource-error="0" positive-float="0 00:00:00.0"/>
+   </schedules>
+   <task wbs="10.1" scheduling="FixedInterval" constraint-endtime="2011-03-11T20:00:18.622+02:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-02-21T08:00:18.622+02:00" leader="" id="2011-12-14T08:41:18 hj9zcUCSRv" name="Structurarea colectiei">
+    <estimate risk="None" expected="3" optimistic="3" pessimistic="3" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-02-18T20:00:42.911+02:00" start="2011-02-21T08:00:18.622+02:00" positive-float="2 12:00:21.541" end="2011-03-11T20:00:18.622+02:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="2 12:00:22.541" not-scheduled="0" scheduling-conflict="0" end-work="2011-03-11T20:00:18.622+02:00" start-work="2011-02-21T08:00:18.622+02:00" latestart="2011-02-21T08:00:18.622+02:00" duration="18 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-03-14T08:00:39.163+02:00" negative-float="0 00:00:00.0" earlyfinish="2011-03-11T20:00:18.622+02:00"/>
+    </schedules>
+   </task>
+   <task wbs="10.2" scheduling="FixedInterval" constraint-endtime="2011-04-08T20:00:40.163+03:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-03-14T08:00:40.163+02:00" leader="" id="2011-12-14T08:41:40 aALzvoPFfO" name="Crearea formularului cu XForms">
+    <estimate risk="None" expected="1" optimistic="1" pessimistic="1" unit="M" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-03-11T20:00:18.622+02:00" start="2011-03-14T08:00:40.163+02:00" positive-float="2 12:00:13.833" end="2011-04-08T20:00:40.163+03:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="2 12:00:14.833" not-scheduled="0" scheduling-conflict="0" end-work="2011-04-08T20:00:40.163+03:00" start-work="2011-03-14T08:00:40.163+02:00" latestart="2011-03-14T08:00:39.163+02:00" duration="25 11:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-04-11T08:00:52.996+03:00" negative-float="0 00:00:00.0" earlyfinish="2011-04-08T20:00:40.163+03:00"/>
+    </schedules>
+   </task>
+   <task wbs="10.3" scheduling="FixedInterval" constraint-endtime="2011-05-06T20:00:53.996+03:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-04-11T08:00:53.996+03:00" leader="" id="2011-12-14T08:41:53 OOcJ8HTn4N" name="Realizarea interogarii cu XQuery">
+    <estimate risk="None" expected="1" optimistic="1" pessimistic="1" unit="M" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-04-08T20:00:40.163+03:00" start="2011-04-11T08:00:53.996+03:00" positive-float="2 11:59:14.657" end="2011-05-06T20:00:53.996+03:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="2 11:59:14.657" not-scheduled="0" scheduling-conflict="0" end-work="2011-05-06T20:00:53.996+03:00" start-work="2011-04-11T08:00:53.996+03:00" latestart="2011-04-11T08:00:52.996+03:00" duration="25 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-05-09T08:00:07.653+03:00" negative-float="0 00:00:00.0" earlyfinish="2011-05-06T20:00:53.996+03:00"/>
+    </schedules>
+   </task>
+   <task wbs="10.4" scheduling="FixedInterval" constraint-endtime="2011-05-26T20:00:07.653+03:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-05-09T08:00:07.653+03:00" leader="" id="2011-12-14T08:42:07 il4pihKu7l" name="Realizarea comunicarii cu baza de date eXist">
+    <estimate risk="None" expected="3" optimistic="3" pessimistic="3" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-05-06T20:00:53.996+03:00" start="2011-05-09T08:00:07.653+03:00" positive-float="0 12:00:36.726" end="2011-05-26T20:00:07.653+03:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="0 12:00:37.726" not-scheduled="0" scheduling-conflict="0" end-work="2011-05-26T20:00:07.653+03:00" start-work="2011-05-09T08:00:07.653+03:00" latestart="2011-05-09T08:00:07.653+03:00" duration="17 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-05-27T08:00:43.379+03:00" negative-float="0 00:00:00.0" earlyfinish="2011-05-26T20:00:07.653+03:00"/>
+    </schedules>
+   </task>
+   <task wbs="10.5" scheduling="FixedInterval" constraint-endtime="2011-05-19T20:00:27.148+03:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-05-14T08:00:27.148+03:00" leader="" id="2011-12-14T08:42:27 nit8hou71X" name="Diseminare rezultate: paper Sibiu">
+    <estimate risk="None" expected="1" optimistic="1" pessimistic="1" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-02-18T20:00:42.911+02:00" start="2011-05-14T08:00:27.148+03:00" positive-float="41 00:00:25.838" end="2011-05-19T20:00:27.148+03:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" end-work="2011-05-19T20:00:27.148+03:00" start-work="2011-05-14T08:00:27.148+03:00" latestart="2011-05-14T08:00:27.148+03:00" duration="5 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-06-29T20:00:52.986+03:00" negative-float="0 00:00:00.0" earlyfinish="2011-05-19T20:00:27.148+03:00"/>
+    </schedules>
+   </task>
+   <task wbs="10.6" scheduling="FixedInterval" constraint-endtime="2011-06-15T20:00:44.379+03:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-05-27T08:00:44.379+03:00" leader="" id="2011-12-14T08:42:44 TPv4j4LApN" name="Realizarea transformarilor cu XSLT">
+    <estimate risk="None" expected="3" optimistic="3" pessimistic="3" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-05-26T20:00:07.653+03:00" start="2011-05-27T08:00:44.379+03:00" positive-float="0 11:59:38.566" end="2011-06-15T20:00:44.379+03:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="0 11:59:38.566" not-scheduled="0" scheduling-conflict="0" end-work="2011-06-15T20:00:44.379+03:00" start-work="2011-05-27T08:00:44.379+03:00" latestart="2011-05-27T08:00:43.379+03:00" duration="19 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-06-16T08:00:21.945+03:00" negative-float="0 00:00:00.0" earlyfinish="2011-06-15T20:00:44.379+03:00"/>
+    </schedules>
+   </task>
+   <task wbs="10.7" scheduling="FixedInterval" constraint-endtime="2011-06-10T20:00:45.299+03:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-06-06T08:00:45.299+03:00" leader="" id="2011-12-14T08:42:45 WX6aNoFhhN" name="Diseminare rezultate: conferinta studentilor">
+    <estimate risk="None" expected="1" optimistic="1" pessimistic="1" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+    <workpackage owner="" owner-id=""/>
+    <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+    <schedules>
+     <schedule earlystart="2011-02-18T20:00:42.911+02:00" start="2011-06-06T08:00:45.299+03:00" positive-float="19 00:00:07.687" end="2011-06-10T20:00:45.299+03:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" end-work="2011-06-10T20:00:45.299+03:00" start-work="2011-06-06T08:00:45.299+03:00" latestart="2011-06-06T08:00:45.299+03:00" duration="4 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-06-29T20:00:52.986+03:00" negative-float="0 00:00:00.0" earlyfinish="2011-06-10T20:00:45.299+03:00"/>
+    </schedules>
+   </task>
+  </task>
+  <task wbs="11" scheduling="FixedInterval" constraint-endtime="2011-06-22T20:00:21.945+03:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-06-16T08:00:21.945+03:00" leader="" id="2011-12-14T08:43:21 QU3Kbk8TpA" name="Testarea aplicatiei">
+   <estimate risk="None" expected="1" optimistic="1" pessimistic="1" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <schedules>
+    <schedule earlystart="2011-06-15T20:00:44.379+03:00" start="2011-06-16T08:00:21.945+03:00" positive-float="0 12:00:08.268" end="2011-06-22T20:00:21.945+03:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="0 12:00:08.268" not-scheduled="0" scheduling-conflict="0" end-work="2011-06-22T20:00:21.945+03:00" start-work="2011-06-16T08:00:21.945+03:00" latestart="2011-06-16T08:00:21.945+03:00" duration="6 12:00:00.0" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-06-23T08:00:29.213+03:00" negative-float="0 00:00:00.0" earlyfinish="2011-06-22T20:00:21.945+03:00"/>
+   </schedules>
+  </task>
+  <task wbs="12" scheduling="FixedInterval" constraint-endtime="2011-06-29T20:00:29.214+03:00" description="" startup-cost="0" shutdown-cost="0" constraint-starttime="2011-06-23T08:00:29.213+03:00" leader="" id="2011-12-14T08:43:29 1HXwLEyeNn" name="Modificari si completari licenta">
+   <estimate risk="None" expected="1" optimistic="1" pessimistic="1" unit="w" calendar-id="2011-12-14T09:16:20 BreET2HhXq" type="Duration"/>
+   <workpackage owner="" owner-id=""/>
+   <progress entrymode="EnterCompleted" finishTime="" started="0" finished="0" startTime=""/>
+   <schedules>
+    <schedule earlystart="2011-06-22T20:00:21.945+03:00" start="2011-06-23T08:00:29.213+03:00" positive-float="0 00:00:23.772" end="2011-06-29T20:00:29.214+03:00" in-critical-path="0" id="11" resource-overbooked="0" name="Schedule: Plan" free-float="0 00:00:00.0" not-scheduled="0" scheduling-conflict="0" end-work="2011-06-29T20:00:29.214+03:00" start-work="2011-06-23T08:00:29.213+03:00" latestart="2011-06-23T08:00:29.213+03:00" duration="6 12:00:00.1" resource-error="0" resource-not-available="0" type="Expected" latefinish="2011-06-29T20:00:52.986+03:00" negative-float="0 00:00:00.0" earlyfinish="2011-06-29T20:00:29.214+03:00"/>
+   </schedules>
+  </task>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:36:58 U7PlZUKgxb" lag="0 00:00:00.0" child-id="2011-12-14T08:37:32 w8dNIMAfed"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:37:32 w8dNIMAfed" lag="0 00:00:00.0" child-id="2011-12-14T08:37:46 AUPBu31q2K"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:37:46 AUPBu31q2K" lag="0 00:00:00.0" child-id="2011-12-14T08:37:57 eWR3FzVZdS"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:37:57 eWR3FzVZdS" lag="0 00:00:00.0" child-id="2011-12-14T08:38:17 9Zamuq63Vk"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:38:17 9Zamuq63Vk" lag="0 00:00:00.0" child-id="2011-12-14T08:38:51 gdD3p57qv7"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:38:51 gdD3p57qv7" lag="0 00:00:00.0" child-id="2011-12-14T08:39:04 8ZdXarU5Q5"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:39:20 VZf3JXsPaL" lag="0 00:00:00.0" child-id="2011-12-14T08:39:31 GzNImSPaMW"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:39:31 GzNImSPaMW" lag="0 00:00:00.0" child-id="2011-12-14T08:39:48 gt7DUyiXNn"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:39:48 gt7DUyiXNn" lag="0 00:00:00.0" child-id="2011-12-14T08:39:54 3uQ6EwybWK"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:39:54 3uQ6EwybWK" lag="0 00:00:00.0" child-id="2011-12-14T08:40:01 llH611XQbt"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:40:01 llH611XQbt" lag="0 00:00:00.0" child-id="2011-12-14T08:40:09 uHmzSEw8mJ"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:40:09 uHmzSEw8mJ" lag="0 00:00:00.0" child-id="2011-12-14T08:40:42 pBItNEszjA"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:40:09 uHmzSEw8mJ" lag="0 00:00:00.0" child-id="2011-12-14T08:40:52 iSPnTQKrzB"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:40:42 pBItNEszjA" lag="0 00:00:00.0" child-id="2011-12-14T08:41:07 lEvkgAgpwx"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:41:18 hj9zcUCSRv" lag="0 00:00:00.0" child-id="2011-12-14T08:41:40 aALzvoPFfO"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:41:40 aALzvoPFfO" lag="0 00:00:00.0" child-id="2011-12-14T08:41:53 OOcJ8HTn4N"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:41:53 OOcJ8HTn4N" lag="0 00:00:00.0" child-id="2011-12-14T08:42:07 il4pihKu7l"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:42:07 il4pihKu7l" lag="0 00:00:00.0" child-id="2011-12-14T08:42:44 TPv4j4LApN"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:42:44 TPv4j4LApN" lag="0 00:00:00.0" child-id="2011-12-14T08:43:21 QU3Kbk8TpA"/>
+  <relation type="Finish-Start" parent-id="2011-12-14T08:43:21 QU3Kbk8TpA" lag="0 00:00:00.0" child-id="2011-12-14T08:43:29 1HXwLEyeNn"/>
+  <schedules>
+   <plan scheduling-direction="0" recalculate-from="" check-external-appointments="1" distribution="0" baselined="1" recalculate="0" id="RrEILFDf0j" overbooking="0" name="Plan" scheduler-plugin-id="">
+    <schedule duration="247 12:00:52.986" scheduling-conflict="1" end="2011-06-29T20:00:52.986+03:00" type="Expected" id="11" name="Schedule: Plan" start="2010-10-25T08:00:00+03:00"/>
+   </plan>
+  </schedules>
+ </project>
+</kplato>

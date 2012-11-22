@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specificationSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns="http://www.yawlfoundation.org/yawlschema"
+                  xsi:schemaLocation="http://www.yawlfoundation.org/yawlschema http://www.yawlfoundation.org/yawlschema/YAWL_Schema2.2.xsd"
+                  version="2.2">
+   <specification uri="Eto">
+      <metaData xmlns="http://www.w3.org/1999/xhtml">
+         <creator>cris</creator>
+         <description>No description has been given.</description>
+         <version>1.1</version>
+         <persistent>false</persistent>
+         <identifier>UID_bb69af42-714e-4a05-87dc-6d11cad683be</identifier>
+      </metaData>
+      <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"/>
+      <decomposition xmlns="http://www.w3.org/1999/xhtml" id="engineering" xsi:type="NetFactsType">
+         <processControlElements>
+            <inputCondition id="InputCondition">
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+            </inputCondition>
+            <task id="mec design">
+               <name>mec design</name>
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ele design">
+               <name>ele design</name>
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <outputCondition id="OutputCondition"/>
+         </processControlElements>
+      </decomposition>
+      <decomposition xmlns="http://www.w3.org/1999/xhtml" id="procurement" xsi:type="NetFactsType">
+         <processControlElements>
+            <inputCondition id="InputCondition">
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+            </inputCondition>
+            <task id="orders">
+               <name>orders</name>
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="material arrival">
+               <name>material arrival</name>
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="material check">
+               <name>material check</name>
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <outputCondition id="OutputCondition"/>
+         </processControlElements>
+      </decomposition>
+      <decomposition xmlns="http://www.w3.org/1999/xhtml" id="constuction" xsi:type="NetFactsType">
+         <processControlElements>
+            <inputCondition id="InputCondition">
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+            </inputCondition>
+            <task id="assembly">
+               <name>assembly</name>
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="coating">
+               <name>coating</name>
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="un-installation">
+               <name>un-installation</name>
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <outputCondition id="OutputCondition"/>
+         </processControlElements>
+      </decomposition>
+      <decomposition xmlns="http://www.w3.org/1999/xhtml" id="delivery" xsi:type="NetFactsType">
+         <processControlElements>
+            <inputCondition id="InputCondition">
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+            </inputCondition>
+            <task id="marking and packing">
+               <name>marking and packing</name>
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="transport">
+               <name>transport</name>
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <outputCondition id="OutputCondition"/>
+         </processControlElements>
+      </decomposition>
+      <decomposition xmlns="http://www.w3.org/1999/xhtml" id="installation" xsi:type="NetFactsType">
+         <processControlElements>
+            <inputCondition id="InputCondition">
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+            </inputCondition>
+            <task id="check at arrival">
+               <name>check at arrival</name>
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="installation">
+               <name>installation</name>
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="commissioning">
+               <name>commissioning</name>
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="dinner">
+               <name>dinner</name>
+               <flowsInto>
+                  <nextElementRef id=""/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <outputCondition id="OutputCondition"/>
+         </processControlElements>
+      </decomposition>
+   </specification>
+   <layout xmlns="http://www.w3.org/1999/xhtml">
+      <locale language="en" country="US"/>
+      <specification id="Eto">
+         <size w="137" h="117"/>
+         <net id="engineering">
+            <bounds w="1198" h="285" y="0" x="0"/>
+            <frame w="1201" h="288" y="24" x="2"/>
+            <viewport w="1201" h="288" y="0" x="0"/>
+            <vertex id="InputCondition">
+               <attributes>
+                  <bounds w="32.0" h="32.0" y="112.0" x="36.0"/>
+               </attributes>
+            </vertex>
+            <vertex id="OutputCondition">
+               <attributes>
+                  <bounds w="32.0" h="32.0" y="112.0" x="676.0"/>
+               </attributes>
+            </vertex>
+            <container id="mec design">
+               <vertex>
+                  <attributes>
+                     <bounds w="32.0" h="32.0" y="48.0" x="328.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="96.0" h="18.0" y="80.0" x="296.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ele design">
+               <vertex>
+                  <attributes>
+                     <bounds w="32.0" h="32.0" y="48.0" x="328.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="96.0" h="18.0" y="80.0" x="296.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <flow source="mec design" target="mec design">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ele design" target="ele design">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+         </net>
+         <net id="procurement">
+            <bounds w="1198" h="285" y="0" x="0"/>
+            <frame w="1201" h="288" y="24" x="2"/>
+            <viewport w="1201" h="288" y="0" x="0"/>
+            <vertex id="InputCondition">
+               <attributes>
+                  <bounds w="32.0" h="32.0" y="112.0" x="36.0"/>
+               </attributes>
+            </vertex>
+            <vertex id="OutputCondition">
+               <attributes>
+                  <bounds w="32.0" h="32.0" y="112.0" x="676.0"/>
+               </attributes>
+            </vertex>
+            <container id="orders">
+               <vertex>
+                  <attributes>
+                     <bounds w="32.0" h="32.0" y="48.0" x="328.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="96.0" h="18.0" y="80.0" x="296.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="material arrival">
+               <vertex>
+                  <attributes>
+                     <bounds w="32.0" h="32.0" y="48.0" x="328.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="96.0" h="18.0" y="80.0" x="296.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="material check">
+               <vertex>
+                  <attributes>
+                     <bounds w="32.0" h="32.0" y="48.0" x="328.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="96.0" h="18.0" y="80.0" x="296.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <flow source="orders" target="orders">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="material arrival" target="material arrival">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="material check" target="material check">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+         </net>
+         <net id="constuction">
+            <bounds w="1198" h="285" y="0" x="0"/>
+            <frame w="1201" h="288" y="24" x="2"/>
+            <viewport w="1201" h="288" y="0" x="0"/>
+            <vertex id="InputCondition">
+               <attributes>
+                  <bounds w="32.0" h="32.0" y="112.0" x="36.0"/>
+               </attributes>
+            </vertex>
+            <vertex id="OutputCondition">
+               <attributes>
+                  <bounds w="32.0" h="32.0" y="112.0" x="676.0"/>
+               </attributes>
+            </vertex>
+            <container id="assembly">
+               <vertex>
+                  <attributes>
+                     <bounds w="32.0" h="32.0" y="48.0" x="328.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="96.0" h="18.0" y="80.0" x="296.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="coating">
+               <vertex>
+                  <attributes>
+                     <bounds w="32.0" h="32.0" y="48.0" x="328.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="96.0" h="18.0" y="80.0" x="296.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="un-installation">
+               <vertex>
+                  <attributes>
+                     <bounds w="32.0" h="32.0" y="48.0" x="328.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="96.0" h="18.0" y="80.0" x="296.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <flow source="assembly" target="assembly">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="coating" target="coating">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="un-installation" target="un-installation">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+         </net>
+         <net id="delivery">
+            <bounds w="1198" h="285" y="0" x="0"/>
+            <frame w="1201" h="288" y="24" x="2"/>
+            <viewport w="1201" h="288" y="0" x="0"/>
+            <vertex id="InputCondition">
+               <attributes>
+                  <bounds w="32.0" h="32.0" y="112.0" x="36.0"/>
+               </attributes>
+            </vertex>
+            <vertex id="OutputCondition">
+               <attributes>
+                  <bounds w="32.0" h="32.0" y="112.0" x="676.0"/>
+               </attributes>
+            </vertex>
+            <container id="marking and packing">
+               <vertex>
+                  <attributes>
+                     <bounds w="32.0" h="32.0" y="48.0" x="328.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="96.0" h="18.0" y="80.0" x="296.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="transport">
+               <vertex>
+                  <attributes>
+                     <bounds w="32.0" h="32.0" y="48.0" x="328.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="96.0" h="18.0" y="80.0" x="296.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <flow source="marking and packing" target="marking and packing">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="transport" target="transport">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+         </net>
+         <net id="installation">
+            <bounds w="1198" h="285" y="0" x="0"/>
+            <frame w="1201" h="288" y="24" x="2"/>
+            <viewport w="1201" h="288" y="0" x="0"/>
+            <vertex id="InputCondition">
+               <attributes>
+                  <bounds w="32.0" h="32.0" y="112.0" x="36.0"/>
+               </attributes>
+            </vertex>
+            <vertex id="OutputCondition">
+               <attributes>
+                  <bounds w="32.0" h="32.0" y="112.0" x="676.0"/>
+               </attributes>
+            </vertex>
+            <container id="check at arrival">
+               <vertex>
+                  <attributes>
+                     <bounds w="32.0" h="32.0" y="48.0" x="328.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="96.0" h="18.0" y="80.0" x="296.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="installation">
+               <vertex>
+                  <attributes>
+                     <bounds w="32.0" h="32.0" y="48.0" x="328.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="96.0" h="18.0" y="80.0" x="296.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="commissioning">
+               <vertex>
+                  <attributes>
+                     <bounds w="32.0" h="32.0" y="48.0" x="328.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="96.0" h="18.0" y="80.0" x="296.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="dinner">
+               <vertex>
+                  <attributes>
+                     <bounds w="32.0" h="32.0" y="48.0" x="328.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="96.0" h="18.0" y="80.0" x="296.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <flow source="check at arrival" target="check at arrival">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="installation" target="installation">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="commissioning" target="commissioning">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="dinner" target="dinner">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+         </net>
+      </specification>
+   </layout>
+</specificationSet>
