@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProjectManagementSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         xmlns="http://www.pacificedge.com/PMXML"
+                         xsi:schemaLocation="http://www.pacificedge.com/PMXML file:/home/cris/Disertatie/KP2PMXML/pmxml_schema.xsd">
+   <InstanceData xmlns="">
+      <UserID>1</UserID>
+      <UserName>cris</UserName>
+      <AppName>1</AppName>
+      <AppVersion>0.6.5</AppVersion>
+      <Generated/>
+      <SchemaVersion/>
+      <Projects>
+         <ProjectName projectID="1">eto project</ProjectName>
+      </Projects>
+   </InstanceData>
+   <PoolResources>
+      <PoolResource xmlns="" ResourceID="1">
+         <PersistentID>1</PersistentID>
+         <FormattedName>mec designer</FormattedName>
+         <FirstName/>
+         <LastName/>
+         <MiddleName/>
+         <Initials>md</Initials>
+         <EmailAddress>md@kplato.org</EmailAddress>
+         <MaxQuantity>100</MaxQuantity>
+         <Type>1</Type>
+         <Cost>30.00</Cost>
+         <OvertimeCost>60.00</OvertimeCost>
+         <PlannedStart>2010-11-04T00:00:00+02:00</PlannedStart>
+         <PlannedFinish>2012-11-04T00:00:00+02:00</PlannedFinish>
+         <ActualStart/>
+         <ActualFinish/>
+         <AvailableFrom>2010-11-04T00:00:00+02:00</AvailableFrom>
+         <AvailableTo>2012-11-04T00:00:00+02:00</AvailableTo>
+      </PoolResource>
+      <PoolResource xmlns="" ResourceID="1">
+         <PersistentID>1</PersistentID>
+         <FormattedName>ele designer</FormattedName>
+         <FirstName/>
+         <LastName/>
+         <MiddleName/>
+         <Initials>ed</Initials>
+         <EmailAddress>ed@kplato.org</EmailAddress>
+         <MaxQuantity>100</MaxQuantity>
+         <Type>1</Type>
+         <Cost>30.00</Cost>
+         <OvertimeCost>60.00</OvertimeCost>
+         <PlannedStart>2010-11-04T00:00:00+02:00</PlannedStart>
+         <PlannedFinish>2012-11-04T00:00:00+02:00</PlannedFinish>
+         <ActualStart/>
+         <ActualFinish/>
+         <AvailableFrom>2010-11-04T00:00:00+02:00</AvailableFrom>
+         <AvailableTo>2012-11-04T00:00:00+02:00</AvailableTo>
+      </PoolResource>
+      <PoolResource xmlns="" ResourceID="1">
+         <PersistentID>1</PersistentID>
+         <FormattedName>purchaser1</FormattedName>
+         <FirstName/>
+         <LastName/>
+         <MiddleName/>
+         <Initials>pd</Initials>
+         <EmailAddress>pd@kplato.org</EmailAddress>
+         <MaxQuantity>100</MaxQuantity>
+         <Type>1</Type>
+         <Cost>22.00</Cost>
+         <OvertimeCost>44.00</OvertimeCost>
+         <PlannedStart>2010-11-04T00:00:00+02:00</PlannedStart>
+         <PlannedFinish>2012-11-04T00:00:00+02:00</PlannedFinish>
+         <ActualStart/>
+         <ActualFinish/>
+         <AvailableFrom>2010-11-04T00:00:00+02:00</AvailableFrom>
+         <AvailableTo>2012-11-04T00:00:00+02:00</AvailableTo>
+      </PoolResource>
+      <PoolResource xmlns="" ResourceID="1">
+         <PersistentID>1</PersistentID>
+         <FormattedName>worker 1</FormattedName>
+         <FirstName/>
+         <LastName/>
+         <MiddleName/>
+         <Initials>w1</Initials>
+         <EmailAddress>w1@kplato.org</EmailAddress>
+         <MaxQuantity>100</MaxQuantity>
+         <Type>1</Type>
+         <Cost>20.00</Cost>
+         <OvertimeCost>40.00</OvertimeCost>
+         <PlannedStart>2010-11-04T00:00:00+02:00</PlannedStart>
+         <PlannedFinish>2012-11-04T00:00:00+02:00</PlannedFinish>
+         <ActualStart/>
+         <ActualFinish/>
+         <AvailableFrom>2010-11-04T00:00:00+02:00</AvailableFrom>
+         <AvailableTo>2012-11-04T00:00:00+02:00</AvailableTo>
+      </PoolResource>
+      <PoolResource xmlns="" ResourceID="1">
+         <PersistentID>1</PersistentID>
+         <FormattedName>worker 2</FormattedName>
+         <FirstName/>
+         <LastName/>
+         <MiddleName/>
+         <Initials>w2</Initials>
+         <EmailAddress>w2@kplato.org</EmailAddress>
+         <MaxQuantity>100</MaxQuantity>
+         <Type>1</Type>
+         <Cost>20.00</Cost>
+         <OvertimeCost>40.00</OvertimeCost>
+         <PlannedStart>2010-11-04T00:00:00+02:00</PlannedStart>
+         <PlannedFinish>2012-11-04T00:00:00+02:00</PlannedFinish>
+         <ActualStart/>
+         <ActualFinish/>
+         <AvailableFrom>2010-11-04T00:00:00+02:00</AvailableFrom>
+         <AvailableTo>2012-11-04T00:00:00+02:00</AvailableTo>
+      </PoolResource>
+      <PoolResource xmlns="" ResourceID="1">
+         <PersistentID>1</PersistentID>
+         <FormattedName>cnc machine</FormattedName>
+         <FirstName/>
+         <LastName/>
+         <MiddleName/>
+         <Initials/>
+         <EmailAddress/>
+         <MaxQuantity>100</MaxQuantity>
+         <Type>0</Type>
+         <Cost>30.00</Cost>
+         <OvertimeCost>30.00</OvertimeCost>
+         <PlannedStart>2010-11-04T00:00:00+02:00</PlannedStart>
+         <PlannedFinish>2012-11-04T00:00:00+02:00</PlannedFinish>
+         <ActualStart/>
+         <ActualFinish/>
+         <AvailableFrom>2010-11-04T00:00:00+02:00</AvailableFrom>
+         <AvailableTo>2012-11-04T00:00:00+02:00</AvailableTo>
+      </PoolResource>
+      <PoolResource xmlns="" ResourceID="1">
+         <PersistentID>1</PersistentID>
+         <FormattedName>assembly tools</FormattedName>
+         <FirstName/>
+         <LastName/>
+         <MiddleName/>
+         <Initials/>
+         <EmailAddress/>
+         <MaxQuantity>100</MaxQuantity>
+         <Type>0</Type>
+         <Cost>2.00</Cost>
+         <OvertimeCost>2.00</OvertimeCost>
+         <PlannedStart>2010-12-04T00:00:00+02:00</PlannedStart>
+         <PlannedFinish>2012-11-04T00:00:00+02:00</PlannedFinish>
+         <ActualStart/>
+         <ActualFinish/>
+         <AvailableFrom>2010-12-04T00:00:00+02:00</AvailableFrom>
+         <AvailableTo>2012-11-04T00:00:00+02:00</AvailableTo>
+      </PoolResource>
+      <PoolResource xmlns="" ResourceID="1">
+         <PersistentID>1</PersistentID>
+         <FormattedName>supervisor</FormattedName>
+         <FirstName/>
+         <LastName/>
+         <MiddleName/>
+         <Initials>sv</Initials>
+         <EmailAddress>sv@kplato.org</EmailAddress>
+         <MaxQuantity>100</MaxQuantity>
+         <Type>1</Type>
+         <Cost>70.00</Cost>
+         <OvertimeCost>140.00</OvertimeCost>
+         <PlannedStart>2010-11-04T00:00:00+02:00</PlannedStart>
+         <PlannedFinish>2012-11-04T00:00:00+02:00</PlannedFinish>
+         <ActualStart/>
+         <ActualFinish/>
+         <AvailableFrom>2010-11-04T00:00:00+02:00</AvailableFrom>
+         <AvailableTo>2012-11-04T00:00:00+02:00</AvailableTo>
+      </PoolResource>
+      <PoolResource xmlns="" ResourceID="1">
+         <PersistentID>1</PersistentID>
+         <FormattedName>commissioning</FormattedName>
+         <FirstName/>
+         <LastName/>
+         <MiddleName/>
+         <Initials>co</Initials>
+         <EmailAddress>co@kplato.org</EmailAddress>
+         <MaxQuantity>100</MaxQuantity>
+         <Type>1</Type>
+         <Cost>80.00</Cost>
+         <OvertimeCost>160.00</OvertimeCost>
+         <PlannedStart>2010-11-04T00:00:00+02:00</PlannedStart>
+         <PlannedFinish>2012-11-04T00:00:00+02:00</PlannedFinish>
+         <ActualStart/>
+         <ActualFinish/>
+         <AvailableFrom>2010-11-04T00:00:00+02:00</AvailableFrom>
+         <AvailableTo>2012-11-04T00:00:00+02:00</AvailableTo>
+      </PoolResource>
+   </PoolResources>
+   <Projects count="0">
+      <Project xmlns="" ProjectID="1">
+         <PersistentID application="1">1</PersistentID>
+         <ProjectName>eto project</ProjectName>
+         <LastModified/>
+         <Description>Engineering To Order</Description>
+         <Title>eto project</Title>
+         <Author>cris</Author>
+         <Category/>
+         <Company/>
+         <StatusDate/>
+         <Manager>cris</Manager>
+         <Subject>eto project</Subject>
+         <CreatedDate/>
+         <HoursPerDay>8</HoursPerDay>
+         <DaysPerMonth>22</DaysPerMonth>
+         <HoursPerWeek>40</HoursPerWeek>
+         <PlannedStart>2010-11-01T00:00:00+02:00</PlannedStart>
+         <PlannedFinish>2012-11-04T00:00:00+02:00</PlannedFinish>
+         <ActualStart/>
+         <ActualFinish/>
+         <EarlyStart/>
+         <EarlyFinish/>
+         <LateStart/>
+         <LateFinish/>
+         <Resources>
+            <Resource ResourceID="1"/>
+            <Resource ResourceID="1"/>
+            <Resource ResourceID="1"/>
+            <Resource ResourceID="1"/>
+            <Resource ResourceID="1"/>
+            <Resource ResourceID="1"/>
+            <Resource ResourceID="1"/>
+            <Resource ResourceID="1"/>
+            <Resource ResourceID="1"/>
+         </Resources>
+         <Tasks>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>engineering</TaskName>
+               <IsSummary>1</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>1</TaskOrderID>
+               <ParentTaskID>0</ParentTaskID>
+               <ParentPersistentID>0</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete></PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>1</WBS>
+               <PlannedStart>2011-11-14T20:57:26.685+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:57:26.685+02:00</PlannedFinish>
+               <ActualStart>2010-11-04T08:00:00+02:00</ActualStart>
+               <ActualFinish/>
+               <!--      <ActualDuration>{string($task/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> --><EarlyStart>2010-11-01T00:00:00+02:00</EarlyStart>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish>2011-03-10T04:32:00+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>procurement</TaskName>
+               <IsSummary>1</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>2</TaskOrderID>
+               <ParentTaskID>0</ParentTaskID>
+               <ParentPersistentID>0</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete></PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>2</WBS>
+               <PlannedStart>2011-11-14T20:57:36.885+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:57:36.885+02:00</PlannedFinish>
+               <ActualStart>2010-11-18T12:00:00+02:00</ActualStart>
+               <ActualFinish/>
+               <!--      <ActualDuration>{string($task/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> --><EarlyStart>2010-11-01T00:00:00+02:00</EarlyStart>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish>2011-03-10T04:32:00+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>constuction</TaskName>
+               <IsSummary>1</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>3</TaskOrderID>
+               <ParentTaskID>0</ParentTaskID>
+               <ParentPersistentID>0</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete></PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>3</WBS>
+               <PlannedStart>2011-11-14T20:58:05.478+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:58:05.478+02:00</PlannedFinish>
+               <ActualStart>2011-01-18T14:49:08.571+02:00</ActualStart>
+               <ActualFinish/>
+               <!--      <ActualDuration>{string($task/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> --><EarlyStart>2010-11-01T00:00:00+02:00</EarlyStart>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish>2011-03-10T04:32:00+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>delivery</TaskName>
+               <IsSummary>1</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>4</TaskOrderID>
+               <ParentTaskID>0</ParentTaskID>
+               <ParentPersistentID>0</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete></PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>4</WBS>
+               <PlannedStart>2011-11-14T20:58:18.333+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:58:18.333+02:00</PlannedFinish>
+               <ActualStart>2011-01-24T14:57:08.571+02:00</ActualStart>
+               <ActualFinish/>
+               <!--      <ActualDuration>{string($task/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> --><EarlyStart>2010-11-01T00:00:00+02:00</EarlyStart>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish>2011-03-10T04:32:00+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>installation</TaskName>
+               <IsSummary>1</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>5</TaskOrderID>
+               <ParentTaskID>0</ParentTaskID>
+               <ParentPersistentID>0</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete></PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>5</WBS>
+               <PlannedStart>2011-11-14T20:58:23.141+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:58:23.141+02:00</PlannedFinish>
+               <ActualStart>2011-02-23T02:00:00+02:00</ActualStart>
+               <ActualFinish/>
+               <!--      <ActualDuration>{string($task/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> --><EarlyStart>2010-11-01T00:00:00+02:00</EarlyStart>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish>2011-03-10T04:32:00+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>mec design</TaskName>
+               <IsSummary>0</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>1</TaskOrderID>
+               <ParentTaskID>1</ParentTaskID>
+               <ParentPersistentID>1</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete>{xs:int(string($subtask/*[name()='progress']/*[name()='completition-entry']/@percent-finished))}</PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>1.1</WBS>
+               <PlannedStart>2011-11-14T20:58:37.389+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:58:37.389+02:00</PlannedFinish>
+               <ActualStart>2010-11-04T08:00:00+02:00</ActualStart>
+               <ActualFinish>2010-11-18T12:00:00+02:00</ActualFinish>
+               <!--    <ActualDuration>{string($subtask/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> 
+                    <RemainingDuration>{string($subtask/*[name()='progress']/*[name()='completition-entry']/@remaining-effort)}</RemainingDuration> --><EarlyStart>2010-11-04T08:00:00+02:00</EarlyStart>
+               <EarlyFinish>2010-11-18T12:00:00+02:00</EarlyFinish>
+               <LateStart>2010-11-04T08:42:51.999+02:00</LateStart>
+               <LateFinish>2010-11-18T12:42:51.999+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>ele design</TaskName>
+               <IsSummary>0</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>2</TaskOrderID>
+               <ParentTaskID>1</ParentTaskID>
+               <ParentPersistentID>1</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete>{xs:int(string($subtask/*[name()='progress']/*[name()='completition-entry']/@percent-finished))}</PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>1.2</WBS>
+               <PlannedStart>2011-11-14T20:58:42.445+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:58:42.445+02:00</PlannedFinish>
+               <ActualStart>2010-11-04T08:00:00+02:00</ActualStart>
+               <ActualFinish>2010-11-11T10:00:00+02:00</ActualFinish>
+               <!--    <ActualDuration>{string($subtask/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> 
+                    <RemainingDuration>{string($subtask/*[name()='progress']/*[name()='completition-entry']/@remaining-effort)}</RemainingDuration> --><EarlyStart>2010-11-04T08:00:00+02:00</EarlyStart>
+               <EarlyFinish>2010-11-11T10:00:00+02:00</EarlyFinish>
+               <LateStart>2010-11-11T10:42:51.999+02:00</LateStart>
+               <LateFinish>2010-11-18T12:42:51.999+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>orders</TaskName>
+               <IsSummary>0</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>1</TaskOrderID>
+               <ParentTaskID>2</ParentTaskID>
+               <ParentPersistentID>2</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete>{xs:int(string($subtask/*[name()='progress']/*[name()='completition-entry']/@percent-finished))}</PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>2.1</WBS>
+               <PlannedStart>2011-11-14T20:58:49.869+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:58:49.869+02:00</PlannedFinish>
+               <ActualStart>2010-11-18T12:00:00+02:00</ActualStart>
+               <ActualFinish>2010-11-22T12:12:00+02:00</ActualFinish>
+               <!--    <ActualDuration>{string($subtask/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> 
+                    <RemainingDuration>{string($subtask/*[name()='progress']/*[name()='completition-entry']/@remaining-effort)}</RemainingDuration> --><EarlyStart>2010-11-18T12:00:00+02:00</EarlyStart>
+               <EarlyFinish>2010-11-22T12:12:00+02:00</EarlyFinish>
+               <LateStart>2010-11-18T12:42:51.999+02:00</LateStart>
+               <LateFinish>2010-11-22T12:54:51.999+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>material arrival</TaskName>
+               <IsSummary>0</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>2</TaskOrderID>
+               <ParentTaskID>2</ParentTaskID>
+               <ParentPersistentID>2</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete>{xs:int(string($subtask/*[name()='progress']/*[name()='completition-entry']/@percent-finished))}</PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>2.2</WBS>
+               <PlannedStart>2011-11-14T20:58:53.741+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:58:53.741+02:00</PlannedFinish>
+               <ActualStart>2010-11-22T12:12:00+02:00</ActualStart>
+               <ActualFinish>2011-01-17T14:29:08.571+02:00</ActualFinish>
+               <!--    <ActualDuration>{string($subtask/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> 
+                    <RemainingDuration>{string($subtask/*[name()='progress']/*[name()='completition-entry']/@remaining-effort)}</RemainingDuration> --><EarlyStart>2010-11-22T12:12:00+02:00</EarlyStart>
+               <EarlyFinish>2011-01-17T14:29:08.571+02:00</EarlyFinish>
+               <LateStart>2010-11-22T12:54:51.999+02:00</LateStart>
+               <LateFinish>2011-01-17T15:12:00+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>material check</TaskName>
+               <IsSummary>0</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>3</TaskOrderID>
+               <ParentTaskID>2</ParentTaskID>
+               <ParentPersistentID>2</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete>{xs:int(string($subtask/*[name()='progress']/*[name()='completition-entry']/@percent-finished))}</PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>2.3</WBS>
+               <PlannedStart>2011-11-14T20:58:59.358+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:58:59.358+02:00</PlannedFinish>
+               <ActualStart>2011-01-17T14:29:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-18T14:49:08.571+02:00</ActualFinish>
+               <!--    <ActualDuration>{string($subtask/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> 
+                    <RemainingDuration>{string($subtask/*[name()='progress']/*[name()='completition-entry']/@remaining-effort)}</RemainingDuration> --><EarlyStart>2011-01-17T14:29:08.571+02:00</EarlyStart>
+               <EarlyFinish>2011-01-18T14:49:08.571+02:00</EarlyFinish>
+               <LateStart>2011-01-17T15:12:00+02:00</LateStart>
+               <LateFinish>2011-01-18T15:32:00+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>assembly</TaskName>
+               <IsSummary>0</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>1</TaskOrderID>
+               <ParentTaskID>3</ParentTaskID>
+               <ParentPersistentID>3</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete>{xs:int(string($subtask/*[name()='progress']/*[name()='completition-entry']/@percent-finished))}</PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>3.1</WBS>
+               <PlannedStart>2011-11-14T20:59:05.590+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:59:05.590+02:00</PlannedFinish>
+               <ActualStart>2011-01-18T14:49:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-20T14:47:08.571+02:00</ActualFinish>
+               <!--    <ActualDuration>{string($subtask/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> 
+                    <RemainingDuration>{string($subtask/*[name()='progress']/*[name()='completition-entry']/@remaining-effort)}</RemainingDuration> --><EarlyStart>2011-01-18T14:49:08.571+02:00</EarlyStart>
+               <EarlyFinish>2011-01-20T14:47:08.571+02:00</EarlyFinish>
+               <LateStart>2011-01-18T15:32:00+02:00</LateStart>
+               <LateFinish>2011-01-20T15:30:00+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>coating</TaskName>
+               <IsSummary>0</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>2</TaskOrderID>
+               <ParentTaskID>3</ParentTaskID>
+               <ParentPersistentID>3</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete>{xs:int(string($subtask/*[name()='progress']/*[name()='completition-entry']/@percent-finished))}</PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>3.2</WBS>
+               <PlannedStart>2011-11-14T20:59:11.814+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:59:11.814+02:00</PlannedFinish>
+               <ActualStart>2011-01-20T14:47:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-21T14:57:08.571+02:00</ActualFinish>
+               <!--    <ActualDuration>{string($subtask/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> 
+                    <RemainingDuration>{string($subtask/*[name()='progress']/*[name()='completition-entry']/@remaining-effort)}</RemainingDuration> --><EarlyStart>2011-01-20T14:47:08.571+02:00</EarlyStart>
+               <EarlyFinish>2011-01-21T14:57:08.571+02:00</EarlyFinish>
+               <LateStart>2011-01-20T15:30:00+02:00</LateStart>
+               <LateFinish>2011-01-21T15:40:00+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>un-installation</TaskName>
+               <IsSummary>0</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>3</TaskOrderID>
+               <ParentTaskID>3</ParentTaskID>
+               <ParentPersistentID>3</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete>{xs:int(string($subtask/*[name()='progress']/*[name()='completition-entry']/@percent-finished))}</PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>3.3</WBS>
+               <PlannedStart>2011-11-14T20:59:15.157+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:59:15.157+02:00</PlannedFinish>
+               <ActualStart>2011-01-21T14:57:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-24T14:57:08.571+02:00</ActualFinish>
+               <!--    <ActualDuration>{string($subtask/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> 
+                    <RemainingDuration>{string($subtask/*[name()='progress']/*[name()='completition-entry']/@remaining-effort)}</RemainingDuration> --><EarlyStart>2011-01-21T14:57:08.571+02:00</EarlyStart>
+               <EarlyFinish>2011-01-24T14:57:08.571+02:00</EarlyFinish>
+               <LateStart>2011-01-21T15:40:00+02:00</LateStart>
+               <LateFinish>2011-01-24T15:40:00+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>marking and packing</TaskName>
+               <IsSummary>0</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>1</TaskOrderID>
+               <ParentTaskID>4</ParentTaskID>
+               <ParentPersistentID>4</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete>{xs:int(string($subtask/*[name()='progress']/*[name()='completition-entry']/@percent-finished))}</PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>4.1</WBS>
+               <PlannedStart>2011-11-14T20:59:23.445+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:59:23.445+02:00</PlannedFinish>
+               <ActualStart>2011-01-24T14:57:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-25T15:17:08.571+02:00</ActualFinish>
+               <!--    <ActualDuration>{string($subtask/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> 
+                    <RemainingDuration>{string($subtask/*[name()='progress']/*[name()='completition-entry']/@remaining-effort)}</RemainingDuration> --><EarlyStart>2011-01-24T14:57:08.571+02:00</EarlyStart>
+               <EarlyFinish>2011-01-25T15:17:08.571+02:00</EarlyFinish>
+               <LateStart>2011-01-24T15:40:00+02:00</LateStart>
+               <LateFinish>2011-01-25T16:00:00+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>transport</TaskName>
+               <IsSummary>0</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>2</TaskOrderID>
+               <ParentTaskID>4</ParentTaskID>
+               <ParentPersistentID>4</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete>{xs:int(string($subtask/*[name()='progress']/*[name()='completition-entry']/@percent-finished))}</PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>4.2</WBS>
+               <PlannedStart>2011-11-14T20:59:26.135+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:59:26.135+02:00</PlannedFinish>
+               <ActualStart>2011-01-25T15:17:08.571+02:00</ActualStart>
+               <ActualFinish>2011-02-22T15:17:08.571+02:00</ActualFinish>
+               <!--    <ActualDuration>{string($subtask/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> 
+                    <RemainingDuration>{string($subtask/*[name()='progress']/*[name()='completition-entry']/@remaining-effort)}</RemainingDuration> --><EarlyStart>2011-01-25T15:17:08.571+02:00</EarlyStart>
+               <EarlyFinish>2011-02-22T15:17:08.571+02:00</EarlyFinish>
+               <LateStart>2011-01-26T08:00:00+02:00</LateStart>
+               <LateFinish>2011-02-22T16:00:00+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>check at arrival</TaskName>
+               <IsSummary>0</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>1</TaskOrderID>
+               <ParentTaskID>5</ParentTaskID>
+               <ParentPersistentID>5</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete>{xs:int(string($subtask/*[name()='progress']/*[name()='completition-entry']/@percent-finished))}</PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>5.1</WBS>
+               <PlannedStart>2011-11-14T20:59:30.350+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:59:30.350+02:00</PlannedFinish>
+               <ActualStart>2011-02-23T02:00:00+02:00</ActualStart>
+               <ActualFinish>2011-02-25T06:30:00+02:00</ActualFinish>
+               <!--    <ActualDuration>{string($subtask/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> 
+                    <RemainingDuration>{string($subtask/*[name()='progress']/*[name()='completition-entry']/@remaining-effort)}</RemainingDuration> --><EarlyStart>2011-02-23T02:00:00+02:00</EarlyStart>
+               <EarlyFinish>2011-02-25T06:30:00+02:00</EarlyFinish>
+               <LateStart>2011-02-23T02:00:00+02:00</LateStart>
+               <LateFinish>2011-02-25T06:30:00+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>installation</TaskName>
+               <IsSummary>0</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>2</TaskOrderID>
+               <ParentTaskID>5</ParentTaskID>
+               <ParentPersistentID>5</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete>{xs:int(string($subtask/*[name()='progress']/*[name()='completition-entry']/@percent-finished))}</PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>5.2</WBS>
+               <PlannedStart>2011-11-14T20:59:35.694+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:59:35.694+02:00</PlannedFinish>
+               <ActualStart>2011-02-25T06:30:00+02:00</ActualStart>
+               <ActualFinish>2011-03-06T04:10:00+02:00</ActualFinish>
+               <!--    <ActualDuration>{string($subtask/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> 
+                    <RemainingDuration>{string($subtask/*[name()='progress']/*[name()='completition-entry']/@remaining-effort)}</RemainingDuration> --><EarlyStart>2011-02-25T06:30:00+02:00</EarlyStart>
+               <EarlyFinish>2011-03-06T04:10:00+02:00</EarlyFinish>
+               <LateStart>2011-02-25T06:30:00+02:00</LateStart>
+               <LateFinish>2011-03-06T04:10:00+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>commissioning</TaskName>
+               <IsSummary>0</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>3</TaskOrderID>
+               <ParentTaskID>5</ParentTaskID>
+               <ParentPersistentID>5</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete>{xs:int(string($subtask/*[name()='progress']/*[name()='completition-entry']/@percent-finished))}</PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>5.3</WBS>
+               <PlannedStart>2011-11-14T20:59:40.926+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:59:40.926+02:00</PlannedFinish>
+               <ActualStart>2011-03-06T04:10:00+02:00</ActualStart>
+               <ActualFinish>2011-03-10T02:32:00+02:00</ActualFinish>
+               <!--    <ActualDuration>{string($subtask/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> 
+                    <RemainingDuration>{string($subtask/*[name()='progress']/*[name()='completition-entry']/@remaining-effort)}</RemainingDuration> --><EarlyStart>2011-03-06T04:10:00+02:00</EarlyStart>
+               <EarlyFinish>2011-03-10T02:32:00+02:00</EarlyFinish>
+               <LateStart>2011-03-06T04:10:00+02:00</LateStart>
+               <LateFinish>2011-03-10T02:32:00+02:00</LateFinish>
+            </Task>
+            <Task TaskID="1">
+               <PersistentID>1</PersistentID>
+               <TaskName>dinner</TaskName>
+               <IsSummary>0</IsSummary>
+               <OutlineLevel>0</OutlineLevel>
+               <TaskOrderID>4</TaskOrderID>
+               <ParentTaskID>5</ParentTaskID>
+               <ParentPersistentID>5</ParentPersistentID>
+               <IsMilestone>0</IsMilestone>
+               <IsCritical>0</IsCritical>
+               <TaskNotes/>
+               <!--  <PercentComplete>{xs:int(string($subtask/*[name()='progress']/*[name()='completition-entry']/@percent-finished))}</PercentComplete>
+                    <PercentWorkComplete></PercentWorkComplete>
+                    <Priority></Priority> --><WBS>5.4</WBS>
+               <PlannedStart>2011-11-14T20:59:44.326+02:00</PlannedStart>
+               <PlannedFinish>2011-11-14T20:59:44.326+02:00</PlannedFinish>
+               <ActualStart>2011-03-10T02:32:00+02:00</ActualStart>
+               <ActualFinish>2011-03-10T04:32:00+02:00</ActualFinish>
+               <!--    <ActualDuration>{string($subtask/*[name()='schedules']/*[name()='schedule']/@duration)}</ActualDuration> 
+                    <RemainingDuration>{string($subtask/*[name()='progress']/*[name()='completition-entry']/@remaining-effort)}</RemainingDuration> --><EarlyStart>2011-03-10T02:32:00+02:00</EarlyStart>
+               <EarlyFinish>2011-03-10T04:32:00+02:00</EarlyFinish>
+               <LateStart>2011-03-10T02:32:00+02:00</LateStart>
+               <LateFinish>2011-03-10T04:32:00+02:00</LateFinish>
+            </Task>
+         </Tasks>
+         <Assignments>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2010-11-04T08:00:00+02:00</ActualStart>
+               <ActualFinish>2010-11-18T12:00:00+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2010-11-04T08:00:00+02:00</ActualStart>
+               <ActualFinish>2010-11-11T10:00:00+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2010-11-18T12:00:00+02:00</ActualStart>
+               <ActualFinish>2010-11-22T12:12:00+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-01-17T14:29:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-18T14:49:08.571+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-01-18T14:49:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-20T14:47:08.571+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-01-18T14:49:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-20T14:47:08.571+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-01-18T14:49:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-20T14:47:08.571+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-01-18T14:49:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-20T14:47:08.571+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-01-20T14:47:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-21T14:57:08.571+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-01-20T14:47:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-21T14:57:08.571+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-01-21T14:57:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-24T14:57:08.571+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-01-21T14:57:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-24T14:57:08.571+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-01-21T14:57:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-24T14:57:08.571+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-01-21T14:57:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-24T14:57:08.571+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-01-24T14:57:08.571+02:00</ActualStart>
+               <ActualFinish>2011-01-25T15:17:08.571+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-02-23T02:00:00+02:00</ActualStart>
+               <ActualFinish>2011-02-25T06:30:00+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-02-25T06:30:00+02:00</ActualStart>
+               <ActualFinish>2011-03-06T04:10:00+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-03-06T04:10:00+02:00</ActualStart>
+               <ActualFinish>2011-03-10T02:32:00+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+            <Assignment AssignmentID="1" ResourceID="1" TaskID="1">
+               <PersistentID>1</PersistentID>
+               <ResourcePersistentID>1</ResourcePersistentID>
+               <TaskPersistentID>1</TaskPersistentID>
+               <Quantity>0</Quantity>
+               <Notes/>
+               <PlannedStart/>
+               <PlannedFinish/>
+               <ActualStart>2011-03-10T02:32:00+02:00</ActualStart>
+               <ActualFinish>2011-03-10T04:32:00+02:00</ActualFinish>
+               <EarlyStart/>
+               <EarlyFinish/>
+               <LateStart/>
+               <LateFinish/>
+            </Assignment>
+         </Assignments>
+      </Project>
+   </Projects>
+</ProjectManagementSchema>
