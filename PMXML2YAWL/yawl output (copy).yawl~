@@ -1,0 +1,1693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specificationSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns="http://www.yawlfoundation.org/yawlschema"
+                  xsi:schemaLocation="http://www.yawlfoundation.org/yawlschema file:/home/cris/Disertatie/PMXML2YAWL/YAWL_Schema2.2.xsd"
+                  version="2.2">
+   <specification uri="http://www.oxygenxml.com/">
+      <name>Luxury Custom Home Construction Schedule</name>
+      <documentation>descr</documentation>
+      <metaData>
+         <title>b4ubuild_sample_07a</title>
+         <creator>Greg Susman - GS Design, Inc.</creator>
+         <subject>Luxury Custom Home Construction Schedule</subject>
+         <description>descr</description>
+         <created>2012-11-10</created>
+      </metaData>
+      <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"/>
+      <decomposition id="id1" isRootNet="true" xsi:type="NetFactsType">
+         <processControlElements>
+            <inputCondition id="InputCondition_1">
+               <flowsInto>
+                  <nextElementRef id="ID0"/>
+               </flowsInto>
+            </inputCondition>
+            <task id="ID0">
+               <name>b4ubuild_sample_07a</name>
+               <flowsInto>
+                  <nextElementRef id="ID1"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID1">
+               <name>Contracts</name>
+               <flowsInto>
+                  <nextElementRef id="ID2"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID2">
+               <name>Supply Lot Sale Agreement</name>
+               <flowsInto>
+                  <nextElementRef id="ID3"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID3">
+               <name>Supply Construction Agreement</name>
+               <flowsInto>
+                  <nextElementRef id="ID4"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID4">
+               <name>Supply Contract Plans</name>
+               <flowsInto>
+                  <nextElementRef id="ID5"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID5">
+               <name>Supply Contract Specifications</name>
+               <flowsInto>
+                  <nextElementRef id="ID6"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID6">
+               <name>Supply Contract Site Plan</name>
+               <flowsInto>
+                  <nextElementRef id="ID7"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID7">
+               <name>Secure Financing</name>
+               <flowsInto>
+                  <nextElementRef id="ID8"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID8">
+               <name>Construction Loan Settlement</name>
+               <flowsInto>
+                  <nextElementRef id="ID9"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID9">
+               <name>Document Review &amp; Revision</name>
+               <flowsInto>
+                  <nextElementRef id="ID10"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID10">
+               <name>Review &amp; Finalize Plans</name>
+               <flowsInto>
+                  <nextElementRef id="ID11"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID11">
+               <name>Review &amp; Finalize Specifications</name>
+               <flowsInto>
+                  <nextElementRef id="ID12"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID12">
+               <name>Review &amp; Finalize Site Plan</name>
+               <flowsInto>
+                  <nextElementRef id="ID13"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID13">
+               <name>Print Construction Drawings</name>
+               <flowsInto>
+                  <nextElementRef id="ID14"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID14">
+               <name>Approve Revised Plans</name>
+               <flowsInto>
+                  <nextElementRef id="ID15"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID15">
+               <name>Approve Revised Specifications</name>
+               <flowsInto>
+                  <nextElementRef id="ID16"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID16">
+               <name>Approve Revised Site Plan</name>
+               <flowsInto>
+                  <nextElementRef id="ID17"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID17">
+               <name>Bids &amp; Contracts</name>
+               <flowsInto>
+                  <nextElementRef id="ID18"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID18">
+               <name>Make Copies of Plans</name>
+               <flowsInto>
+                  <nextElementRef id="ID19"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID19">
+               <name>Make Copies of Specifications</name>
+               <flowsInto>
+                  <nextElementRef id="ID20"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID20">
+               <name>Distribute Plans &amp; Specifications</name>
+               <flowsInto>
+                  <nextElementRef id="ID21"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID21">
+               <name>Receive Bids</name>
+               <flowsInto>
+                  <nextElementRef id="ID22"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID22">
+               <name>Review Bids</name>
+               <flowsInto>
+                  <nextElementRef id="ID23"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID23">
+               <name>Sales</name>
+               <flowsInto>
+                  <nextElementRef id="ID24"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID24">
+               <name>Construction</name>
+               <flowsInto>
+                  <nextElementRef id="ID25"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID25">
+               <name>Execute Subcontractor Agreements</name>
+               <flowsInto>
+                  <nextElementRef id="ID26"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID26">
+               <name>Grading &amp; Building Permits</name>
+               <flowsInto>
+                  <nextElementRef id="ID27"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID27">
+               <name>Schedule lot stake-out</name>
+               <flowsInto>
+                  <nextElementRef id="ID28"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID28">
+               <name>Stake lot</name>
+               <flowsInto>
+                  <nextElementRef id="ID29"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID29">
+               <name>File Grading Permit Application</name>
+               <flowsInto>
+                  <nextElementRef id="ID30"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID30">
+               <name>File Building Permit Application</name>
+               <flowsInto>
+                  <nextElementRef id="ID31"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID31">
+               <name>Post Lot Identification</name>
+               <flowsInto>
+                  <nextElementRef id="ID32"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID32">
+               <name>Meet Sediment Control Inspector</name>
+               <flowsInto>
+                  <nextElementRef id="ID33"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID33">
+               <name>Walk Lot w/ Owner</name>
+               <flowsInto>
+                  <nextElementRef id="ID34"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID34">
+               <name>Install Construction Entrance</name>
+               <flowsInto>
+                  <nextElementRef id="ID35"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID35">
+               <name>Install Sediment Controls</name>
+               <flowsInto>
+                  <nextElementRef id="ID36"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID36">
+               <name>Sediment Control Insp.</name>
+               <flowsInto>
+                  <nextElementRef id="ID37"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID37">
+               <name>Grading Permit Issued</name>
+               <flowsInto>
+                  <nextElementRef id="ID38"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID38">
+               <name>County Permit Process</name>
+               <flowsInto>
+                  <nextElementRef id="ID39"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID39">
+               <name>Building Permit Approved</name>
+               <flowsInto>
+                  <nextElementRef id="ID40"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID40">
+               <name>Pay Permit Fees and Excise Taxes</name>
+               <flowsInto>
+                  <nextElementRef id="ID41"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID41">
+               <name>Building Permit Issued</name>
+               <flowsInto>
+                  <nextElementRef id="ID42"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID42">
+               <name>Site Work</name>
+               <flowsInto>
+                  <nextElementRef id="ID43"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID43">
+               <name>Clear Lot</name>
+               <flowsInto>
+                  <nextElementRef id="ID44"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID44">
+               <name>Strip Topsoil &amp; Stockpile</name>
+               <flowsInto>
+                  <nextElementRef id="ID45"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID45">
+               <name>Stake Lot for Excavation</name>
+               <flowsInto>
+                  <nextElementRef id="ID46"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID46">
+               <name>Rough grade lot</name>
+               <flowsInto>
+                  <nextElementRef id="ID47"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID47">
+               <name>Excavate for foundation</name>
+               <flowsInto>
+                  <nextElementRef id="ID48"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID48">
+               <name>Foundation</name>
+               <flowsInto>
+                  <nextElementRef id="ID49"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID49">
+               <name>Layout footings</name>
+               <flowsInto>
+                  <nextElementRef id="ID50"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID50">
+               <name>Dig Footings &amp; Install Reinforcing</name>
+               <flowsInto>
+                  <nextElementRef id="ID51"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID51">
+               <name>Footing Inspection</name>
+               <flowsInto>
+                  <nextElementRef id="ID52"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID52">
+               <name>Pour footings</name>
+               <flowsInto>
+                  <nextElementRef id="ID53"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID53">
+               <name>Pin Footings</name>
+               <flowsInto>
+                  <nextElementRef id="ID54"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID54">
+               <name>Stock Block, Mortar, Sand</name>
+               <flowsInto>
+                  <nextElementRef id="ID55"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID55">
+               <name>Build Block Foundation</name>
+               <flowsInto>
+                  <nextElementRef id="ID56"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID56">
+               <name>Foundation Certification</name>
+               <flowsInto>
+                  <nextElementRef id="ID57"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID57">
+               <name>Draw #1 (Location Survey)</name>
+               <flowsInto>
+                  <nextElementRef id="ID58"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID58">
+               <name>Fill Block Cores w/ Concrete</name>
+               <flowsInto>
+                  <nextElementRef id="ID59"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID59">
+               <name>Steel Delivery</name>
+               <flowsInto>
+                  <nextElementRef id="ID60"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID60">
+               <name>Set Lintels, Bolts, Cap Block</name>
+               <flowsInto>
+                  <nextElementRef id="ID61"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID61">
+               <name>Lumber Delivery</name>
+               <flowsInto>
+                  <nextElementRef id="ID62"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <task id="ID62">
+               <name>Waterproofing and Drain Tile</name>
+               <flowsInto>
+                  <nextElementRef id="OutputCondition_2"/>
+               </flowsInto>
+               <join code="xor"/>
+               <split code="and"/>
+            </task>
+            <outputCondition id="OutputCondition_2"/>
+         </processControlElements>
+      </decomposition>
+   </specification>
+   <layout>
+      <locale language="en" country="US"/>
+      <specification id="id1">
+         <size w="118" h="27"/>
+         <net id="id1">
+            <bounds w="1696" h="384" y="0" x="-141"/>
+            <frame w="505" h="275" y="24" x="2"/>
+            <viewport w="505" h="275" y="0" x="0"/>
+            <vertex id="InputCondition_1">
+               <attributes>
+                  <bounds w="32.0" h="32.0" y="120.0" x="0.0"/>
+               </attributes>
+            </vertex>
+            <vertex id="OutputCondition_2">
+               <attributes>
+                  <bounds w="32.0" h="32.0" y="108.0" x="1644.0"/>
+               </attributes>
+            </vertex>
+            <container id="ID0">
+               <vertex>
+                  <attributes>
+                     <bounds w="37.0" h="37.0" y="113.0" x="77.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="101.0" h="41.0" y="145.0" x="45.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID1">
+               <vertex>
+                  <attributes>
+                     <bounds w="42" h="42" y="118" x="82"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="106" h="46" y="150" x="50"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID2">
+               <vertex>
+                  <attributes>
+                     <bounds w="47" h="47" y="123" x="87"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="111" h="51" y="155" x="55"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID3">
+               <vertex>
+                  <attributes>
+                     <bounds w="52" h="52" y="128" x="92"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="116" h="56" y="160" x="60"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID4">
+               <vertex>
+                  <attributes>
+                     <bounds w="57" h="57" y="133" x="97"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="121" h="61" y="165" x="65"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID5">
+               <vertex>
+                  <attributes>
+                     <bounds w="62" h="62" y="138" x="102"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="126" h="66" y="170" x="70"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID6">
+               <vertex>
+                  <attributes>
+                     <bounds w="67" h="67" y="143" x="107"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="131" h="71" y="175" x="75"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID7">
+               <vertex>
+                  <attributes>
+                     <bounds w="72" h="72" y="148" x="112"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="136" h="76" y="180" x="80"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID8">
+               <vertex>
+                  <attributes>
+                     <bounds w="77" h="77" y="153" x="117"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="141" h="81" y="185" x="85"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID9">
+               <vertex>
+                  <attributes>
+                     <bounds w="82" h="82" y="158" x="122"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="146" h="86" y="190" x="90"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID10">
+               <vertex>
+                  <attributes>
+                     <bounds w="87" h="87" y="163" x="127"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="151" h="91" y="195" x="95"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID11">
+               <vertex>
+                  <attributes>
+                     <bounds w="92" h="92" y="168" x="132"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="156" h="96" y="200" x="100"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID12">
+               <vertex>
+                  <attributes>
+                     <bounds w="97" h="97" y="173" x="137"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="161" h="101" y="205" x="105"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID13">
+               <vertex>
+                  <attributes>
+                     <bounds w="102" h="102" y="178" x="142"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="166" h="106" y="210" x="110"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID14">
+               <vertex>
+                  <attributes>
+                     <bounds w="107" h="107" y="183" x="147"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="171" h="111" y="215" x="115"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID15">
+               <vertex>
+                  <attributes>
+                     <bounds w="112" h="112" y="188" x="152"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="176" h="116" y="220" x="120"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID16">
+               <vertex>
+                  <attributes>
+                     <bounds w="117" h="117" y="193" x="157"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="181" h="121" y="225" x="125"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID17">
+               <vertex>
+                  <attributes>
+                     <bounds w="122" h="122" y="198" x="162"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="186" h="126" y="230" x="130"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID18">
+               <vertex>
+                  <attributes>
+                     <bounds w="127" h="127" y="203" x="167"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="191" h="131" y="235" x="135"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID19">
+               <vertex>
+                  <attributes>
+                     <bounds w="132" h="132" y="208" x="172"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="196" h="136" y="240" x="140"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID20">
+               <vertex>
+                  <attributes>
+                     <bounds w="137" h="137" y="213" x="177"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="201" h="141" y="245" x="145"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID21">
+               <vertex>
+                  <attributes>
+                     <bounds w="142.0" h="142.0" y="218.0" x="182.0"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="206.0" h="146.0" y="250.0" x="150.0"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID22">
+               <vertex>
+                  <attributes>
+                     <bounds w="147" h="147" y="223" x="187"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="211" h="151" y="255" x="155"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID23">
+               <vertex>
+                  <attributes>
+                     <bounds w="152" h="152" y="228" x="192"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="216" h="156" y="260" x="160"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID24">
+               <vertex>
+                  <attributes>
+                     <bounds w="157" h="157" y="233" x="197"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="221" h="161" y="265" x="165"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID25">
+               <vertex>
+                  <attributes>
+                     <bounds w="162" h="162" y="238" x="202"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="226" h="166" y="270" x="170"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID26">
+               <vertex>
+                  <attributes>
+                     <bounds w="167" h="167" y="243" x="207"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="231" h="171" y="275" x="175"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID27">
+               <vertex>
+                  <attributes>
+                     <bounds w="172" h="172" y="248" x="212"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="236" h="176" y="280" x="180"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID28">
+               <vertex>
+                  <attributes>
+                     <bounds w="177" h="177" y="253" x="217"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="241" h="181" y="285" x="185"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID29">
+               <vertex>
+                  <attributes>
+                     <bounds w="182" h="182" y="258" x="222"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="246" h="186" y="290" x="190"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID30">
+               <vertex>
+                  <attributes>
+                     <bounds w="187" h="187" y="263" x="227"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="251" h="191" y="295" x="195"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID31">
+               <vertex>
+                  <attributes>
+                     <bounds w="192" h="192" y="268" x="232"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="256" h="196" y="300" x="200"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID32">
+               <vertex>
+                  <attributes>
+                     <bounds w="197" h="197" y="273" x="237"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="261" h="201" y="305" x="205"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID33">
+               <vertex>
+                  <attributes>
+                     <bounds w="202" h="202" y="278" x="242"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="266" h="206" y="310" x="210"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID34">
+               <vertex>
+                  <attributes>
+                     <bounds w="207" h="207" y="283" x="247"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="271" h="211" y="315" x="215"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID35">
+               <vertex>
+                  <attributes>
+                     <bounds w="212" h="212" y="288" x="252"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="276" h="216" y="320" x="220"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID36">
+               <vertex>
+                  <attributes>
+                     <bounds w="217" h="217" y="293" x="257"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="281" h="221" y="325" x="225"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID37">
+               <vertex>
+                  <attributes>
+                     <bounds w="222" h="222" y="298" x="262"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="286" h="226" y="330" x="230"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID38">
+               <vertex>
+                  <attributes>
+                     <bounds w="227" h="227" y="303" x="267"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="291" h="231" y="335" x="235"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID39">
+               <vertex>
+                  <attributes>
+                     <bounds w="232" h="232" y="308" x="272"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="296" h="236" y="340" x="240"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID40">
+               <vertex>
+                  <attributes>
+                     <bounds w="237" h="237" y="313" x="277"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="301" h="241" y="345" x="245"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID41">
+               <vertex>
+                  <attributes>
+                     <bounds w="242" h="242" y="318" x="282"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="306" h="246" y="350" x="250"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID42">
+               <vertex>
+                  <attributes>
+                     <bounds w="247" h="247" y="323" x="287"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="311" h="251" y="355" x="255"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID43">
+               <vertex>
+                  <attributes>
+                     <bounds w="252" h="252" y="328" x="292"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="316" h="256" y="360" x="260"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID44">
+               <vertex>
+                  <attributes>
+                     <bounds w="257" h="257" y="333" x="297"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="321" h="261" y="365" x="265"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID45">
+               <vertex>
+                  <attributes>
+                     <bounds w="262" h="262" y="338" x="302"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="326" h="266" y="370" x="270"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID46">
+               <vertex>
+                  <attributes>
+                     <bounds w="267" h="267" y="343" x="307"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="331" h="271" y="375" x="275"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID47">
+               <vertex>
+                  <attributes>
+                     <bounds w="272" h="272" y="348" x="312"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="336" h="276" y="380" x="280"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID48">
+               <vertex>
+                  <attributes>
+                     <bounds w="277" h="277" y="353" x="317"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="341" h="281" y="385" x="285"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID49">
+               <vertex>
+                  <attributes>
+                     <bounds w="282" h="282" y="358" x="322"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="346" h="286" y="390" x="290"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID50">
+               <vertex>
+                  <attributes>
+                     <bounds w="287" h="287" y="363" x="327"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="351" h="291" y="395" x="295"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID51">
+               <vertex>
+                  <attributes>
+                     <bounds w="292" h="292" y="368" x="332"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="356" h="296" y="400" x="300"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID52">
+               <vertex>
+                  <attributes>
+                     <bounds w="297" h="297" y="373" x="337"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="361" h="301" y="405" x="305"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID53">
+               <vertex>
+                  <attributes>
+                     <bounds w="302" h="302" y="378" x="342"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="366" h="306" y="410" x="310"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID54">
+               <vertex>
+                  <attributes>
+                     <bounds w="307" h="307" y="383" x="347"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="371" h="311" y="415" x="315"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID55">
+               <vertex>
+                  <attributes>
+                     <bounds w="312" h="312" y="388" x="352"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="376" h="316" y="420" x="320"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID56">
+               <vertex>
+                  <attributes>
+                     <bounds w="317" h="317" y="393" x="357"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="381" h="321" y="425" x="325"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID57">
+               <vertex>
+                  <attributes>
+                     <bounds w="322" h="322" y="398" x="362"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="386" h="326" y="430" x="330"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID58">
+               <vertex>
+                  <attributes>
+                     <bounds w="327" h="327" y="403" x="367"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="391" h="331" y="435" x="335"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID59">
+               <vertex>
+                  <attributes>
+                     <bounds w="332" h="332" y="408" x="372"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="396" h="336" y="440" x="340"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID60">
+               <vertex>
+                  <attributes>
+                     <bounds w="337" h="337" y="413" x="377"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="401" h="341" y="445" x="345"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID61">
+               <vertex>
+                  <attributes>
+                     <bounds w="342" h="342" y="418" x="382"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="406" h="346" y="450" x="350"/>
+                  </attributes>
+               </label>
+            </container>
+            <container id="ID62">
+               <vertex>
+                  <attributes>
+                     <bounds w="347" h="347" y="423" x="387"/>
+                  </attributes>
+               </vertex>
+               <label>
+                  <attributes>
+                     <bounds w="411" h="351" y="455" x="355"/>
+                  </attributes>
+               </label>
+            </container>
+            <flow source="InputCondition_1" target="ID0">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID0" target="ID1">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID1" target="ID2">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID2" target="ID3">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID3" target="ID4">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID4" target="ID5">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID5" target="ID6">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID6" target="ID7">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID7" target="ID8">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID8" target="ID9">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID9" target="ID10">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID10" target="ID11">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID11" target="ID12">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID12" target="ID13">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID13" target="ID14">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID14" target="ID15">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID15" target="ID16">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID16" target="ID17">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID17" target="ID18">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID18" target="ID19">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID19" target="ID20">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID20" target="ID21">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID21" target="ID22">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID22" target="ID23">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID23" target="ID24">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID24" target="ID25">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID25" target="ID26">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID26" target="ID27">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID27" target="ID28">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID28" target="ID29">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID29" target="ID30">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID30" target="ID31">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID31" target="ID32">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID32" target="ID33">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID33" target="ID34">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID34" target="ID35">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID35" target="ID36">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID36" target="ID37">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID37" target="ID38">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID38" target="ID39">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID39" target="ID40">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID40" target="ID41">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID41" target="ID42">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID42" target="ID43">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID43" target="ID44">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID44" target="ID45">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID45" target="ID46">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID46" target="ID47">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID47" target="ID48">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID48" target="ID49">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID49" target="ID50">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID50" target="ID51">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID51" target="ID52">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID52" target="ID53">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID53" target="ID54">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID54" target="ID55">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID55" target="ID56">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID56" target="ID57">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID57" target="ID58">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID58" target="ID59">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID59" target="ID60">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID60" target="ID61">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID61" target="ID62">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+            <flow source="ID62" target="OutputCondition_2">
+               <ports in="13" out="12"/>
+               <attributes>
+                  <lineStyle>11</lineStyle>
+               </attributes>
+            </flow>
+         </net>
+      </specification>
+   </layout>
+</specificationSet>
