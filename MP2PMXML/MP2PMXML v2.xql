@@ -6,11 +6,13 @@ declare namespace transform="http://exist-db.org/xquery/transform";
 declare namespace xsi="http://www.w3.org/2001/XMLSchema-instance";
 declare default element namespace "http://www.w3.org/1999/xhtml";
 
+declare variable $modul:doc := doc("sample.xml");
+
 declare function modul:metadata() as element()*
 {   
-    let $leader := string(doc("sample.xml")/*/*[name()='Author'])
-    let $date := string(doc("sample.xml")/*/*[name()='LastSaved'])
-    let $projectname := string(doc("sample.xml")/*/*[name()='Subject'])
+    let $leader := string($modul:doc/*/*[name()='Author'])
+    let $date := string($modul:doc/*/*[name()='LastSaved'])
+    let $projectname := string($modul:doc/*/*[name()='Subject'])
     let $metadata := ( 
                         <InstanceData xmlns="">
                             <UserID>1</UserID>
@@ -31,7 +33,7 @@ declare function modul:metadata() as element()*
 declare function modul:resources() as element()*
 {
     let $resources :=( <PoolResources>
-    {for $resource in doc("sample.xml")/*/*[name()='Resources']/*[name()='Resource']
+    {for $resource in $modul:doc/*/*[name()='Resources']/*[name()='Resource']
     return
     <PoolResource xmlns="" ResourceID="{string($resource/*[name()='ID'])}">
             <PersistentID>{string($resource/*[name()='UID'])}</PersistentID>
@@ -79,20 +81,20 @@ declare function modul:resources() as element()*
 declare function modul:projects() as element()*
 {
     
-    let $projectname := string(doc("sample.xml")/*/*[name()='Subject'])
-    let $leader := string(doc("sample.xml")/*/*[name()='Author'])
-    let $title := string(doc("sample.xml")/*/*[name()='Title'])
-    let $lastmodified := string(doc("sample.xml")/*/*[name()='LastSaved'])
-    let $startdate := string(doc("sample.xml")/*/*[name()='StartDate'])
-    let $finishdate := string(doc("sample.xml")/*/*[name()='FinishDate'])
-    let $company := string(doc("sample.xml")/*/*[name()='Company'])
-    let $manager := string(doc("sample.xml")/*/*[name()='Manager'])
-    let $dayspermonth := string(doc("sample.xml")/*/*[name()='DaysPerMonth'])
-    let $hoursperday := string(doc("sample.xml")/*/*[name()='MinutesPerDay'] div 60)
-    let $hoursperweek := string(doc("sample.xml")/*/*[name()='MinutesPerWeek'] div 60)
-    let $weekstartdate := string(doc("sample.xml")/*/*[name()='WeekStartDay'])
+    let $projectname := string($modul:doc/*/*[name()='Subject'])
+    let $leader := string($modul:doc/*/*[name()='Author'])
+    let $title := string($modul:doc/*/*[name()='Title'])
+    let $lastmodified := string($modul:doc/*/*[name()='LastSaved'])
+    let $startdate := string($modul:doc/*/*[name()='StartDate'])
+    let $finishdate := string($modul:doc/*/*[name()='FinishDate'])
+    let $company := string($modul:doc/*/*[name()='Company'])
+    let $manager := string($modul:doc/*/*[name()='Manager'])
+    let $dayspermonth := string($modul:doc/*/*[name()='DaysPerMonth'])
+    let $hoursperday := string($modul:doc/*/*[name()='MinutesPerDay'] div 60)
+    let $hoursperweek := string($modul:doc/*/*[name()='MinutesPerWeek'] div 60)
+    let $weekstartdate := string($modul:doc/*/*[name()='WeekStartDay'])
     let $projects :=( <Projects count="0">
-    {for $project in doc("sample.xml")/*[name()='Project']
+    {for $project in $modul:doc/*[name()='Project']
     return 
         <Project xmlns="" ProjectID="1">
             <PersistentID application="1">1</PersistentID>
@@ -115,14 +117,14 @@ declare function modul:projects() as element()*
             <PlannedFinish>{$finishdate}</PlannedFinish>
             <Resources>
              {
-                for $resource in doc("sample.xml")/*/*[name()='Resources']/*[name()='Resource']
+                for $resource in $modul:doc/*/*[name()='Resources']/*[name()='Resource']
                 return
                 <Resource ResourceID="{string($resource/*[name()='ID'])}"/>
               }
             </Resources> 
             <Tasks>
               {
-                for $task in doc("sample.xml")/*/*[name()='Tasks']/*[name()='Task']
+                for $task in $modul:doc/*/*[name()='Tasks']/*[name()='Task']
                 return
                 <Task TaskID="{string($task/*[name()='ID'])}">
                     <PersistentID>{string($task/*[name()='UID'])}</PersistentID>
@@ -170,7 +172,7 @@ declare function modul:projects() as element()*
             </Tasks>
             <Assignments>
             {
-                for $assignment in doc("sample.xml")/*/*[name()='Assignments']/*[name()='Assignments']
+                for $assignment in $modul:doc/*/*[name()='Assignments']/*[name()='Assignment']
                 return
                <Assignment AssignmentID="{string($assignment/*[name()='UID'])}" ResourceID="{string($assignment/*[name()='ResourceUID'])}" TaskID="{string($assignment/*[name()='TaskUID'])}">
                     <PersistentID>{string($assignment/*[name()='UID'])}</PersistentID>
@@ -179,12 +181,12 @@ declare function modul:projects() as element()*
                     <Quantity>{string($assignment/*[name()='Units'])}</Quantity>
                     <ActualStart>{string($assignment/*[name()='Start'])}</ActualStart>
                     <ActualFinish>{string($assignment/*[name()='Finish'])}</ActualFinish>
-                    <ActualWork>{string($assignment/*[name()='ActualWork'])}</ActualWork>
-                    <ActualOvertimeWork>{string($assignment/*[name()='ActualOvertimeWork'])}</ActualOvertimeWork>
+                    <ActualWork>{substring-after(substring-before($assignment/*[name()='ActualWork'],'H'), 'PT')}</ActualWork>
+                    <ActualOvertimeWork>{substring-after(substring-before($assignment/*[name()='ActualOvertimeWork'],'H'), 'PT')}</ActualOvertimeWork>
                     <ActualCost>{string($assignment/*[name()='ActualCost'])}</ActualCost>
                     <ActualOvertimeCost>{string($assignment/*[name()='ActualOvertimeCost'])}</ActualOvertimeCost>
-                    <RemainingWork>{string($assignment/*[name()='RemainingWork'])}</RemainingWork>
-                    <RemainingOvertimeWork>{string($assignment/*[name()='RemainingOvertimeWork'])}</RemainingOvertimeWork>
+                    <RemainingWork>{substring-after(substring-before($assignment/*[name()='RemainingWork'],'H'), 'PT')}</RemainingWork>
+                    <RemainingOvertimeWork>{substring-after(substring-before($assignment/*[name()='RemainingOvertimeWork'],'H'), 'PT')}</RemainingOvertimeWork>
                     <RemainingCost>{string($assignment/*[name()='RemainingCost'])}</RemainingCost>
                     <RemainingOvertimeCost>{string($assignment/*[name()='RemainingOvertimeCost'])}</RemainingOvertimeCost>
                     <ACWP>{string($assignment/*[name()='ACWP'])}</ACWP>

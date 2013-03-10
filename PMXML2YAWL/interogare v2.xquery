@@ -13,6 +13,6 @@ return
     <specificationSet xmlns="http://www.yawlfoundation.org/yawlschema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2"
                           xsi:schemaLocation="http://www.yawlfoundation.org/yawlschema file:/home/cris/Disertatie/PMXML2YAWL/YAWL_Schema2.2.xsd">
     {modul:metadata()}
-    {modul:layout()}
+ <!--   {modul:layout()} -->
     </specificationSet>
     )

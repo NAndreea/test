@@ -47,6 +47,15 @@ declare function modul:metadata() as element()*
                                      </flowsInto>
                                      <join code="xor" />
                                      <split code="and" />
+                                     <resourcing>
+                                        <offer initiator="system">
+                                          <distributionSet>
+                                            <initialSet />
+                                          </distributionSet>
+                                        </offer>
+                                        <allocate initiator="user" />
+                                        <start initiator="user" />
+                                      </resourcing>
                                    </task>
                                    }
                                    <outputCondition id="OutputCondition_2" />
@@ -59,7 +68,7 @@ declare function modul:metadata() as element()*
 };
 
 
-declare function modul:layout() as element()*
+(:declare function modul:layout() as element()*
 {
  let $projectname := string($modul:doc/*/*[name()='Projects']/*[name()='Project']/*[name()='ProjectName'])
  let $id := string($modul:doc/*/*[name()='Projects']/*[name()='Project']/*[name()='PersistentID'])
@@ -127,4 +136,4 @@ declare function modul:layout() as element()*
                 )
  return $layout
 
-};
+};:)
